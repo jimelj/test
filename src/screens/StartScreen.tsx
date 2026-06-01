@@ -12,19 +12,27 @@ export function StartScreen({
 }: {
   attempts: Record<ModuleId, Attempt | null>;
   allModuleIds: ModuleId[];
-  onStart: (player: Player, moduleId: ModuleId, timerEnabled: boolean) => void;
+  onStart: (
+    player: Player,
+    pin: string,
+    moduleId: ModuleId,
+    timerEnabled: boolean
+  ) => void | Promise<void>;
   onResume: (moduleId: ModuleId) => void;
   onViewLeaderboard: () => void;
 }) {
   const [first, setFirst] = useState("");
   const [last, setLast] = useState("");
+  const [pin, setPin] = useState("");
   const [touched, setTouched] = useState(false);
+  const [busy, setBusy] = useState(false);
   const [selectedModule, setSelectedModule] = useState<ModuleId | null>(null);
   const [timerEnabled, setTimerEnabled] = useState(true);
 
   const firstOk = first.trim().length >= 1;
   const lastOk = last.trim().length >= 1;
-  const nameValid = firstOk && lastOk;
+  const pinOk = /^\d{4}$/.test(pin.trim());
+  const nameValid = firstOk && lastOk && pinOk;
 
   const selectedMod = selectedModule ? getModule(selectedModule) : null;
   const questionCount = selectedMod ? selectedMod.questions.length : null;
@@ -34,11 +42,21 @@ export function StartScreen({
     setSelectedModule((prev) => (prev === id ? null : id));
   };
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setTouched(true);
-    if (!nameValid || !selectedModule || !moduleReady) return;
-    onStart({ first: first.trim(), last: last.trim() }, selectedModule, timerEnabled);
+    if (!nameValid || !selectedModule || !moduleReady || busy) return;
+    setBusy(true);
+    try {
+      await onStart(
+        { first: first.trim(), last: last.trim() },
+        pin.trim(),
+        selectedModule,
+        timerEnabled
+      );
+    } finally {
+      setBusy(false);
+    }
   };
 
   const handleResume = (e: React.MouseEvent, id: ModuleId) => {
@@ -140,8 +158,27 @@ export function StartScreen({
             />
           </div>
         </div>
+        <div style={{ marginTop: 12 }}>
+          <label className="field-label" htmlFor="pin">4-digit resume PIN</label>
+          <input
+            id="pin"
+            className={`input ${touched && !pinOk ? "err" : ""}`}
+            value={pin}
+            onChange={(e) => setPin(e.target.value.replace(/\D/g, "").slice(0, 4))}
+            placeholder="1234"
+            inputMode="numeric"
+            autoComplete="off"
+            maxLength={4}
+          />
+          <p className="field-hint" style={{ marginTop: 6, color: "var(--muted)", fontSize: 13 }}>
+            Pick any 4 digits. Enter the same name and PIN to pick up where you left
+            off, on any device.
+          </p>
+        </div>
         {touched && !nameValid && (
-          <p className="err-text">Please enter both your first and last name.</p>
+          <p className="err-text">
+            Enter your first and last name plus a 4-digit PIN.
+          </p>
         )}
 
         {/* Timer Toggle */}
@@ -196,8 +233,9 @@ export function StartScreen({
           <div className="rule">
             <span className="num">4</span>
             <span>
-              Your progress is saved on this device, so a refresh won&apos;t lose
-              your place{timerEnabled ? " or reset the clock" : ""}.
+              Your progress is saved to your name + PIN, so a refresh or even a
+              different device won&apos;t lose your place
+              {timerEnabled ? " or reset the clock" : ""}.
             </span>
           </div>
         </div>
@@ -212,10 +250,12 @@ export function StartScreen({
         <button
           type="submit"
           className="btn block"
-          disabled={touched && (!nameValid || !selectedModule || !moduleReady)}
+          disabled={busy || (touched && (!nameValid || !selectedModule || !moduleReady))}
         >
-          {selectedModule
-            ? `Start ${getModule(selectedModule).label} →`
+          {busy
+            ? "Checking for saved progress…"
+            : selectedModule
+            ? `Start or resume ${getModule(selectedModule).label} →`
             : "Select a module to begin →"}
         </button>
 

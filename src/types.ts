@@ -17,6 +17,7 @@ export type ModuleId = 1 | 2 | 3;
 
 export type Attempt = {
   player: Player;
+  pin: string; // 4-digit resume PIN; part of the cross-device resume key
   moduleId: ModuleId;
   timerEnabled: boolean;
   startedAt: number; // epoch ms
@@ -25,6 +26,7 @@ export type Attempt = {
   optionOrder: Record<number, number[]>; // questionId -> presentationIdx => originalIdx
   answers: Record<number, number>; // questionId -> chosen ORIGINAL option index
   submitted: boolean;
+  updatedAt?: number; // epoch ms of last save; used to reconcile local vs server
 };
 
 export type LeaderboardEntry = {

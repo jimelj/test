@@ -7,6 +7,14 @@ import {
   migrateStorageIfNeeded,
   saveAttempt,
 } from "./lib/storage";
+import {
+  clearAttemptRemote,
+  flushAttemptRemote,
+  loadAttemptRemote,
+  resumeKeyFor,
+  saveAttemptRemoteDebounced,
+  saveAttemptRemoteNow,
+} from "./lib/attempts";
 import { seededShuffle } from "./lib/shuffle";
 import { TopBar } from "./components/TopBar";
 import { StartScreen } from "./screens/StartScreen";
@@ -92,12 +100,50 @@ export function App() {
   }, []);
 
   const updateAttempt = useCallback((next: Attempt) => {
-    setAttempts((prev) => ({ ...prev, [next.moduleId]: next }));
-    saveAttempt(next);
+    const stamped: Attempt = { ...next, updatedAt: Date.now() };
+    setAttempts((prev) => ({ ...prev, [stamped.moduleId]: stamped }));
+    saveAttempt(stamped);
+    saveAttemptRemoteDebounced(stamped);
   }, []);
 
-  const startExam = useCallback(
-    (player: Player, moduleId: ModuleId, timerEnabled: boolean) => {
+  // Resume-aware start. Re-entering the same name + PIN restores the existing
+  // attempt (from server, falling back to this device) instead of overwriting
+  // it. Only a genuinely new identity creates a fresh attempt.
+  const begin = useCallback(
+    async (player: Player, pin: string, moduleId: ModuleId, timerEnabled: boolean) => {
+      const key = resumeKeyFor(player, moduleId, pin);
+      const localMatches = (a: Attempt | null): a is Attempt =>
+        !!a && resumeKeyFor(a.player, a.moduleId, a.pin ?? "") === key;
+
+      let chosen: Attempt | null = null;
+      try {
+        const remote = await loadAttemptRemote(player, moduleId, pin);
+        const local = loadAttempt(moduleId);
+        const localOk = localMatches(local) ? local : null;
+        if (remote && localOk) {
+          // Newest write wins so a refresh mid-question doesn't lose answers.
+          chosen =
+            (localOk.updatedAt ?? localOk.startedAt) >= (remote.updatedAt ?? remote.startedAt)
+              ? localOk
+              : remote;
+        } else {
+          chosen = remote ?? localOk;
+        }
+      } catch {
+        const local = loadAttempt(moduleId);
+        chosen = localMatches(local) ? local : null;
+      }
+
+      if (chosen) {
+        const resumed = chosen;
+        setActiveModule(moduleId);
+        setAttempts((prev) => ({ ...prev, [moduleId]: resumed }));
+        saveAttempt(resumed); // cache the reconciled copy on this device
+        navigate(resumed.submitted ? "results" : "quiz", moduleId);
+        return;
+      }
+
+      // No existing attempt for this identity: start fresh.
       const mod = getModule(moduleId);
       const questions = mod.questions;
       const seed = Date.now() % 2147483647;
@@ -111,6 +157,7 @@ export function App() {
       }
       const next: Attempt = {
         player,
+        pin,
         moduleId,
         timerEnabled,
         startedAt: Date.now(),
@@ -122,6 +169,7 @@ export function App() {
       };
       setActiveModule(moduleId);
       updateAttempt(next);
+      void saveAttemptRemoteNow({ ...next, updatedAt: Date.now() });
       navigate("quiz", moduleId);
     },
     [updateAttempt, navigate]
@@ -143,8 +191,14 @@ export function App() {
       if (!mod) return prev;
       const existing = prev[mod];
       if (!existing) return prev;
-      const next: Attempt = { ...existing, submitted: true, finishedAt: Date.now() };
+      const next: Attempt = {
+        ...existing,
+        submitted: true,
+        finishedAt: Date.now(),
+        updatedAt: Date.now(),
+      };
       saveAttempt(next);
+      void saveAttemptRemoteNow(next); // persist the final state right away
       return { ...prev, [mod]: next };
     });
     navigate("results");
@@ -152,11 +206,28 @@ export function App() {
 
   const retake = useCallback(() => {
     const mod = activeModuleRef.current;
+    const att = mod ? attemptsRef.current[mod] : null;
     if (mod) clearAttempt(mod);
+    if (att) void clearAttemptRemote(att.player, att.moduleId, att.pin ?? "");
     setAttempts((prev) => ({ ...prev, ...(mod ? { [mod]: null } : {}) }));
     setActiveModule(null);
     navigate("start", null);
   }, [navigate]);
+
+  // Flush any pending debounced save when the tab is hidden or closed, so the
+  // last answer survives even if she swipes the tab away on mobile.
+  useEffect(() => {
+    const flush = () => flushAttemptRemote();
+    const onVisibility = () => {
+      if (document.visibilityState === "hidden") flush();
+    };
+    window.addEventListener("pagehide", flush);
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => {
+      window.removeEventListener("pagehide", flush);
+      document.removeEventListener("visibilitychange", onVisibility);
+    };
+  }, []);
 
   const questionsById = useMemo(() => {
     if (!activeModule) return new Map();
@@ -174,7 +245,7 @@ export function App() {
         <StartScreen
           attempts={attempts}
           allModuleIds={ALL_MODULE_IDS}
-          onStart={startExam}
+          onStart={begin}
           onResume={resumeExam}
           onViewLeaderboard={() => navigate("leaderboard", null)}
         />
