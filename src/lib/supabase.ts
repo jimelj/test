@@ -10,6 +10,9 @@ const client: SupabaseClient | null = supabaseEnabled
   ? createClient(url as string, anon as string)
   : null;
 
+// Exported for the attempt-persistence layer (RPC calls). Null when env unset.
+export const supabase = client;
+
 const TABLE = "leaderboard";
 
 export async function fetchLeaderboard(
