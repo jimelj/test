@@ -21,21 +21,19 @@ import { StartScreen } from "./screens/StartScreen";
 import { QuizScreen } from "./screens/QuizScreen";
 import { ResultsScreen } from "./screens/ResultsScreen";
 import { Leaderboard } from "./screens/Leaderboard";
-import { getModule } from "./data/modules";
+import { getModule, MODULES } from "./data/modules";
 
 type View = "start" | "quiz" | "results" | "leaderboard";
 
 // Run once at startup to move legacy localStorage keys → per-module keys
 migrateStorageIfNeeded();
 
-const ALL_MODULE_IDS: ModuleId[] = [1, 2, 3];
+const ALL_MODULE_IDS: ModuleId[] = MODULES.map((m) => m.id);
 
 function loadAllAttempts(): Record<ModuleId, Attempt | null> {
-  return {
-    1: loadAttempt(1),
-    2: loadAttempt(2),
-    3: loadAttempt(3),
-  };
+  const out: Record<ModuleId, Attempt | null> = {};
+  for (const id of ALL_MODULE_IDS) out[id] = loadAttempt(id);
+  return out;
 }
 
 function initialViewForModule(a: Attempt | null): View {

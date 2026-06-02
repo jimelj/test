@@ -6,10 +6,12 @@ Built with React + TypeScript + Vite, deployed on Vercel, with a Supabase Postgr
 
 ## Features
 
-- **Three study modules**, each a full question bank:
-  - **Module 1 — SNABA Live Collective Notes** (Collectives 1–21): core ABA concepts, measurement, behavior change procedures, and verbal behavior.
-  - **Module 2 — BAS 6th Edition Study Guide**: includes BACB ethics-code questions, flagged with a gold ⚖ Ethics marker.
-  - **Module 3 — PTBA Study Guide**: assessment, treatment planning, and professional practice.
+- **34 modules**, each its own question bank, leaderboard, and resumable attempt:
+  - **Study Guides (Modules 1–3)**, each with 185 questions:
+    - **Module 1 — SNABA Live Collective Notes** (Collectives 1–21): core ABA concepts, measurement, behavior change procedures, and verbal behavior.
+    - **Module 2 — BAS 6th Edition Study Guide**: includes BACB ethics-code questions, flagged with a gold ⚖ Ethics marker.
+    - **Module 3 — PTBA Study Guide**: assessment, treatment planning, and professional practice.
+  - **Cooper chapters (Modules 4–34)**: all 31 chapters of Cooper, Heron & Heward's *Applied Behavior Analysis*, each a focused 50-question set (chapter N maps to module N + 3). Chapter 31 (Ethics) carries the ⚖ marker.
 - **Timed or untimed** exams (countdown timer optional per attempt).
 - **Randomized** question order and answer-option order, seeded per attempt so a refresh keeps the same layout.
 - **Resume in progress**: attempts are saved to `localStorage` per module, so closing the tab mid-exam doesn't lose your place.
@@ -88,10 +90,12 @@ src/
     storage.ts            # localStorage attempt persistence + migration
     shuffle.ts            # seeded shuffle for question/option order
   data/
-    modules.ts            # module metadata + question-bank wiring
-    questions_m1.ts       # Module 1 question bank
-    questions_m2.ts       # Module 2 question bank
-    questions_m3.ts       # Module 3 question bank
+    modules.ts            # module metadata + question-bank wiring (study + Cooper)
+    questions_m1.ts       # Module 1 question bank (study guide)
+    questions_m2.ts       # Module 2 question bank (study guide)
+    questions_m3.ts       # Module 3 question bank (study guide)
+    questions_m4.ts …     # Modules 4–34: one file per Cooper chapter (50 q each)
+    questions_m34.ts
 
 supabase/
   migrations/             # leaderboard table + RLS policies + module columns
@@ -103,7 +107,9 @@ supabase/
 The leaderboard lives in a single `public.leaderboard` table. Schema and policies are defined in `supabase/migrations/`:
 
 - `20260527013635_leaderboard.sql` — creates the table, ranking index, and RLS policies (public read, public insert-own, no update/delete).
-- `20260528_leaderboard_modules.sql` — adds `module` (1–3) and `timed` columns for multi-module support.
+- `20260528_leaderboard_modules.sql` — adds `module` and `timed` columns for multi-module support.
+- `20260601_exam_attempts.sql` — durable, cross-device resumable attempts (`exam_attempts` table + `load_attempt`/`save_attempt`/`clear_attempt` RPCs).
+- `20260601_modules_to_34.sql` — widens the allowed `module` range from 1–3 to 1–34 (leaderboard constraint + insert policy, `exam_attempts` constraint, and the `save_attempt` RPC) so the Cooper chapter modules can record scores and resume. Additive only; existing rows are untouched.
 
 Apply migrations with the Supabase CLI:
 

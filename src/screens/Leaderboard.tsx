@@ -8,7 +8,7 @@ type Tab = "all" | ModuleId;
 
 const TABS: { id: Tab; label: string }[] = [
   { id: "all", label: "All" },
-  ...MODULES.map((m) => ({ id: m.id as Tab, label: m.label })),
+  ...MODULES.map((m) => ({ id: m.id as Tab, label: m.shortLabel })),
 ];
 
 export function Leaderboard({ onBack }: { onBack: () => void }) {

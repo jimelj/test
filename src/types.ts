@@ -13,7 +13,8 @@ export type Player = {
   last: string;
 };
 
-export type ModuleId = 1 | 2 | 3;
+// 1-3 are the original study guides; 4-34 are Cooper chapters (chapter N => module N+3).
+export type ModuleId = number;
 
 export type Attempt = {
   player: Player;

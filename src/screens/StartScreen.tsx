@@ -64,6 +64,87 @@ export function StartScreen({
     onResume(id);
   };
 
+  const studyIds = allModuleIds.filter((id) => getModule(id).group === "study");
+  const cooperIds = allModuleIds.filter((id) => getModule(id).group === "cooper");
+
+  const renderStudyCard = (id: ModuleId) => {
+    const mod = getModule(id);
+    const att = attempts[id];
+    const hasInProgress = att && !att.submitted;
+    const hasCompleted = att?.submitted;
+    const qCount = mod.questions.length;
+    const available = qCount > 0;
+    const selected = selectedModule === id;
+    return (
+      <button
+        key={id}
+        type="button"
+        className={`module-card ${selected ? "selected" : ""} ${!available ? "unavailable" : ""}`}
+        onClick={() => available && handleModuleClick(id)}
+        aria-pressed={selected}
+        disabled={!available}
+      >
+        <div className="mc-top">
+          <span className="mc-label">{mod.label}</span>
+          {hasInProgress && (
+            <span className="mc-badge resume" onClick={(e) => handleResume(e, id)}>
+              Resume ↗
+            </span>
+          )}
+          {hasCompleted && !hasInProgress && <span className="mc-badge done">Completed</span>}
+          {!available && <span className="mc-badge soon">Coming soon</span>}
+        </div>
+        <p className="mc-desc">{mod.description}</p>
+        <div className="mc-foot">
+          {available ? (
+            <span className="chip sm">
+              <span className="ic">{qCount}</span> questions
+            </span>
+          ) : (
+            <span className="chip sm muted">Questions loading…</span>
+          )}
+          {mod.ethics && available && <span className="chip sm ethics-chip">⚖ Ethics section</span>}
+          {mod.note && available && <span className="chip sm blue-chip">{mod.note}</span>}
+        </div>
+      </button>
+    );
+  };
+
+  const renderChapterCard = (id: ModuleId) => {
+    const mod = getModule(id);
+    const att = attempts[id];
+    const hasInProgress = att && !att.submitted;
+    const hasCompleted = att?.submitted;
+    const qCount = mod.questions.length;
+    const available = qCount > 0;
+    const selected = selectedModule === id;
+    return (
+      <button
+        key={id}
+        type="button"
+        className={`ch-card ${selected ? "selected" : ""} ${!available ? "unavailable" : ""}`}
+        onClick={() => available && handleModuleClick(id)}
+        aria-pressed={selected}
+        disabled={!available}
+      >
+        <div className="ch-top">
+          <span className="ch-num">CH {mod.chapter}</span>
+          {hasInProgress && (
+            <span className="mc-badge resume" onClick={(e) => handleResume(e, id)}>
+              Resume ↗
+            </span>
+          )}
+          {hasCompleted && !hasInProgress && <span className="mc-badge done">Done</span>}
+        </div>
+        <div className="ch-title">{mod.title}</div>
+        <div className="ch-foot">
+          <span className="ch-q">{qCount} questions</span>
+          {mod.ethics && <span className="chip sm ethics-chip">⚖ Ethics</span>}
+        </div>
+      </button>
+    );
+  };
+
   return (
     <main className="shell">
       <section className="hero">
@@ -72,63 +153,30 @@ export function StartScreen({
           Practice <span className="accent">Exams</span>
         </h1>
         <p className="lede">
-          Three independent modules, each with 185 multiple-choice questions. Pick a
-          module, sharpen up, and land your spot on the leaderboard.
+          Three study-guide modules plus all 31 chapters of Cooper, Heron &amp; Heward,
+          each chapter a focused 50-question set. Pick a module and climb its leaderboard.
         </p>
       </section>
 
-      {/* Module Cards */}
-      <div className="module-grid">
-        {allModuleIds.map((id) => {
-          const mod = getModule(id);
-          const att = attempts[id];
-          const hasInProgress = att && !att.submitted;
-          const hasCompleted = att?.submitted;
-          const qCount = mod.questions.length;
-          const available = qCount > 0;
-          const selected = selectedModule === id;
+      {studyIds.length > 0 && (
+        <>
+          <div className="section-head">
+            <h2>Study Guides</h2>
+            <span className="count">{studyIds.length} modules</span>
+          </div>
+          <div className="module-grid">{studyIds.map(renderStudyCard)}</div>
+        </>
+      )}
 
-          return (
-            <button
-              key={id}
-              type="button"
-              className={`module-card ${selected ? "selected" : ""} ${!available ? "unavailable" : ""}`}
-              onClick={() => available && handleModuleClick(id)}
-              aria-pressed={selected}
-              disabled={!available}
-            >
-              <div className="mc-top">
-                <span className="mc-label">{mod.label}</span>
-                {hasInProgress && (
-                  <span className="mc-badge resume" onClick={(e) => handleResume(e, id)}>
-                    Resume ↗
-                  </span>
-                )}
-                {hasCompleted && !hasInProgress && (
-                  <span className="mc-badge done">Completed</span>
-                )}
-                {!available && <span className="mc-badge soon">Coming soon</span>}
-              </div>
-              <p className="mc-desc">{mod.description}</p>
-              <div className="mc-foot">
-                {available ? (
-                  <span className="chip sm">
-                    <span className="ic">{qCount}</span> questions
-                  </span>
-                ) : (
-                  <span className="chip sm muted">Questions loading…</span>
-                )}
-                {mod.id === 2 && available && (
-                  <span className="chip sm ethics-chip">⚖ Ethics section</span>
-                )}
-                {mod.id === 3 && available && (
-                  <span className="chip sm blue-chip">📘 All domains</span>
-                )}
-              </div>
-            </button>
-          );
-        })}
-      </div>
+      {cooperIds.length > 0 && (
+        <>
+          <div className="section-head">
+            <h2>Cooper · Applied Behavior Analysis</h2>
+            <span className="count">{cooperIds.length} chapters · 50 q each</span>
+          </div>
+          <div className="ch-grid">{cooperIds.map(renderChapterCard)}</div>
+        </>
+      )}
 
       <form className="card start-card" onSubmit={submit} noValidate>
         <span className="eyebrow">Enter your name to begin</span>
