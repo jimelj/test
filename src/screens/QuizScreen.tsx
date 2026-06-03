@@ -54,7 +54,13 @@ export function QuizScreen({
   const selectedPres =
     selectedOriginal === undefined ? -1 : presOrder.indexOf(selectedOriginal);
 
+  // Once a question is answered, the choice locks and feedback is revealed.
+  const answered = selectedOriginal !== undefined;
+  const isCorrect = answered && selectedOriginal === question?.correctIndex;
+  const correctPres = question ? presOrder.indexOf(question.correctIndex) : -1;
+
   const choose = (presIdx: number) => {
+    if (answered) return; // locked after first answer
     const original = presOrder[presIdx];
     onUpdate({ ...attempt, answers: { ...attempt.answers, [qid]: original } });
   };
@@ -132,21 +138,53 @@ export function QuizScreen({
             {presOrder.map((_, presIdx) => {
               const original = presOrder[presIdx];
               const selected = selectedPres === presIdx;
+              // After answering: mark the correct option, and the chosen one if it was wrong.
+              const showCorrect = answered && original === question.correctIndex;
+              const showWrong = answered && selected && !isCorrect;
+              const cls = showCorrect
+                ? "correct"
+                : showWrong
+                ? "wrong"
+                : selected
+                ? "sel"
+                : "";
               return (
                 <button
                   key={presIdx}
                   type="button"
                   role="radio"
                   aria-checked={selected}
-                  className={`opt ${selected ? "sel" : ""}`}
+                  className={`opt ${cls}`}
                   onClick={() => choose(presIdx)}
+                  disabled={answered}
                 >
                   <span className="key">{LETTERS[presIdx]}</span>
                   <span>{question.options[original]}</span>
+                  {showCorrect && <span className="opt-mark">✓</span>}
+                  {showWrong && <span className="opt-mark">✗</span>}
                 </button>
               );
             })}
           </div>
+
+          {answered && (
+            <div className={`q-feedback ${isCorrect ? "ok" : "no"}`} aria-live="polite">
+              <div className="qf-head">
+                {isCorrect ? "✓ Correct" : "✗ Not quite"}
+                {!isCorrect && correctPres >= 0 && (
+                  <span className="qf-correct">
+                    Correct answer: {LETTERS[correctPres]}. {question.options[question.correctIndex]}
+                  </span>
+                )}
+              </div>
+              {question.explanation && (
+                <div className="qf-why">
+                  <span className="lab">Why</span>
+                  {question.explanation}
+                </div>
+              )}
+            </div>
+          )}
 
           <div className="quiz-actions">
             <button
