@@ -1,4 +1,5 @@
 import type { ModuleId, Question } from "../types";
+import { QUESTIONS_MASTER } from "./questions_master";
 import { QUESTIONS_M1 } from "./questions_m1";
 import { QUESTIONS_M2 } from "./questions_m2";
 import { QUESTIONS_M3 } from "./questions_m3";
@@ -40,7 +41,7 @@ export type ModuleMeta = {
   shortLabel: string; // compact label, used for leaderboard tabs/chips
   description: string;
   questions: Question[];
-  group: "study" | "cooper";
+  group: "study" | "cooper" | "master";
   chapter?: number; // Cooper textbook chapter number (cooper group only)
   title?: string; // chapter title (cooper group only)
   ethics?: boolean; // show the gold ethics marker
@@ -164,7 +165,19 @@ const COOPER_MODULES: ModuleMeta[] = COOPER_CHAPTERS.map(({ chapter, title }) =>
   };
 });
 
-export const MODULES: ModuleMeta[] = [...STUDY_MODULES, ...COOPER_MODULES];
+// The Master De Facto Test: 200 questions evenly pulled from all 31 chapters
+// and 3 modules. Rendered with its own colorful treatment on the start screen.
+const MASTER_MODULE: ModuleMeta = {
+  id: 35,
+  label: "Master De Facto Test",
+  shortLabel: "Master",
+  description:
+    "200 questions pulled evenly from all 31 chapters and 3 modules — the full-scope mock exam.",
+  questions: QUESTIONS_MASTER,
+  group: "master",
+};
+
+export const MODULES: ModuleMeta[] = [MASTER_MODULE, ...STUDY_MODULES, ...COOPER_MODULES];
 
 export const MODULE_MAP = new Map<ModuleId, ModuleMeta>(MODULES.map((m) => [m.id, m]));
 

@@ -59,58 +59,6 @@ export const QUESTIONS_M30: Question[] = [
     explanation: "A behavior is assumed to be maintained by automatic reinforcement only after social reinforcers have been ruled out, such as when the behavior occurs even when the individual is alone. Rocking with no social consequences present is consistent with automatic reinforcement.",
   },
   {
-    id: 29005,
-    topic: "Functions of Behavior",
-    prompt: "A child cries and tantrums until a preferred toy is returned to her. The behavior is most likely maintained by which source of reinforcement?",
-    options: [
-      "Automatic negative reinforcement",
-      "Social positive reinforcement in the form of tangible access",
-      "Social negative reinforcement in the form of escape",
-      "Automatic positive reinforcement"
-    ],
-    correctIndex: 1,
-    explanation: "Tangible reinforcement occurs when problem behaviors produce access to reinforcing materials or other stimuli. A child who tantrums until a preferred item is returned is obtaining positive reinforcement in the form of access to tangibles.",
-  },
-  {
-    id: 29006,
-    topic: "Functions of Behavior",
-    prompt: "Intense scratching of a poison ivy rash is most accurately described as behavior maintained by which reinforcement contingency?",
-    options: [
-      "Social positive reinforcement",
-      "Automatic positive reinforcement",
-      "Automatic negative reinforcement",
-      "Social negative reinforcement"
-    ],
-    correctIndex: 2,
-    explanation: "Automatic negative reinforcement can account for behaviors that terminate aversive stimulation directly. Scratching a rash is negatively reinforced by the alleviation of itching, and the reinforcer is an automatic outcome of the response rather than dependent on another person's action.",
-  },
-  {
-    id: 29007,
-    topic: "Functions of Behavior",
-    prompt: "A teacher inadvertently reprimands a student every time the student engages in disruptive behavior. Over time, the disruptive behavior increases. This scenario is best explained by which reinforcement contingency?",
-    options: [
-      "Automatic negative reinforcement, because reprimands are aversive",
-      "Automatic positive reinforcement, because no social interaction is involved",
-      "Social negative reinforcement, because the teacher removes demands during the reprimand",
-      "Social positive reinforcement, because the reprimand is a form of attention"
-    ],
-    correctIndex: 3,
-    explanation: "Problem behavior often results in immediate attention from others in the form of reprimands. These reactions can positively reinforce problem behavior even if inadvertently, making it more likely in similar circumstances.",
-  },
-  {
-    id: 29008,
-    topic: "Functions of Behavior",
-    prompt: "The fact that the same reinforcement contingencies that account for desirable behavior can also account for undesirable behavior is evidence that environmental influences do what?",
-    options: [
-      "Only strengthen behavior that serves adaptive functions",
-      "Only weaken behavior that serves maladaptive functions",
-      "Distinguish between desirable and undesirable topographies of behavior",
-      "Do not make distinctions between desirable and undesirable topographies of behavior"
-    ],
-    correctIndex: 3,
-    explanation: "It is important to recognize that environmental influences do not make distinctions between desirable and undesirable topographies of behavior. The same reinforcement contingencies can account for both appropriate and problem behavior.",
-  },
-  {
     id: 29009,
     topic: "Role of FBA in Intervention and Prevention",
     prompt: "A behavior analyst learns from an FBA that a student's tantrums are triggered by the discriminative stimulus of running water. Replacing running water with a waterless antibacterial hand gel is an example of which intervention approach?",
@@ -150,19 +98,6 @@ export const QUESTIONS_M30: Question[] = [
     explanation: "Teaching alternative behaviors involves identifying the reinforcer currently maintaining problem behavior and teaching an alternative appropriate behavior that produces the same reinforcer. Teaching the child to request a break serves the same escape function as tantrums.",
   },
   {
-    id: 29012,
-    topic: "Role of FBA in Intervention and Prevention",
-    prompt: "A student's tantrums appear to be maintained by escape from hand washing, but a time-out intervention is implemented that inadvertently allows the student to avoid lunchtime activities. What is the most likely outcome?",
-    options: [
-      "The tantrums will decrease because the student receives a consequence",
-      "The tantrums will increase because time-out serves as the reinforcer (escape)",
-      "The tantrums will be unaffected because no extinction is in place",
-      "The tantrums will generalize to new settings and then extinguish"
-    ],
-    correctIndex: 1,
-    explanation: "If the function of tantrums is escape from aversive lunchtime events, a time-out that removes the student from those events functions as the same reinforcer (escape), making tantrums more likely. Using an intervention without considering behavioral function can exacerbate problem behavior.",
-  },
-  {
     id: 29013,
     topic: "Role of FBA in Intervention and Prevention",
     prompt: "Interventions selected without consideration of behavioral function and implemented in a trial-and-error manner are referred to as what?",
@@ -174,32 +109,6 @@ export const QUESTIONS_M30: Question[] = [
     ],
     correctIndex: 3,
     explanation: "When caregivers resort to increasingly intrusive, coercive, or punishment-based interventions after previous unsuccessful attempts without understanding behavioral function, those interventions are referred to as default technologies.",
-  },
-  {
-    id: 29014,
-    topic: "Role of FBA in Intervention and Prevention",
-    prompt: "Research by Iwata and colleagues (1994b) found that escape from task demands or other aversive stimuli accounted for self-injurious behavior (SIB) in the largest proportion of cases. What implication does this finding have for prevention?",
-    options: [
-      "Preventive efforts should focus on using punishment to suppress SIB early",
-      "Preventive efforts should target modifying instructional environments to be less aversive",
-      "Preventive efforts are ineffective because SIB is biologically determined",
-      "Preventive efforts should focus exclusively on medication management"
-    ],
-    correctIndex: 1,
-    explanation: "The data suggest that preventive efforts should be directed toward modifying instructional environments, such as providing more frequent reinforcement for desirable behavior, opportunities for breaks, or means to request help with difficult tasks, so they are less likely to function as sources of aversive stimulation.",
-  },
-  {
-    id: 29015,
-    topic: "Role of FBA in Intervention and Prevention",
-    prompt: "When problem behavior is suppressed through punishment without addressing its function, what is a likely unintended consequence?",
-    options: [
-      "The motivating operations for problem behavior are eliminated permanently",
-      "Other behaviors serving the same function may emerge",
-      "The reinforcer maintaining the behavior is permanently removed",
-      "The behavior will generalize to all settings and then extinguish"
-    ],
-    correctIndex: 1,
-    explanation: "Although problem behavior may be suppressed using punishment, additional behaviors not subject to the punishment contingencies may emerge because the motivating operations for problem behavior remain. For example, eliminating tantrums does not eliminate avoidance as a reinforcer, so other escape-maintained behaviors may develop.",
   },
   {
     id: 29016,
@@ -226,19 +135,6 @@ export const QUESTIONS_M30: Question[] = [
     ],
     correctIndex: 0,
     explanation: "Functional analysis is the only FBA method that allows practitioners to confirm hypotheses regarding functional relations between problem behavior and environmental events. Descriptive and indirect methods are used for hypothesis formulation, not confirmation.",
-  },
-  {
-    id: 29018,
-    topic: "Functional Analysis",
-    prompt: "Functional analysis procedures were first pioneered by which researchers?",
-    options: [
-      "Bijou, Peterson, and Ault (1968)",
-      "O'Neill, Bundock, Kladis, and Hawken (2015)",
-      "Hanley, Jin, Vanselow, and Hanratty (2014)",
-      "Iwata, Dorsey, Slifer, Bauman, and Richman (1994a)"
-    ],
-    correctIndex: 3,
-    explanation: "Functional analysis procedures were first pioneered by Iwata, Dorsey, Slifer, Bauman, and Richman (1994a). Their work systematically arranged antecedents and consequences to observe and measure their separate effects on problem behavior.",
   },
   {
     id: 29019,
@@ -280,19 +176,6 @@ export const QUESTIONS_M30: Question[] = [
     explanation: "Elevated problem behavior in the alone condition suggests that problem behavior is maintained by automatic reinforcement. Further analysis is needed to determine whether the source is positive or negative automatic reinforcement.",
   },
   {
-    id: 29022,
-    topic: "Functional Analysis",
-    prompt: "When problem behavior occurs frequently across all functional analysis conditions, including the play condition, or varies unpredictably across conditions, this pattern is called what?",
-    options: [
-      "A differentiated pattern indicating multiple functions",
-      "An undifferentiated pattern, which is inconclusive",
-      "A clear escape function",
-      "Automatic reinforcement confirmed by the alone condition"
-    ],
-    correctIndex: 1,
-    explanation: "If problem behavior occurs frequently in all conditions, including the play condition, or is variable across conditions, responding is considered undifferentiated. Such results are inconclusive, but can also occur with behavior maintained by automatic reinforcement.",
-  },
-  {
     id: 29023,
     topic: "Functional Analysis",
     prompt: "Which of the following is identified as the primary advantage of functional analysis over other FBA methods?",
@@ -304,19 +187,6 @@ export const QUESTIONS_M30: Question[] = [
     ],
     correctIndex: 3,
     explanation: "The primary advantage of functional analysis is its ability to yield a clear demonstration of the variable or variables that influence the occurrence of a problem behavior. It is the standard of scientific evidence by which other assessment alternatives are evaluated.",
-  },
-  {
-    id: 29024,
-    topic: "Functional Analysis",
-    prompt: "A known risk of conducting a functional analysis is that the assessment process may do which of the following?",
-    options: [
-      "Permanently eliminate problem behavior during assessment conditions",
-      "Temporarily strengthen or increase problem behavior to unacceptable levels",
-      "Produce results identical to those of indirect assessments",
-      "Prevent the practitioner from forming any hypotheses about function"
-    ],
-    correctIndex: 1,
-    explanation: "A risk of functional analysis is that the assessment process may temporarily strengthen or increase the undesirable behavior to unacceptable levels, or possibly result in the behavior acquiring new functions.",
   },
   {
     id: 29025,
@@ -371,32 +241,6 @@ export const QUESTIONS_M30: Question[] = [
     explanation: "The IISCA may have particular utility when problem behavior is not observed in typical FA conditions and when the behavior analyst suspects multiple contingencies may be maintaining problem behavior. It tests multiple contingencies implemented simultaneously.",
   },
   {
-    id: 29029,
-    topic: "Variations of Functional Analysis",
-    prompt: "In a latency-based functional analysis, what is the index of problem behavior that is measured?",
-    options: [
-      "The frequency of problem behavior per session",
-      "The duration of each problem behavior episode",
-      "The latency from onset of the establishing operation to the first occurrence of problem behavior",
-      "The interval between consecutive occurrences of problem behavior"
-    ],
-    correctIndex: 2,
-    explanation: "In a latency-based functional analysis, the index of problem behavior is the latency from onset of the establishing operation to the first occurrence of the problem behavior. Shorter latency in a particular condition suggests that condition is maintaining the behavior.",
-  },
-  {
-    id: 29030,
-    topic: "Variations of Functional Analysis",
-    prompt: "Conducting a functional analysis on precursor behavior is most appropriate when which condition exists?",
-    options: [
-      "The target behavior is too infrequent to analyze",
-      "The target behavior occurs exclusively in natural settings",
-      "Indirect assessments have already confirmed the function of the behavior",
-      "Even one occurrence of the target behavior poses unacceptable risk to the client or others"
-    ],
-    correctIndex: 3,
-    explanation: "When even one occurrence of problem behavior can be so severe that evoking it poses unacceptable risk to the client and/or others, it can be helpful to conduct the functional analysis on precursor behavior, a behavior that reliably precedes the target behavior.",
-  },
-  {
     id: 29031,
     topic: "Safety Considerations for Functional Analyses",
     prompt: "Research has found that the use of protective equipment during a functional analysis may have which effect on the assessment?",
@@ -449,32 +293,6 @@ export const QUESTIONS_M30: Question[] = [
     explanation: "With ABC continuous recording, targeted environmental events (antecedents and consequences) are recorded whenever they occur, regardless of whether problem behavior occurred with them. This recording method may reveal events that occur in close temporal proximity to the target behavior.",
   },
   {
-    id: 29035,
-    topic: "Descriptive Functional Behavior Assessment",
-    prompt: "ABC narrative recording differs from ABC continuous recording in which important way?",
-    options: [
-      "Narrative recording uses structured codes, whereas continuous recording is open-ended",
-      "Narrative recording is conducted only in clinical settings",
-      "Data in narrative recording are collected only when the target behavior occurs, and the recording is open-ended",
-      "Narrative recording requires more time to complete than continuous recording"
-    ],
-    correctIndex: 2,
-    explanation: "ABC narrative recording differs from continuous recording in that data are collected only when behaviors of interest are observed, and the recording is open-ended (any events that immediately precede and follow the target behavior are noted).",
-  },
-  {
-    id: 29036,
-    topic: "Descriptive Functional Behavior Assessment",
-    prompt: "A potential limitation of ABC narrative recording is that observers may report inferred states rather than observable events. What does this suggest?",
-    options: [
-      "Observers need no training because narrative recording is subjective by design",
-      "Unless observers receive adequate training, they may report inferred states or subjective impressions instead of observable events",
-      "Observers should be trained to omit consequences and focus only on antecedents",
-      "Observers should use narrative recording only when problem behavior occurs at high frequencies"
-    ],
-    correctIndex: 1,
-    explanation: "Unless observers receive adequate training, they may report inferred states or subjective impressions (for example, 'felt embarrassed' or 'was frustrated') instead of describing observable events in objective terms, which is a known limitation of ABC narrative recording.",
-  },
-  {
     id: 29037,
     topic: "Descriptive Functional Behavior Assessment",
     prompt: "Scatterplot recording is primarily designed to identify which of the following?",
@@ -486,19 +304,6 @@ export const QUESTIONS_M30: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Scatterplot recording is a procedure for recording the extent to which a target behavior occurs more often at particular times than others. After data are collected over a series of days, they are analyzed for patterns (specific time periods typically associated with problem behavior).",
-  },
-  {
-    id: 29038,
-    topic: "Descriptive Functional Behavior Assessment",
-    prompt: "In a contingency space analysis (CSA), where on the graph would a data point fall to suggest a positive contingency potentially maintaining the behavior?",
-    options: [
-      "Below and to the right of the neutrality line",
-      "On or near the neutrality line",
-      "Above and to the left of the neutrality line",
-      "At the origin of the graph (coordinates 0, 0)"
-    ],
-    correctIndex: 2,
-    explanation: "In a contingency space analysis, if the data point falls above and to the left of the neutrality line, a positive contingency may exist, suggesting that the consequence could be maintaining the behavior. The greater the distance from the neutrality line, the stronger the hypothesized relationship.",
   },
   {
     id: 29039,
@@ -538,19 +343,6 @@ export const QUESTIONS_M30: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Behavior rating scales designed for functional assessment ask informants to estimate the extent to which behavior occurs under specified conditions, using a Likert scale (for example, never, seldom, usually, always). Hypotheses about function are based on the scores associated with each condition.",
-  },
-  {
-    id: 29042,
-    topic: "Indirect Functional Behavior Assessment",
-    prompt: "The Motivation Assessment Scale (MAS) and the Questions About Behavioral Function (QABF) have been found to have which significant limitation?",
-    options: [
-      "They have been repeatedly demonstrated to be unreliable and of questionable validity in identifying function",
-      "They are too time-consuming for practical use in school settings",
-      "They require highly specialized training to administer and score",
-      "They assess too many behavioral functions to be clinically useful"
-    ],
-    correctIndex: 0,
-    explanation: "The MAS and QABF have been repeatedly demonstrated to be unreliable and therefore of questionable validity in identifying function. Behavior analysts are cautioned about relying on these closed-ended indirect assessment instruments.",
   },
   {
     id: 29043,
@@ -603,57 +395,5 @@ export const QUESTIONS_M30: Question[] = [
     ],
     correctIndex: 2,
     explanation: "Assessment is ongoing once intervention is implemented, as it is important for the continued monitoring of intervention effectiveness. The functions of behavior are not static but dynamic and change over time. If the function changes, additional functional analyses may be needed to revise the intervention.",
-  },
-  {
-    id: 29047,
-    topic: "Case Examples",
-    prompt: "In the case of Marie, her aggression was determined to be maintained by access to tangibles. Which treatment was found to be effective in decreasing her aggression?",
-    options: [
-      "Extinction alone, without teaching a replacement behavior",
-      "Functional communication training (FCT) to teach appropriate requesting for the tangible item",
-      "A differential reinforcement of other behavior (DRO) schedule",
-      "Removing all preferred tangibles from Marie's environment"
-    ],
-    correctIndex: 1,
-    explanation: "Functional communication training (FCT) was used to teach Marie to ask appropriately for the tangible item. This replacement behavior matched the function of the problem behavior and could efficiently compete for the reinforcer. During training, requests increased and aggression dropped to zero.",
-  },
-  {
-    id: 29048,
-    topic: "Case Examples",
-    prompt: "In the case of Carson, a trial-based functional analysis revealed that his disruptive behavior was maintained by which function?",
-    options: [
-      "Escape from academic demands",
-      "Access to tangible items",
-      "Social positive reinforcement in the form of teacher attention",
-      "Automatic reinforcement"
-    ],
-    correctIndex: 2,
-    explanation: "The results of Carson's trial-based functional analysis showed that disruption occurred most often in the attention test condition, supporting the hypothesis that attention was maintaining disruptive behavior. The escape test condition evoked no problem behavior.",
-  },
-  {
-    id: 29049,
-    topic: "Case Examples",
-    prompt: "In the case of Lorraine, the functional analysis revealed that noncompliance and self-injurious behavior (SIB) served different functions. What were those functions?",
-    options: [
-      "Noncompliance served an attention function; SIB served an escape function",
-      "Both noncompliance and SIB served an escape function",
-      "Noncompliance served an escape function; SIB served an attention function",
-      "Both noncompliance and SIB served an automatic reinforcement function"
-    ],
-    correctIndex: 2,
-    explanation: "In Lorraine's functional analysis, noncompliance occurred most frequently during the contingent escape condition, suggesting an escape function. SIB occurred most frequently during the contingent attention condition, suggesting an attention function. Different interventions were developed for each behavior accordingly.",
-  },
-  {
-    id: 29050,
-    topic: "Case Examples",
-    prompt: "In the case of Will, a functional analysis of precursor behavior (verbal outbursts) was conducted instead of directly assessing his physical aggression. What was the primary reason for this decision?",
-    options: [
-      "Will's physical aggression occurred too frequently to measure accurately",
-      "Will's behaviors were so severe that allowing even one occurrence could be dangerous",
-      "The functional analysis setting did not have sufficient space to observe aggression safely",
-      "Will refused to participate in any condition that involved physical demands"
-    ],
-    correctIndex: 1,
-    explanation: "One of Will's caseworkers was concerned that Will's behaviors were so severe that allowing them to occur even once could be dangerous. Because verbal outbursts reliably preceded Will's aggression, the functional analysis was conducted on the precursor behavior to avoid evoking the severe target behavior.",
   },
 ];

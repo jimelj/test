@@ -33,19 +33,6 @@ export const QUESTIONS_M9: Question[] = [
     explanation: "Visual analysis is conservative because a behavior change must look impressive on a graph, not just reach statistical significance. Variables that produce weak or unstable effects are screened out, enabling applied behavior analysts to develop a useful technology of behavior change.",
   },
   {
-    id: 8003,
-    topic: "Purpose and Benefits of Graphic Displays",
-    prompt: "A behavior analyst plots each session's data on a graph immediately after the observation period. Which benefit of graphic displays does this practice most directly support?",
-    options: [
-      "It ensures statistical significance of the intervention effect",
-      "It provides immediate access to an ongoing visual record, allowing treatment decisions to be responsive to the participant's performance",
-      "It eliminates the need for inter-observer agreement checks",
-      "It automatically identifies the independent variable responsible for behavior change"
-    ],
-    correctIndex: 1,
-    explanation: "Plotting each measure of behavior soon after the observational period gives the practitioner or researcher immediate access to an ongoing visual record of the participant's behavior, enabling treatment and experimental decisions to be responsive to the participant's performance.",
-  },
-  {
     id: 8004,
     topic: "Purpose and Benefits of Graphic Displays",
     prompt: "Which of the following is a benefit of graphic displays that is NOT typically offered by statistical tests of inference?",
@@ -57,19 +44,6 @@ export const QUESTIONS_M9: Question[] = [
     ],
     correctIndex: 2,
     explanation: "Graphs enable and encourage independent judgments and interpretations of the meaning and significance of behavior change. Instead of relying on an author's interpretations or statistical manipulations, readers can form independent conclusions based on their own visual analysis of the data.",
-  },
-  {
-    id: 8005,
-    topic: "Purpose and Benefits of Graphic Displays",
-    prompt: "Numerous studies have demonstrated that graphing one's own performance can serve as what type of intervention?",
-    options: [
-      "A punishment procedure that reduces unwanted behavior",
-      "A source of feedback that has been demonstrated to improve a variety of target behaviors",
-      "A replacement for direct measurement of behavior",
-      "A method for establishing baseline stability"
-    ],
-    correctIndex: 1,
-    explanation: "Graphs can provide feedback to the people whose behavior the graphs depict. Numerous studies have reported improved performance of a wide variety of target behaviors when participants received graphical feedback, and graphing one's own performance has been demonstrated to be an effective intervention for academic and behavior change objectives.",
   },
   {
     id: 8006,
@@ -98,19 +72,6 @@ export const QUESTIONS_M9: Question[] = [
     explanation: "The horizontal axis is a straight horizontal line that most often represents the passage of time and the presence, absence, or value of the independent variable. A defining characteristic of applied behavior analysis is repeated measurement of behavior across time.",
   },
   {
-    id: 8008,
-    topic: "Parts of a Basic Line Graph",
-    prompt: "What does the vertical axis (y-axis or ordinate) most often represent on a line graph in applied behavior analysis?",
-    options: [
-      "The chronological succession of experimental sessions",
-      "The independent variable being manipulated by the researcher",
-      "A range of values of the dependent variable, which is always some quantifiable dimension of behavior",
-      "The passage of time between successive observations"
-    ],
-    correctIndex: 2,
-    explanation: "The vertical axis is a vertical line drawn upward from the left-hand end of the horizontal axis. It most often represents a range of values of the dependent variable, which in applied behavior analysis is always some quantifiable dimension of behavior.",
-  },
-  {
     id: 8009,
     topic: "Parts of a Basic Line Graph",
     prompt: "Condition change lines on a line graph serve what purpose?",
@@ -137,32 +98,6 @@ export const QUESTIONS_M9: Question[] = [
     explanation: "Each data point on a graph represents two facts: (a) a quantifiable measure of the target behavior recorded during a given observation period and (b) the time or experimental conditions under which that particular measurement was conducted.",
   },
   {
-    id: 8011,
-    topic: "Parts of a Basic Line Graph",
-    prompt: "The data path on a line graph is created by doing which of the following?",
-    options: [
-      "Plotting the cumulative total of all responses from the beginning of data collection",
-      "Drawing a horizontal dashed line at the average value of all data points within a condition",
-      "Connecting successive data points within a given condition with a straight line",
-      "Drawing a diagonal trend line using the least-squares regression equation"
-    ],
-    correctIndex: 2,
-    explanation: "Connecting successive data points within a given condition with a straight line creates a data path. The data path represents the level and trend of behavior between successive data points and is a primary focus of attention in the interpretation and analysis of graphed data.",
-  },
-  {
-    id: 8012,
-    topic: "Parts of a Basic Line Graph",
-    prompt: "What information should the figure caption of a line graph provide?",
-    options: [
-      "A complete statistical analysis of the data, including significance levels",
-      "A concise statement that, combined with axis and condition labels, gives the reader sufficient information to identify the independent and dependent variables, and explains any symbols or potentially confusing features",
-      "Only the name of the independent variable and the number of participants",
-      "A description of the theoretical framework guiding the research"
-    ],
-    correctIndex: 1,
-    explanation: "The figure caption is a concise statement that, in combination with the axis and condition labels, provides the reader with sufficient information to identify the independent and dependent variables. It should also explain any symbols or observed but unplanned events and clarify potentially confusing features of the graph.",
-  },
-  {
     id: 8013,
     topic: "Variations of the Simple Line Graph: Multiple Data Paths",
     prompt: "A graph with multiple data paths can be used to display which of the following? Select the most complete answer.",
@@ -174,32 +109,6 @@ export const QUESTIONS_M9: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Graphs with multiple data paths are used frequently in applied behavior analysis to show (a) two or more dimensions of the same behavior, (b) two or more different behaviors, (c) the same behavior under different and alternating experimental conditions, (d) changes in target behavior relative to the changing values of an independent variable, and (e) the behavior of two or more participants.",
-  },
-  {
-    id: 8014,
-    topic: "Variations of the Simple Line Graph: Multiple Data Paths",
-    prompt: "When a graph includes a second vertical axis on the right-hand side, what is the primary reason for its inclusion?",
-    options: [
-      "To show the passage of time in a different unit than the left vertical axis",
-      "To display different scales for multiple data paths when the data sets have different dimensional units or ranges",
-      "To indicate that the study used a multiple baseline design across participants",
-      "To provide a second measure of the same behavior at the same scale for confirmation"
-    ],
-    correctIndex: 1,
-    explanation: "A second vertical axis, drawn on the right-hand side, is sometimes used to show different scales for multiple data paths. Readers of dual-vertical axis graphs must view them with care, particularly when assessing the magnitude of behavior change, because of differences in scale.",
-  },
-  {
-    id: 8015,
-    topic: "Bar Graphs",
-    prompt: "Bar graphs sacrifice which features of data presentation in exchange for the efficiency of summarizing and comparing large amounts of data?",
-    options: [
-      "The ability to display mean performance and the identity of conditions",
-      "The presentation of variability and trends in the data",
-      "The ability to compare across conditions and participants",
-      "The accuracy of individual data points and the identity of the dependent variable"
-    ],
-    correctIndex: 1,
-    explanation: "Bar graphs sacrifice the presentation of the variability and trends in data, which are apparent in a line graph, in exchange for the efficiency of summarizing and comparing large amounts of data in a simple, easy-to-interpret format.",
   },
   {
     id: 8016,
@@ -228,19 +137,6 @@ export const QUESTIONS_M9: Question[] = [
     explanation: "Bar graphs that present a measure of central tendency, such as the mean or median score for each condition, may mask important variability in the data. The range of measures represented by a mean or median can be shown with range bars to address this limitation.",
   },
   {
-    id: 8018,
-    topic: "Cumulative Records",
-    prompt: "B.F. Skinner and Ogden Lindsley are each associated with a distinct behavioral graphic display. Which option identifies them correctly?",
-    options: [
-      "The scatterplot, which Skinner used to study schedules of reinforcement",
-      "The Standard Celeration Chart, which Skinner invented in the 1930s",
-      "The cumulative record, invented by Skinner, and the Standard Celeration Chart, developed by Lindsley",
-      "The bar graph, which Lindsley developed for precision teaching applications"
-    ],
-    correctIndex: 2,
-    explanation: "In the 1930s, Skinner invented the cumulative recorder, a device that automatically draws a graph of a subject's rate of behavior. Ogden Lindsley later developed the Standard Celeration Chart, a standardized ratio chart for charting and analyzing how frequency of behavior changes over time.",
-  },
-  {
     id: 8019,
     topic: "Cumulative Records",
     prompt: "On a cumulative record, what does the y-axis value of any data point represent?",
@@ -267,19 +163,6 @@ export const QUESTIONS_M9: Question[] = [
     explanation: "On a cumulative record, the steeper the slope, the higher the response rate. The rate of responding is directly proportional to the slope of the curve. To produce a visual representation of an overall rate, the first and last data points of a given series of observations should be connected with a straight line.",
   },
   {
-    id: 8021,
-    topic: "Cumulative Records",
-    prompt: "The term 'local response rate' on a cumulative record refers to what?",
-    options: [
-      "The average rate of response over an entire experimental condition",
-      "The rate of response during periods smaller than that for which an overall rate has been given",
-      "The rate of response observed only during the first session of each condition",
-      "The rate of response calculated by dividing total responses by the number of conditions"
-    ],
-    correctIndex: 1,
-    explanation: "The term local response rate refers to the rate of response during periods smaller than that for which an overall rate has been given. Local rates show fluctuations in responding within a given period, and can be compared to overall response rates by comparing the relevant slopes.",
-  },
-  {
     id: 8022,
     topic: "Cumulative Records",
     prompt: "A cumulative graph is preferred over a noncumulative line graph in which of the following situations?",
@@ -291,19 +174,6 @@ export const QUESTIONS_M9: Question[] = [
     ],
     correctIndex: 2,
     explanation: "A cumulative graph may be preferable when (a) the total number of responses over time is important or progress toward a specific goal can be measured in cumulative units, (b) it is used as a source of feedback for clients, (c) the target behavior can occur or not occur just once per observation session, or (d) a fine analysis of intricate behavior-environment relations is desired.",
-  },
-  {
-    id: 8023,
-    topic: "Cumulative Records",
-    prompt: "One limitation of cumulative records compared to noncumulative line graphs is that they cannot display which of the following?",
-    options: [
-      "The overall rate of response across a phase",
-      "A plateau or flattening of the data path",
-      "Decelerating trends; the cumulative graph either ascends or plateaus, never descends",
-      "Resets to zero when a performance criterion is met"
-    ],
-    correctIndex: 2,
-    explanation: "A cumulative graph does not reveal decelerating trends; it either ascends or plateaus. For individuals for whom a decelerating trend may signal failure or otherwise affect them negatively, a cumulative graph, with its ascending or plateauing appearance, may mitigate concerns.",
   },
   {
     id: 8024,
@@ -343,32 +213,6 @@ export const QUESTIONS_M9: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Precision teaching is predicated on the position that (a) learning is best measured as a change in response rate, (b) learning most often occurs through proportional changes in behavior, and (c) past changes in performance can project future learning.",
-  },
-  {
-    id: 8027,
-    topic: "Ratio Charts and the Standard Celeration Chart",
-    prompt: "In precision teaching terminology, what does 'bounce' refer to?",
-    options: [
-      "A reset of the cumulative graph to the zero value on the y-axis",
-      "A measure of performance variability represented by parallel lines above and below a celeration line that encompass the majority of performance",
-      "The sudden increase in response rate at the start of a new condition on the Standard Celeration Chart",
-      "The slope value of the celeration line expressed as a times or divide value"
-    ],
-    correctIndex: 1,
-    explanation: "Bounce lines are a measure of performance variability. They are parallel straight lines above and below a celeration line that encompass the majority of performance. The up bounce line is placed through the upmost point (excluding outliers) and the down bounce line through the downmost point (excluding outliers). Bounce values are always written as a times value.",
-  },
-  {
-    id: 8028,
-    topic: "Ratio Charts and the Standard Celeration Chart",
-    prompt: "The Standard Celeration Chart is described as a six-cycle multiply-divide graph. What does the vertical axis of this chart accommodate in terms of response frequency range?",
-    options: [
-      "Response rates from 1 per minute to 100 per minute only",
-      "Response rates from 1 per 24 hours (0.000695 per minute) to as high as 1000 per minute",
-      "Response rates from 0 to 100 percent correct",
-      "Response rates scaled in equal-interval units from 0 to 500 responses per minute"
-    ],
-    correctIndex: 1,
-    explanation: "The Standard Celeration Chart is a standard ratio chart with six cycles on the vertical axis that can accommodate response rates as low as 1 per 24 hours (0.000695 per minute) or as high as 1000 per minute.",
   },
   {
     id: 8029,
@@ -436,19 +280,6 @@ export const QUESTIONS_M9: Question[] = [
     explanation: "Increasing the distance on the vertical axis between each unit of measurement magnifies the variability in the data, whereas contracting the units of measurement on the vertical axis minimizes the portrayal of variability in the data set. The graph maker should plot the data against several different scales, watching for distortion.",
   },
   {
-    id: 8034,
-    topic: "Constructing Line Graphs: Drawing and Scaling Axes",
-    prompt: "According to graphing conventions, when should scale breaks be avoided on the vertical axis?",
-    options: [
-      "Scale breaks should never be used on the vertical axis under any circumstances",
-      "In most instances, scale breaks should not be used on the vertical axis; they are only appropriate when two data sets with widely different and nonoverlapping ranges are displayed against the same y-axis",
-      "Scale breaks on the vertical axis should be avoided only when the data set includes outliers",
-      "Scale breaks should be avoided on the vertical axis whenever the data are plotted on cumulative graphs"
-    ],
-    correctIndex: 1,
-    explanation: "In most instances, scale breaks should not be used on the vertical axis. However, when two sets of data with widely different and nonoverlapping ranges are displayed against the same y-axis, a scale break can be used to separate the ranges of measures encompassed by each data set.",
-  },
-  {
     id: 8035,
     topic: "Constructing Line Graphs: Condition Change Lines and Labels",
     prompt: "Where should a condition change line be placed relative to the adjacent data points?",
@@ -460,32 +291,6 @@ export const QUESTIONS_M9: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Condition change lines should be placed after (to the right of) the data point representing the last measure prior to the change, and before (to the left of) the data point representing the first measure obtained after the change. In this way, data points fall clearly on either side of change lines and never on the lines themselves.",
-  },
-  {
-    id: 8036,
-    topic: "Constructing Line Graphs: Condition Change Lines and Labels",
-    prompt: "When an experiment includes relatively minor changes within an ongoing condition, how should the condition change lines be distinguished?",
-    options: [
-      "All changes, major and minor, are represented by the same type of solid vertical line",
-      "Minor changes are indicated by horizontal dashed lines drawn across the data path",
-      "A combination of solid and dashed lines should be used, with solid lines for major condition changes and dashed lines for minor changes within an ongoing condition",
-      "Minor changes within a condition do not require any line; only the condition label changes"
-    ],
-    correctIndex: 2,
-    explanation: "When an experiment includes relatively minor changes within an ongoing condition, a combination of solid and dashed lines should be used to distinguish major and minor changes in conditions. For example, solid lines might indicate changes between baseline, intervention, and follow-up, while dashed lines indicate changes in reinforcement schedule within an intervention phase.",
-  },
-  {
-    id: 8037,
-    topic: "Constructing Line Graphs: Data Points and Data Paths",
-    prompt: "When multiple data sets are plotted on the same set of axes, what practice should be followed for the data point symbols?",
-    options: [
-      "All data sets should use the same solid dot symbol for consistency and clarity",
-      "A different geometric symbol should be used for each set of data, so that the value of each data point can be determined even when data points fall near or on the same coordinates",
-      "Open circles should always be used for one data set and solid dots for the other, regardless of how many data sets there are",
-      "The color of the data points should be varied instead of the shape"
-    ],
-    correctIndex: 1,
-    explanation: "When multiple data sets are plotted on the same set of axes, a different geometric symbol should be used for each set of data. The symbols for each data set should be selected so that the value of each data point can be determined when data points fall near or on the same coordinates on the graph.",
   },
   {
     id: 8038,
@@ -527,19 +332,6 @@ export const QUESTIONS_M9: Question[] = [
     explanation: "Visual analysis of data from an applied behavior analysis experiment is conducted to answer two questions: (a) Did behavior change in a meaningful way? and (b) if so, to what extent can that behavior change be attributed to the independent variable?",
   },
   {
-    id: 8041,
-    topic: "Interpreting Graphically Displayed Behavioral Data: Variability",
-    prompt: "In behavioral data, variability is best defined as which of the following?",
-    options: [
-      "The overall direction taken by a data path across an entire condition",
-      "The value on the vertical axis around which a series of data points converges",
-      "How often and the extent to which repeated measures of behavior yield different outcomes",
-      "The difference in absolute values between the first and last data points within a condition"
-    ],
-    correctIndex: 2,
-    explanation: "How often and the extent to which repeated measures of behavior yield different outcomes is called variability. A high degree of variability within a given condition usually indicates that the researcher or practitioner has achieved insufficient control over the factors influencing the behavior.",
-  },
-  {
     id: 8042,
     topic: "Interpreting Graphically Displayed Behavioral Data: Variability",
     prompt: "A behavior analyst notices a high degree of variability within a given baseline condition. According to visual analysis principles, what does this typically indicate and what action is recommended?",
@@ -566,32 +358,6 @@ export const QUESTIONS_M9: Question[] = [
     explanation: "The value on the vertical axis scale around which a set of behavioral measures converge is called level. Level is examined within a condition in terms of its absolute value on the y-axis (mean, median, or range), the degree of stability or variability, and the extent of change from one level to another.",
   },
   {
-    id: 8044,
-    topic: "Interpreting Graphically Displayed Behavioral Data: Level",
-    prompt: "A mean level line should be interpreted with caution in which of the following situations?",
-    options: [
-      "When the data within a condition are highly stable and show little variability",
-      "When the data within a condition show extreme variability, a clear shift in level, or a strong trend, because the mean line can obscure these important features",
-      "When the mean level line falls exactly at the midpoint of the y-axis scale",
-      "When the condition contains fewer than 10 data points"
-    ],
-    correctIndex: 1,
-    explanation: "Mean level lines should be used and interpreted with caution. With highly stable data, mean level lines pose no serious drawbacks, but with highly variable data or data showing trends, the mean line can obscure important features. A mean level line is inappropriate when the data show extreme variability or when the data are best characterized as occurring at two distinct levels.",
-  },
-  {
-    id: 8045,
-    topic: "Interpreting Graphically Displayed Behavioral Data: Level",
-    prompt: "When would a median level line be preferred over a mean level line to summarize the level of behavior in a condition?",
-    options: [
-      "When the data are stable and all data points fall close to the average value",
-      "When the data include several outliers, either high or low, because the median is not as strongly influenced by extreme values",
-      "When the researcher wants to show that the mean and median are the same, confirming symmetrical data",
-      "When the condition contains more than 20 data points and a mean is difficult to calculate"
-    ],
-    correctIndex: 1,
-    explanation: "A median level line should be used instead of a mean level line to graphically represent the central tendency of a series of data points that include several outliers, either high or low. Because a median level line represents the most typical performance, it is not so influenced by one or two extreme measures.",
-  },
-  {
     id: 8046,
     topic: "Interpreting Graphically Displayed Behavioral Data: Trend",
     prompt: "Trends in behavioral data are described in terms of three characteristics. Which of the following correctly identifies all three?",
@@ -605,19 +371,6 @@ export const QUESTIONS_M9: Question[] = [
     explanation: "Trends are described in terms of their direction (increasing, decreasing, or zero trend), degree or magnitude (gradual or steep), and extent of variability of data points around the trend. The overall direction taken by a data path is its trend.",
   },
   {
-    id: 8047,
-    topic: "Interpreting Graphically Displayed Behavioral Data: Trend",
-    prompt: "The split-middle line of progress is a method used to determine which of the following?",
-    options: [
-      "The cumulative number of responses at the exact midpoint of a condition",
-      "A trend line that is more reliable than freehand but less time-consuming than least-squares regression, used to summarize and predict the overall trend of data",
-      "The mean level of the data by dividing the condition into two equal halves and comparing the halves",
-      "The degree of overlap between data points in adjacent conditions"
-    ],
-    correctIndex: 1,
-    explanation: "The split-middle line of progress is a method of calculating and drawing lines of progress that is more reliable than the freehand method and much less time-consuming than linear regression methods. White (2005) developed the split-middle technique for use with rate data plotted on semilogarithmic charts, and it has proven useful for predicting future behavior.",
-  },
-  {
     id: 8048,
     topic: "Interpreting Graphically Displayed Behavioral Data: Between Conditions",
     prompt: "When comparing data between conditions, how does overlap of data points between adjacent conditions affect interpretation?",
@@ -629,19 +382,6 @@ export const QUESTIONS_M9: Question[] = [
     ],
     correctIndex: 1,
     explanation: "When all data points in one condition fall outside the range of values for all data points in an adjacent condition (no overlap), there is little doubt that behavior changed. When many data points in adjacent conditions overlap one another on the vertical axis, less confidence can be placed in the effect of the independent variable associated with the change in conditions.",
-  },
-  {
-    id: 8049,
-    topic: "Interpreting Graphically Displayed Behavioral Data: Between Conditions",
-    prompt: "A behavior analyst observes that the trend found in a baseline condition continues in the same direction during an intervention condition, with no change in slope or level. What does this pattern indicate?",
-    options: [
-      "The intervention produced a strong, rapid change in behavior",
-      "Visual analysis cannot be conducted unless a condition change line is present",
-      "There appears to be no effect of the independent variable on the direction or degree of the trend in behavior",
-      "The data confirm that the behavior was not measured reliably during baseline"
-    ],
-    correctIndex: 2,
-    explanation: "Visual analysis of data between adjacent conditions includes examining whether the trend found in the first condition changed in direction or slope during the subsequent condition. If the trend does not change, this suggests the independent variable did not produce a meaningful effect on the direction or rate of behavior change.",
   },
   {
     id: 8050,

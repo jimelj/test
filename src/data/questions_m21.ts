@@ -20,19 +20,6 @@ export const QUESTIONS_M21: Question[] = [
     explanation: "Formal properties involve the topography of a verbal response, meaning what the response looks or sounds like, while functional properties involve the causes of that response.",
   },
   {
-    id: 20002,
-    topic: "Form and Function of Language",
-    prompt: "Skinner argued that the meaning of a word is best found in which of the following?",
-    options: [
-      "A cognitive processing system in the speaker's mind",
-      "The physical referent the word names",
-      "The immediate and historical environmental contingencies that evoke and consequate speaker and listener behavior",
-      "The structural regularity of the word across verbal communities"
-    ],
-    correctIndex: 2,
-    explanation: "Skinner rejected cognitive and referential accounts of meaning, arguing instead that meaning is found in the immediate and historical environmental contingencies that evoke and consequate behavior.",
-  },
-  {
     id: 20003,
     topic: "Defining Verbal Behavior",
     prompt: "Skinner defined verbal behavior as behavior reinforced through the mediation of other persons who must be responding in ways:",
@@ -44,19 +31,6 @@ export const QUESTIONS_M21: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Skinner defined verbal behavior as 'behavior reinforced through the mediation of other persons,' and those persons 'must be responding in ways which have been conditioned precisely in order to reinforce the behavior of the speaker.'",
-  },
-  {
-    id: 20004,
-    topic: "Defining Verbal Behavior",
-    prompt: "Skinner preferred the term 'verbal behavior' over 'language' primarily because verbal behavior:",
-    options: [
-      "Emphasizes individual speakers and listeners rather than the practices of whole verbal communities",
-      "Is a more traditional term used by linguists",
-      "Focuses on the formal topography of words",
-      "Refers exclusively to spoken words"
-    ],
-    correctIndex: 0,
-    explanation: "Skinner preferred 'verbal behavior' because it emphasizes the individual speakers and listeners and their contingencies, rather than the broad practices of verbal communities such as 'the English language.'",
   },
   {
     id: 20005,
@@ -72,32 +46,6 @@ export const QUESTIONS_M21: Question[] = [
     explanation: "In topography-based verbal behavior, the listener's behavior is controlled by the speaker's specific response topography (e.g., the particular sign or spoken word), which informs the listener of the relevant motivation and consequence.",
   },
   {
-    id: 20006,
-    topic: "Topography-based and Selection-based Verbal Behavior",
-    prompt: "In selection-based verbal behavior, what information is conveyed to the listener?",
-    options: [
-      "The speaker's specific vocal topography",
-      "The speaker's body language",
-      "The information on the stimulus selected by the speaker",
-      "The acoustic properties of the speaker's voice"
-    ],
-    correctIndex: 2,
-    explanation: "In selection-based verbal behavior, what is conveyed to the listener is the information on the stimulus that the speaker selects, as opposed to the speaker's response topography.",
-  },
-  {
-    id: 20007,
-    topic: "Behavioral Cusps",
-    prompt: "Rosales-Ruiz and Baer defined a behavioral cusp as:",
-    options: [
-      "Any behavior that is maintained exclusively by automatic reinforcement",
-      "Any behavior change that brings the organism's behavior into contact with new contingencies that have even more far-reaching consequences",
-      "A reinforcement schedule in which behavior is acquired rapidly through direct training",
-      "A discrete trial procedure that establishes new mand relations"
-    ],
-    correctIndex: 1,
-    explanation: "Rosales-Ruiz and Baer (1997) defined behavioral cusps as 'any behavior change that brings the organism's behavior into contact with new contingencies that have even more far-reaching consequences.'",
-  },
-  {
     id: 20008,
     topic: "The Elementary Verbal Operants",
     prompt: "Which of the following correctly identifies the antecedent and consequence defining the mand relation?",
@@ -109,32 +57,6 @@ export const QUESTIONS_M21: Question[] = [
     ],
     correctIndex: 2,
     explanation: "The mand is controlled by a motivating operation (MO) and results in specific reinforcement that is directly relevant to that MO, distinguishing it from operants maintained by generalized reinforcement.",
-  },
-  {
-    id: 20009,
-    topic: "The Elementary Verbal Operants",
-    prompt: "A child sees snow falling outside and says 'snow.' This verbal response is best classified as a:",
-    options: [
-      "Mand, because the child wants the snow",
-      "Tact, because the nonverbal stimulus (snow) controls the response",
-      "Echoic, because the child is repeating a word she heard",
-      "Intraverbal, because there is no nonverbal referent involved"
-    ],
-    correctIndex: 1,
-    explanation: "The tact relation involves a nonverbal SD controlling a verbal response that is followed by generalized reinforcement. Seeing snow and saying 'snow' exemplifies tact: a nonverbal SD controls the response form.",
-  },
-  {
-    id: 20010,
-    topic: "The Elementary Verbal Operants",
-    prompt: "A teacher says 'bear' and the student immediately says 'bear.' This is an example of which verbal operant?",
-    options: [
-      "Tact",
-      "Intraverbal",
-      "Echoic",
-      "Textual"
-    ],
-    correctIndex: 2,
-    explanation: "The echoic is a duplic verbal operant in which the vocal response is controlled by an auditory verbal SD that has formal similarity (same sense mode, physically resembling response), followed by generalized reinforcement.",
   },
   {
     id: 20011,
@@ -189,19 +111,6 @@ export const QUESTIONS_M21: Question[] = [
     explanation: "Formal similarity occurs when the controlling verbal stimulus and the response product share the same sense mode (e.g., both auditory) and physically resemble each other (e.g., hear 'bear,' say 'bear').",
   },
   {
-    id: 20015,
-    topic: "Formal Similarity and Point-to-Point Correspondence",
-    prompt: "Point-to-point correspondence between a verbal stimulus and a verbal response means:",
-    options: [
-      "The stimulus and response are in the same sense mode",
-      "The parts of the verbal stimulus correspond to the parts of the verbal response but do not have to physically match",
-      "The response is a perfect acoustic copy of the stimulus",
-      "Both the stimulus and the response are produced by the same person"
-    ],
-    correctIndex: 1,
-    explanation: "Point-to-point correspondence occurs when the parts of a verbal stimulus correspond to the parts of a verbal response without requiring that they physically match, as in seeing 'D-O-G' and saying 'dog.'",
-  },
-  {
     id: 20016,
     topic: "The Duplic Relations",
     prompt: "Which of the following best describes the three types of duplic relations?",
@@ -215,32 +124,6 @@ export const QUESTIONS_M21: Question[] = [
     explanation: "The three types of duplic relations are echoic (auditory match), motor imitation as it relates to sign language (visual match), and copying text. All involve verbally copying verbal stimuli.",
   },
   {
-    id: 20017,
-    topic: "The Codic Relations",
-    prompt: "Michael described the codic relation as suggesting the kind of relation seen in a formal code, where one stimulus stands for another that it does not resemble. Which of the following pairs are the two codic operants?",
-    options: [
-      "Echoic and motor imitation",
-      "Textual and taking dictation",
-      "Mand and tact",
-      "Intraverbal and listener discrimination"
-    ],
-    correctIndex: 1,
-    explanation: "The two codic relations are textual (reading aloud from written text) and taking dictation (converting spoken words to written form). Both have point-to-point correspondence but lack formal similarity.",
-  },
-  {
-    id: 20018,
-    topic: "The Codic Relations",
-    prompt: "Textual behavior is described as reading without necessarily implying that the reader understands what is being read. Understanding what is read is typically identified as:",
-    options: [
-      "Echoic behavior",
-      "Reading comprehension, involving separate intraverbal, mand, tact, and listener operants",
-      "A type of duplic behavior",
-      "Formal similarity between stimulus and response"
-    ],
-    correctIndex: 1,
-    explanation: "Textual behavior is the vocal response controlled by written text, but comprehension involves functionally separate operants such as intraverbal, manding, tacting, and listener discriminations that go beyond textual responding.",
-  },
-  {
     id: 20019,
     topic: "Motivating Operations and the Mand",
     prompt: "How does specific reinforcement for a mand differ from the generalized reinforcement that maintains other verbal operants?",
@@ -252,32 +135,6 @@ export const QUESTIONS_M21: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Specific reinforcement is established by its relation to a specific MO, and when sufficient specific reinforcement is delivered it abolishes the MO. Generalized reinforcement, by contrast, is not dependent on any single MO.",
-  },
-  {
-    id: 20020,
-    topic: "Motivating Operations and the Mand",
-    prompt: "A thirsty person asks a waiter for water, receives water, and stops looking for a drinking fountain. What behavioral process best describes the change in the MO after water is received?",
-    options: [
-      "Establishing operation increasing the value of water",
-      "Abolishing operation decreasing the evocative strength of water deprivation",
-      "Stimulus generalization of the mand",
-      "Verbal function-altering effect"
-    ],
-    correctIndex: 1,
-    explanation: "When sufficient specific reinforcement (water) is obtained, it abolishes the MO (water deprivation), functioning as an abolishing operation that weakens the evocative effect and the drinking fountain's discriminative function.",
-  },
-  {
-    id: 20021,
-    topic: "Classifying Mand Relations",
-    prompt: "Skinner identified nine types of mands distinguished by listener behavior. Which of the following is correctly described?",
-    options: [
-      "Command: involves a willing listener and generalized conditioned reinforcement for compliance",
-      "Request: emitted to a willing listener who is motivated to reinforce the speaker",
-      "Prayer: involves an unwilling listener whose compliance produces specific reinforcement",
-      "Warning: involves an MO for verbal action from the listener"
-    ],
-    correctIndex: 1,
-    explanation: "A request is a mand emitted to a willing listener who is already motivated to reinforce the speaker (e.g., a waiter). The listener's compliance with the request is the specific reinforcement, and generalized Sr reinforces the listener.",
   },
   {
     id: 20022,
@@ -306,19 +163,6 @@ export const QUESTIONS_M21: Question[] = [
     explanation: "Convergent multiple control, as defined by Michael and colleagues, occurs when a single response is controlled by more than one antecedent variable simultaneously, such as a mand controlled by both an MO and an audience SD.",
   },
   {
-    id: 20024,
-    topic: "Multiple Control",
-    prompt: "The verbal stimulus 'Who was Darwin?' evokes many different verbal responses such as 'natural selection,' 'HMS Beagle,' or 'the Galapagos Islands.' This is an example of:",
-    options: [
-      "Convergent multiple control",
-      "Verbal conditional discrimination",
-      "Divergent multiple control",
-      "Recombinative generalization"
-    ],
-    correctIndex: 2,
-    explanation: "Divergent multiple control occurs when a single antecedent variable controls more than one response. The single verbal stimulus 'Who was Darwin?' can evoke multiple different intraverbal responses.",
-  },
-  {
     id: 20025,
     topic: "Private Events",
     prompt: "Which of the following best characterizes Skinner's view of private events?",
@@ -343,45 +187,6 @@ export const QUESTIONS_M21: Question[] = [
     ],
     correctIndex: 2,
     explanation: "In generic tact extension, the novel stimulus shares all of the relevant or defining features of the original stimulus. An oak shares all defining features of 'tree,' so the tact extends generically.",
-  },
-  {
-    id: 20027,
-    topic: "Tact Extension",
-    prompt: "A child calls a bush a 'tree' because a bush has some, but not all, of the defining features of a tree. This is best identified as:",
-    options: [
-      "Generic tact extension",
-      "Metaphorical tact extension",
-      "Metonymical tact extension",
-      "Solecistic tact extension"
-    ],
-    correctIndex: 1,
-    explanation: "Metaphorical tact extension occurs when the novel stimulus has some, but not all, of the defining features of the original stimulus. A bush shares some features with a tree but not all, so the tact 'tree' extends metaphorically.",
-  },
-  {
-    id: 20028,
-    topic: "Tact Extension",
-    prompt: "A child calls a swing a 'tree' because the swing was located in a tree and the swing itself acquired stimulus control over the word 'tree.' This illustrates:",
-    options: [
-      "Generic tact extension",
-      "Metaphorical tact extension",
-      "Metonymical tact extension",
-      "Tact abstraction"
-    ],
-    correctIndex: 2,
-    explanation: "Metonymical tact extension occurs when a novel stimulus does not share any defining features of the original stimulus, but some irrelevant feature that was associated with the original stimulus has acquired stimulus control.",
-  },
-  {
-    id: 20029,
-    topic: "Reinforcement Controlling the Tact",
-    prompt: "A passenger says 'There's a car coming' to a driver who cannot see the oncoming car, allowing the driver to brake. What type of generalized reinforcement for tacting does this exemplify?",
-    options: [
-      "Educational reinforcement",
-      "Escape from aversive stimulation",
-      "Extending the listener's contact with the environment",
-      "A history of contiguous or correlated usage"
-    ],
-    correctIndex: 2,
-    explanation: "Extending the listener's contact with the environment is the primary reinforcement for tacting: the speaker's tact allows the listener to do something she could not have done without the speaker's tact, and the listener provides generalized Sr for that reason.",
   },
   {
     id: 20030,
@@ -436,19 +241,6 @@ export const QUESTIONS_M21: Question[] = [
     explanation: "A verbal conditional discrimination occurs when one verbal stimulus alters the evocative effects of another verbal stimulus in the same antecedent configuration, as 'not' changes the meaning of 'going to dinner.'",
   },
   {
-    id: 20034,
-    topic: "The Intraverbal",
-    prompt: "A child is told 'When your mother asks where did you go, tell her the library.' Later, when the mother asks, the child says 'the library.' This is an example of which type of verbal discrimination?",
-    options: [
-      "Simple verbal discrimination",
-      "Compound verbal discrimination",
-      "Verbal function-altering effect",
-      "Verbal conditional discrimination"
-    ],
-    correctIndex: 2,
-    explanation: "The verbal function-altering effect occurs when verbal stimuli condition the behavior of a listener by changing the functions of other stimuli and MOs encountered later in time. The initial instruction conditioned the child's later intraverbal response.",
-  },
-  {
     id: 20035,
     topic: "Verbal SDs and Intraverbal Control",
     prompt: "Palmer recommends using the term 'intraverbal control' for situations in which:",
@@ -473,19 +265,6 @@ export const QUESTIONS_M21: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Generative learning involves a behavioral effect where previously acquired skills enable or accelerate the acquisition of other skills without dependence on direct teaching or a history of reinforcement.",
-  },
-  {
-    id: 20037,
-    topic: "Stimulus Equivalence and Emergent Tacts",
-    prompt: "In Sidman's equivalence work, which combination of procedures produced untrained tact and textual responses in participants?",
-    options: [
-      "Direct tact training combined with mand training",
-      "Combining matching-to-sample, echoic, and listener skills to generate emergent relations",
-      "Intraverbal training alone without any listener component",
-      "Formal similarity training between auditory and visual stimuli"
-    ],
-    correctIndex: 1,
-    explanation: "Sidman showed that combining matching-to-sample, echoic, and listener skills generated emergent MTS, tact, and textual relations, demonstrating stimulus equivalence: participants named pictures and read words they had not been directly taught.",
   },
   {
     id: 20038,
@@ -553,32 +332,6 @@ export const QUESTIONS_M21: Question[] = [
     explanation: "An autoclitic mand enjoins the listener to take some specific action regarding the primary response. 'Believe me' mands the listener to accept without challenge the primary response 'they are wrong.'",
   },
   {
-    id: 20043,
-    topic: "Autoclitic Verbal Behavior",
-    prompt: "A speaker says 'I'm sure that's the right house,' where 'I'm sure' informs the listener of the strength of the nonverbal stimulus control for the primary tact. This is best identified as:",
-    options: [
-      "Autoclitic mand",
-      "Relational autoclitic tact",
-      "Descriptive autoclitic tact",
-      "Intraverbal autoclitic frame"
-    ],
-    correctIndex: 2,
-    explanation: "A descriptive autoclitic tact is controlled by the nonverbal properties of the antecedent events and their relation to the primary response. 'I'm sure' is a descriptive autoclitic tact of strength, informing the listener of the robustness of the primary tact's source of control.",
-  },
-  {
-    id: 20044,
-    topic: "Autoclitic Verbal Behavior",
-    prompt: "Intraverbal autoclitic frames facilitate verbal behavior by providing:",
-    options: [
-      "Order, agreement, grouping, and composition of larger units of verbal behavior",
-      "Specific reinforcement for the speaker's primary mands",
-      "Formal similarity between the verbal SD and the verbal response",
-      "Point-to-point correspondence between written and spoken stimuli"
-    ],
-    correctIndex: 0,
-    explanation: "Intraverbal autoclitic frames provide order, agreement, grouping, and composition of larger units of verbal behavior, enabling speakers to recombine words in novel frames (e.g., 'the boy's _____').",
-  },
-  {
     id: 20045,
     topic: "Listener Behavior",
     prompt: "According to Skinner, when a listener takes verbal action (e.g., asking a follow-up question), that listener behavior should be analyzed as:",
@@ -590,19 +343,6 @@ export const QUESTIONS_M21: Question[] = [
     ],
     correctIndex: 1,
     explanation: "When a listener takes verbal action, she becomes a speaker, and her behavior should be classified as speaker behavior using the relevant verbal operant categories (e.g., a mand, if she is asking for information).",
-  },
-  {
-    id: 20046,
-    topic: "Listener Behavior",
-    prompt: "Skinner identified three subdivisions of a listener serving as an audience. Which of the following is the largest and most basic subdivision?",
-    options: [
-      "Special audiences who evoke differential topic selection",
-      "The language spoken, which determines the overall class of verbal responses emitted",
-      "Audiences that select a specific subject matter for the speaker",
-      "Audiences that provide negative reinforcement for inappropriate verbal behavior"
-    ],
-    correctIndex: 1,
-    explanation: "The largest and most basic subdivision of the audience as SD is the language spoken (e.g., an English-speaking audience evokes English words). More specific audiences and topic selection are nested within this broader category.",
   },
   {
     id: 20047,

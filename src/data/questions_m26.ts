@@ -59,19 +59,6 @@ export const QUESTIONS_M26: Question[] = [
     explanation: "This assembly task exemplifies a behavior chain with a limited hold because reinforcement is contingent on completing the chain both accurately and within the prescribed time period. The person must emit the behaviors in close temporal succession to obtain reinforcement.",
   },
   {
-    id: 25005,
-    topic: "Behavior Chain with a Limited Hold",
-    prompt: "When a learner completes a chain in the correct sequence but fails to meet the limited hold criterion, what should a behavior analyst measure first?",
-    options: [
-      "The frequency of the terminal response only",
-      "The rate of errors at the final step of the chain",
-      "The overall topography of the chain",
-      "The latency and duration of each component response"
-    ],
-    correctIndex: 3,
-    explanation: "When a client completes a chain correctly but fails to meet the limited hold criterion, the behavior analyst should measure the latency and duration of each component response to identify which step or steps are taking too long, then implement contingencies to improve proficiency.",
-  },
-  {
     id: 25006,
     topic: "Rationale for Chaining",
     prompt: "What is the key distinction between a 'behavior chain' and 'chaining'?",
@@ -96,19 +83,6 @@ export const QUESTIONS_M26: Question[] = [
     ],
     correctIndex: 3,
     explanation: "The first word or picture on the list serves as the SD to occasion the response of completing the first task. After that response terminates the initial stimulus, the second picture on the list becomes the next SD, thereby linking discrete behaviors into a longer chain.",
-  },
-  {
-    id: 25008,
-    topic: "Rationale for Chaining",
-    prompt: "Which of the following is identified as a reason behavior analysts teach new behavior chains?",
-    options: [
-      "Chaining can be used to decrease responding on a variable interval schedule",
-      "Chaining is the only procedure that can establish stimulus control over new behaviors",
-      "Chaining eliminates the need for error correction procedures during acquisition",
-      "Chaining can be combined with other behavior change tactics to build more intricate and adaptive repertoires"
-    ],
-    correctIndex: 3,
-    explanation: "One reason behavior analysts teach behavior chains is that chaining can be combined with other behavior change tactics (e.g., modeling, error correction, prompting) to build more intricate and adaptive repertoires, as illustrated by studies on bedmaking and basketball skills.",
   },
   {
     id: 25009,
@@ -150,32 +124,6 @@ export const QUESTIONS_M26: Question[] = [
     explanation: "The four methods for constructing and validating a task analysis are: observe a competent performer, execute the task yourself, ask an expert, and trial and error. Having a learner with a disability attempt the task and recording errors is not listed as one of the four primary construction methods.",
   },
   {
-    id: 25012,
-    topic: "Constructing and Validating a Task Analysis",
-    prompt: "A research team ate in a variety of fast-food restaurants and self-recorded their activities to develop a task analysis for eating out. What is one advantage of self-performing the task during task analysis development?",
-    options: [
-      "It allows the researcher to avoid the need for a competent performer",
-      "It provides the opportunity to come into contact with all task demands of the sequence",
-      "It eliminates the need for subsequent trial-and-error modifications",
-      "It generates a task analysis that can be generalized to all learners without modification"
-    ],
-    correctIndex: 1,
-    explanation: "One of the three advantages of self-performing the task is that it provides the opportunity to come into contact with all task demands of the sequence. It also generates a clearer idea of the behaviors to be taught and refines the description of the response topography necessary for efficient performance.",
-  },
-  {
-    id: 25013,
-    topic: "Constructing and Validating a Task Analysis",
-    prompt: "Stokes and colleagues based a task analysis for football tackling skills on recommendations by the American Football Coaches Association. This exemplifies which method of constructing a task analysis?",
-    options: [
-      "Trial and error",
-      "Executing the task yourself",
-      "Observing a competent performer",
-      "Expert input"
-    ],
-    correctIndex: 3,
-    explanation: "Consulting persons or associations with recognized and demonstrated expertise is the 'ask an expert' method. The American Football Coaches Association had recognized expertise in football skills, making them a valuable resource for validating a tackling task analysis.",
-  },
-  {
     id: 25014,
     topic: "Constructing and Validating a Task Analysis",
     prompt: "In the trial-and-error method of constructing a task analysis, what makes this approach distinct?",
@@ -215,32 +163,6 @@ export const QUESTIONS_M26: Question[] = [
     explanation: "In the multiple-opportunity method, if a step is performed incorrectly, out of sequence, or if the time limit is exceeded, the behavior analyst completes that step for the learner, repositions the learner for the next step, and continues. Each step performed correctly is scored as correct even if previous steps were incorrect.",
   },
   {
-    id: 25017,
-    topic: "Assessing Mastery Level",
-    prompt: "Compared to the multiple-opportunity method, why is the single-opportunity method described as the more conservative measure?",
-    options: [
-      "It provides the behavior analyst with more detailed information about which steps are already mastered",
-      "It terminates at the first step at which performance breaks down, providing less information but reducing the likelihood that learning occurs during assessment",
-      "It requires more time to complete because each step is assessed multiple times",
-      "It uses physical guidance at every step to ensure the learner contacts reinforcement"
-    ],
-    correctIndex: 1,
-    explanation: "The single-opportunity method is more conservative because it terminates assessment at the first error, providing less information to the teacher and taking less time. It also reduces the likelihood that learning takes place during assessment, since the learner never contacts subsequent steps after an error.",
-  },
-  {
-    id: 25018,
-    topic: "Assessing Mastery Level",
-    prompt: "A key principle for using the multiple-opportunity method correctly is that:",
-    options: [
-      "Teaching must not be commingled with assessment",
-      "The behavior analyst should provide verbal praise after each correct step",
-      "The learner should be given no more than three trials per step before moving on",
-      "Only steps the learner has already mastered should be included in the assessment"
-    ],
-    correctIndex: 0,
-    explanation: "The key to using the multiple-opportunity method correctly is to ensure that teaching is not commingled with assessment. If the learner is unable to perform a step, the behavior analyst completes it and repositions the learner, but does not provide corrective instruction during the assessment.",
-  },
-  {
     id: 25019,
     topic: "Forward Chaining",
     prompt: "In forward chaining, reinforcement is initially delivered when:",
@@ -252,19 +174,6 @@ export const QUESTIONS_M26: Question[] = [
     ],
     correctIndex: 3,
     explanation: "In forward chaining, reinforcement is initially delivered when the predetermined criterion for the performance of the first behavior in the sequence is achieved. Reinforcement then requires criterion completion of Steps 1 and 2, and so on, building cumulatively.",
-  },
-  {
-    id: 25020,
-    topic: "Forward Chaining",
-    prompt: "In the McWilliams and colleagues bedmaking study using skill clusters, once training focused on Skill Cluster 2, which clusters were demonstrated by the teacher?",
-    options: [
-      "Only Skill Cluster 2",
-      "Skill Clusters 1 and 2 only",
-      "Skill Clusters 1, 2, and 3",
-      "All five skill clusters simultaneously"
-    ],
-    correctIndex: 2,
-    explanation: "When training was conducted on Section 2, Sections 1, 2, and 3 were all demonstrated. Teaching the prior section, the current targeted section, and the next section helped students understand where the current skill cluster fit within the larger chain.",
   },
   {
     id: 25021,
@@ -280,19 +189,6 @@ export const QUESTIONS_M26: Question[] = [
     explanation: "Forward chaining can be used to link smaller chains into larger ones. Additional advantages include that it is easy to implement in classroom settings and that it can be combined with other behavior change procedures such as fading.",
   },
   {
-    id: 25022,
-    topic: "Forward Chaining",
-    prompt: "Griffen, Wolery, and Schuster used a constant time delay procedure to teach chained food-preparation tasks to one student while two others observed. What was the key finding regarding the observing students?",
-    options: [
-      "Observing students learned no steps because direct instruction was required",
-      "Observing students required the same number of trials as the directly taught student",
-      "Observation was only effective for the first three steps in the chain",
-      "The observing students learned at least 85% of the correct steps without direct instruction"
-    ],
-    correctIndex: 3,
-    explanation: "The two observing students learned at least 85% of the correct steps in the chain even though direct instruction on those steps had not occurred. This demonstrates that chained responses can be learned through observation, not only through direct teacher instruction.",
-  },
-  {
     id: 25023,
     topic: "Total-Task Chaining",
     prompt: "Total-task chaining is sometimes called whole-task presentation. How does it differ from standard forward chaining?",
@@ -304,19 +200,6 @@ export const QUESTIONS_M26: Question[] = [
     ],
     correctIndex: 3,
     explanation: "In total-task chaining, the learner receives training on each step in the task analysis during every session. The trainer provides assistance for any steps the learner cannot perform independently, and training continues until all steps meet criterion.",
-  },
-  {
-    id: 25024,
-    topic: "Total-Task Chaining",
-    prompt: "Test and colleagues used total-task chaining with a least-to-most prompting procedure to teach adolescents with severe intellectual disabilities to use a public telephone. What were the three prompt levels in their hierarchy?",
-    options: [
-      "Physical, verbal, and gestural",
-      "Verbal, verbal plus gesture, and verbal plus guidance",
-      "Modeling, graduated guidance, and full physical assistance",
-      "Pictorial cue, verbal cue, and physical prompt"
-    ],
-    correctIndex: 1,
-    explanation: "Test and colleagues implemented a least-to-most prompting procedure consisting of three levels: verbal, verbal plus gesture, and verbal plus guidance. These prompts were implemented when errors occurred on any of the 17 steps in the task analysis.",
   },
   {
     id: 25025,
@@ -358,45 +241,6 @@ export const QUESTIONS_M26: Question[] = [
     explanation: "The primary advantage of backward chaining is that the learner contacts the chain's terminal reinforcer on every instructional trial. This repeated contact with the terminal reinforcer increases the discriminative capability of all stimuli associated with the chain's behaviors.",
   },
   {
-    id: 25028,
-    topic: "Backward Chaining",
-    prompt: "In Pierrel and Sherman's classic demonstration, Barnabus the rat learned a chain of 11 responses using backward chaining. Training began by conditioning which response?",
-    options: [
-      "Climbing the spiral staircase, the first response in the sequence",
-      "The middle response (entering the elevator) to establish a midpoint anchor",
-      "The two responses immediately before food delivery simultaneously",
-      "Pressing the bar for food, the last response in the sequence"
-    ],
-    correctIndex: 3,
-    explanation: "In this classic backward chaining demonstration, training began by conditioning the last response in the sequence, the bar press, in the presence of a buzzer sound. Each preceding response was then added in turn, so each stimulus served as both an SD for the next response and a conditioned reinforcer for the preceding response.",
-  },
-  {
-    id: 25029,
-    topic: "Backward Chaining",
-    prompt: "When using backward chaining to teach shoe tying, what is a critical requirement for any supplemental response prompts introduced during training?",
-    options: [
-      "They must be presented simultaneously at every step in the chain",
-      "They must be faded later in the program so behavior comes under stimulus control of naturally occurring SDs",
-      "They must consist only of physical guidance and not verbal or pictorial prompts",
-      "They must be introduced starting from the first step in the task analysis"
-    ],
-    correctIndex: 1,
-    explanation: "Any supplemental response prompts introduced during backward chaining training must be faded later in the program so that the student's behavior comes under stimulus control of the naturally occurring SDs. This ensures the learner eventually performs the chain independently.",
-  },
-  {
-    id: 25030,
-    topic: "Backward Chaining",
-    prompt: "What is the main disadvantage of backward chaining?",
-    options: [
-      "The learner never contacts the terminal reinforcer until the entire chain is mastered",
-      "It cannot be used with learners who have physical disabilities",
-      "The potential passive participation of the learner in earlier steps may limit the total number of responses made during any training session",
-      "It requires more task analysis steps than forward chaining"
-    ],
-    correctIndex: 2,
-    explanation: "The main disadvantage of backward chaining is that the potential passive participation of the learner in earlier steps may limit the total number of responses made during any given training session. The trainer completes the earlier steps, leaving the learner with fewer response opportunities.",
-  },
-  {
     id: 25031,
     topic: "Backward Chaining with Leap Aheads",
     prompt: "How does backward chaining with leap aheads differ from standard backward chaining?",
@@ -421,32 +265,6 @@ export const QUESTIONS_M26: Question[] = [
     ],
     correctIndex: 1,
     explanation: "The purpose of the leap-aheads modification is to decrease the total training time needed to learn the chain. When the learner has already mastered certain steps, spending training trials on those steps slows learning, so those steps are probed rather than trained.",
-  },
-  {
-    id: 25033,
-    topic: "Backward Chaining with Leap Aheads",
-    prompt: "In backward chaining with leap aheads, if a learner leaps ahead past Steps 5 and 6 in a shoe-tying sequence, what must still occur for reinforcement to be delivered?",
-    options: [
-      "The learner only needs to perform the steps that were explicitly trained, not the skipped ones",
-      "The trainer completes Steps 5 and 6 while the learner watches, then the learner finishes the chain",
-      "The learner must still perform Steps 5 and 6 correctly and in sequence with all other steps",
-      "Reinforcement is delivered regardless of Steps 5 and 6 once they have been probed"
-    ],
-    correctIndex: 2,
-    explanation: "Even in backward chaining with leap aheads, the learner must still perform skipped steps correctly and in the proper sequence with all other steps to receive reinforcement. Skipping refers only to reducing training time on already-mastered steps, not eliminating the requirement to perform them.",
-  },
-  {
-    id: 25034,
-    topic: "Choosing a Chaining Method",
-    prompt: "What does research comparing forward chaining, backward chaining, and total-task chaining indicate about their relative effectiveness?",
-    options: [
-      "Backward chaining is consistently the most effective procedure for all learners",
-      "Forward chaining is always the fastest procedure when learners have imitative repertoires",
-      "Direct comparisons have not established that any one procedure is consistently more effective than the others",
-      "Total-task chaining consistently produces the fastest acquisition for learners with severe disabilities"
-    ],
-    correctIndex: 2,
-    explanation: "Kazdin concluded that direct comparisons have not established that forward chaining, backward chaining, or total-task chaining is consistently more effective than the others. A study by Slocum and Tiger similarly found forward and backward chaining to be similarly effective.",
   },
   {
     id: 25035,
@@ -488,19 +306,6 @@ export const QUESTIONS_M26: Question[] = [
     explanation: "To break or interrupt a chain using extinction, the practitioner withholds reinforcement for one or more responses in the chain. Kuhn and colleagues found that applying extinction to the final response resulted in immediate decreases in both the final and earlier responses.",
   },
   {
-    id: 25038,
-    topic: "Disrupting and Breaking Behavior Chains",
-    prompt: "In the satiation method for disrupting a behavior chain, why do earlier responses decrease when unlimited access to the terminal reinforcer is given before the session?",
-    options: [
-      "The establishing operation for the terminal reinforcer is strengthened rather than weakened",
-      "The initial SD is removed from the environment during the satiation period",
-      "The earlier responses are placed on extinction directly",
-      "The effectiveness of earlier stimulus changes as conditioned reinforcers depends on their association with the terminal reinforcer, which has diminished in value"
-    ],
-    correctIndex: 3,
-    explanation: "When satiation reduces the value of the terminal reinforcer, earlier responses also decrease because the effectiveness of earlier stimulus changes as conditioned reinforcers depends on their association with that terminal reinforcer. If the terminal reinforcer loses value, so do the conditioned reinforcers that derive their value from it.",
-  },
-  {
     id: 25039,
     topic: "Disrupting and Breaking Behavior Chains",
     prompt: "Unchaining, as described by Kuhn and colleagues, is designed to decrease an earlier response (R1) in a two-response chain. How does unchaining accomplish this?",
@@ -540,45 +345,6 @@ export const QUESTIONS_M26: Question[] = [
     explanation: "The BCIS is predicated on an assessment that verifies the person is able to complete the chain independently. The interruption is then used to create a communication opportunity. If the person cannot complete the chain independently, the BCIS cannot function as described.",
   },
   {
-    id: 25042,
-    topic: "Behavior Chain Interruption Strategy",
-    prompt: "In the interrupted chain procedure (ICP) applied to a toast-making chain, a practitioner wanting to evoke the mand 'Toaster, please' might:",
-    options: [
-      "Physically guide the learner to say the target phrase at the beginning of the chain",
-      "Interrupt the chain after the last step and withhold the reinforcer",
-      "Substitute the toaster with a different appliance to disrupt the chain",
-      "Conceal the toaster after the learner has obtained bread, then ask 'What do you want?'"
-    ],
-    correctIndex: 3,
-    explanation: "In the ICP, the practitioner arranges the environment so that the learner is unable to continue the chain at a predetermined step. For the toast-making example, the practitioner might conceal the toaster after the learner has obtained bread and then ask 'What do you want?', prompting the mand 'Toaster, please.'",
-  },
-  {
-    id: 25043,
-    topic: "Disrupting and Breaking Behavior Chains",
-    prompt: "If an ashtray next to a favorite chair evokes a chain of finding cigarettes, finding a lighter, and smoking, which chain-disruption method involves removing the ashtray and replacing it with a TV remote to occasion a different chain?",
-    options: [
-      "Satiation",
-      "Extinction",
-      "Substituting the initial SD for an alternative chain",
-      "Extending the chain with time delays"
-    ],
-    correctIndex: 2,
-    explanation: "When a specific SD sets an inappropriate chain in motion, blocking that SD completely and substituting the initial SD for a preferred chain is the method described. Replacing the ashtray (the SD for the smoking chain) with a TV remote substitutes the initial SD and may occasion a more desirable chain of responses.",
-  },
-  {
-    id: 25044,
-    topic: "Disrupting and Breaking Behavior Chains",
-    prompt: "Martin and Pear suggested breaking a chain of excessive food consumption by requiring a person to place their eating utensil on the table between bites. This is an example of:",
-    options: [
-      "Unchaining",
-      "Satiation",
-      "Extending the chain with time delays",
-      "Behavior chain interruption strategy"
-    ],
-    correctIndex: 2,
-    explanation: "Introducing links requiring the person to place their eating utensil on the table between bites, or inserting a 3- to 5-second delay before the next bite, is an example of extending the chain with time delays. This adds steps that separate the components of an undesirable eating chain.",
-  },
-  {
     id: 25045,
     topic: "Troubleshooting Chains",
     prompt: "A restaurant trainee correctly learned the table-busing chain during training but began scraping food scraps onto the table (R2) when dirty dishes were present on the table (S1), instead of first placing dishes on the cart. What troubleshooting step addresses this problem?",
@@ -616,32 +382,6 @@ export const QUESTIONS_M26: Question[] = [
     ],
     correctIndex: 3,
     explanation: "In backward chaining, responses at the end of the chain are strengthened faster than those earlier in the chain because they are reinforced more frequently. The last step is practiced on every trial from the very first session, while earlier steps are added progressively and practiced fewer times overall.",
-  },
-  {
-    id: 25048,
-    topic: "Factors Affecting Performance of Behavior Chains",
-    prompt: "With respect to stimulus variation as a factor affecting chain performance, what is recommended to increase the probability that a correct response will occur across varied conditions?",
-    options: [
-      "Use only a single, consistent SD during training to establish strong stimulus control before introducing variations",
-      "Use backward chaining exclusively when stimulus variation is high",
-      "Introduce all possible variations of the SD the learner will encounter during training",
-      "Reduce the number of steps in the task analysis when multiple SDs are present"
-    ],
-    correctIndex: 2,
-    explanation: "The behavior analyst should introduce all possible variations of the SD the learner will encounter. Presentation of stimulus variations during training increases the probability that the correct response will occur in the presence of those varied stimuli in natural settings.",
-  },
-  {
-    id: 25049,
-    topic: "Factors Affecting Performance of Behavior Chains",
-    prompt: "Bellamy and colleagues illustrated that different bearing configurations in a cam switch assembly task required different responses. What implication does this have for behavior chain training?",
-    options: [
-      "The task analysis should always be reduced to a single step when stimulus variation is present",
-      "Backward chaining should be abandoned when response variation is required",
-      "The terminal reinforcer should be changed when response variations are introduced",
-      "When stimulus variation occurs, training or retraining of the corresponding responses within the chain may be required"
-    ],
-    correctIndex: 3,
-    explanation: "When stimulus variation occurs, response variation may also be required to produce the same effect. The behavior analyst must be aware that introducing new stimulus variations may require training or retraining of responses within the chain.",
   },
   {
     id: 25050,

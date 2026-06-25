@@ -98,32 +98,6 @@ export const QUESTIONS_M24: Question[] = [
     explanation: "Generalized imitation occurs when a learner imitates a wide variety of unprompted, untrained, and non-reinforced modeled behaviors across different settings and situations. It can be considered a higher-order response class in which participants imitate novel models without training.",
   },
   {
-    id: 23008,
-    topic: "Imitation Training",
-    prompt: "Which of the following BEST summarizes the four main findings of Baer, Peterson, and Sherman (1967)?",
-    options: [
-      "Physical guidance alone is sufficient to teach imitation; reinforcement is optional once guidance is faded.",
-      "Children who lacked imitation learned to imitate through shaping and reinforcement; novel models were imitated without direct training; a learning-to-learn effect occurred; and the repertoire maintained as long as some responses produced reinforcement.",
-      "Imitation training works only for motor behaviors; vocal imitation requires a separate protocol.",
-      "Once imitation is trained, it is maintained indefinitely even after all reinforcement is removed."
-    ],
-    correctIndex: 1,
-    explanation: "The results of Baer et al. (1967) showed: (a) non-imitative children learned to imitate using shaping, cues, guidance, and reinforcement; (b) reinforced imitations led to imitation of novel models without specific reinforcement; (c) participants showed a learning-to-learn effect; and (d) the repertoire maintained as long as reinforcement was contingent on at least some imitative responses.",
-  },
-  {
-    id: 23009,
-    topic: "Imitation Training",
-    prompt: "In the Baer et al. (1967) study, when reinforcement was placed on a DRO schedule (reinforcement for any behavior other than imitation), what happened to the participants' imitative behavior?",
-    options: [
-      "Both previously reinforced and never-reinforced probe imitations decreased markedly.",
-      "Imitation maintained at the same high level because of the strong training history.",
-      "Only the novel probe imitations decreased; directly reinforced imitations maintained.",
-      "Imitation increased because the DRO schedule provided more overall reinforcement."
-    ],
-    correctIndex: 0,
-    explanation: "When reinforcement was no longer contingent upon imitative behavior (DRO condition), both the previously reinforced imitations and the never-reinforced probe imitations decreased markedly. All imitative behavior recovered with a small amount of shaping and return of contingent reinforcement.",
-  },
-  {
     id: 23010,
     topic: "Imitation Training",
     prompt: "As a learner progresses through imitation training and requires fewer and fewer trials to acquire each new imitative response, this is described as:",
@@ -176,19 +150,6 @@ export const QUESTIONS_M24: Question[] = [
     explanation: "Practitioners may need to select and use about 25 behaviors as models during initial imitation training. Including both gross motor (e.g., raising a hand) and fine motor movements (e.g., manual sign language) provides learners with opportunities to develop more refined imitative skills.",
   },
   {
-    id: 23014,
-    topic: "Striefel's Imitation Training Protocol",
-    prompt: "During the pretest phase of Striefel's protocol, a practitioner tests a model and the learner correctly imitates it on all three of three pretest trials. What should the practitioner do next?",
-    options: [
-      "Advance to other models, since the learner has already met the criterion for this model.",
-      "Include the model in formal training anyway to strengthen the response.",
-      "Apply physical guidance on subsequent pretest trials to ensure maintenance.",
-      "Remove the model permanently and never use it again during training."
-    ],
-    correctIndex: 0,
-    explanation: "If the learner correctly responds during pretesting to a selected model at the criterion level (e.g., three of three correct), then the practitioner should advance to other models. Models the learner already imitates correctly do not need to be included in formal training.",
-  },
-  {
     id: 23015,
     topic: "Striefel's Imitation Training Protocol",
     prompt: "In Striefel's protocol, after pretesting all selected models, how are models arranged for training?",
@@ -213,19 +174,6 @@ export const QUESTIONS_M24: Question[] = [
     ],
     correctIndex: 1,
     explanation: "The model selected first for training is the one most often responded to correctly during the preassessment, meaning the behavior was similar to the model on some, but not all, preassessment presentations. If only approximations occurred, the behavior with the closest similarity is selected first.",
-  },
-  {
-    id: 23017,
-    topic: "Conduct Imitation Training Sessions",
-    prompt: "The criterion for removing a most recently learned behavior from imitation training in Striefel's postassessment is correct responding without physical guidance on:",
-    options: [
-      "14 out of 15 opportunities across three consecutive postassessments.",
-      "Five consecutive correct responses in a single training session.",
-      "Three of three correct responses in the immediately preceding preassessment.",
-      "All 10 presentations across two consecutive postassessment sessions."
-    ],
-    correctIndex: 0,
-    explanation: "A most recently learned behavior is removed from imitation training following three consecutive postassessments in which the learner responds correctly without physical guidance to the model on 14 out of the 15 opportunities (five previously learned and five still-in-training models, presented three times each).",
   },
   {
     id: 23018,
@@ -267,19 +215,6 @@ export const QUESTIONS_M24: Question[] = [
     explanation: "Learners who consistently emit correct matching responses but not immediately following the model should be reinforced for shorter response latencies, using a decreasing contingency (e.g., from 7 seconds to 5 seconds to 3 seconds) to bring the response under tighter temporal control of the model.",
   },
   {
-    id: 23021,
-    topic: "Guidelines for Imitation Training",
-    prompt: "During imitation training, social and verbal praise should be paired with tangible reinforcers so that eventually:",
-    options: [
-      "Tangible reinforcers can be faded and social attention and verbal praise will maintain imitative behaviors.",
-      "The learner learns to discriminate which type of reinforcer corresponds to each behavior.",
-      "Tangible reinforcers increase the salience of social praise as a secondary reinforcer for the trainer.",
-      "Social praise can be eliminated once tangible reinforcers are firmly established."
-    ],
-    correctIndex: 0,
-    explanation: "The purpose of pairing verbal praise with tangible reinforcers is so that, as training progresses, social attention and verbal praise will come to maintain the matching responses or imitative behaviors on their own, reducing reliance on tangible consequences.",
-  },
-  {
     id: 23022,
     topic: "Guidelines for Imitation Training",
     prompt: "Imitation training is not complete until:",
@@ -304,32 +239,6 @@ export const QUESTIONS_M24: Question[] = [
     ],
     correctIndex: 3,
     explanation: "Physical guidance should be faded gradually. After assisting the complete response, the practitioner lets go just before the movement is completed, and then continues to withdraw support earlier on each subsequent trial until the learner completes the movement independently.",
-  },
-  {
-    id: 23024,
-    topic: "Imitation Training",
-    prompt: "Young et al. (1994) found that children with autism imitated novel models within trained response types but not across different types. The practical implication of this finding is that:",
-    options: [
-      "Imitation should be trained exclusively within one response type to achieve mastery.",
-      "Training should focus on the response type that shows the highest baseline level of imitation.",
-      "Children with autism cannot develop generalized imitation regardless of training procedures.",
-      "Generalization of imitation across response types may need to be directly programmed rather than expected to occur automatically."
-    ],
-    correctIndex: 3,
-    explanation: "The extent to which imitation generalizes may depend on the parameters of the response class used during training and may require direct programming. Young et al. found within-type but not cross-type generalization, indicating that generalization across model types must be explicitly targeted.",
-  },
-  {
-    id: 23025,
-    topic: "Imitation Training",
-    prompt: "A learner with no prior imitative behavior imitates a novel model presented for the first time by a trainer, without any prompting, after training on 130 other models. This event is significant because it provides evidence that:",
-    options: [
-      "130 training trials are the empirically established minimum for developing imitation.",
-      "Physical guidance is no longer needed for any future imitation trials.",
-      "The model has become a conditioned reinforcer for the learner's behavior.",
-      "The learner's behavior is now functionally controlled by the topography of novel models, not just prior reinforcement history."
-    ],
-    correctIndex: 3,
-    explanation: "The criterion for the establishment of a genuine imitative response is displaying a novel response for the first time without shaping or prompting on that trial. This demonstrates that the model's topography now functionally controls the learner's similar behavior, beyond any specific reinforcement history.",
   },
   {
     id: 23026,
@@ -358,32 +267,6 @@ export const QUESTIONS_M24: Question[] = [
     explanation: "Video self-modeling is a specific application of video modeling that allows the individual to imitate targeted behaviors by observing herself or himself successfully performing a behavior, as defined by Bellini and Akullian (2007).",
   },
   {
-    id: 23028,
-    topic: "Video Modeling",
-    prompt: "In Aldi et al. (2016), point-of-view video models were created by filming the arms and hands of family members performing daily living skills. This format is intended to:",
-    options: [
-      "Eliminate background distractions by keeping the camera focused on a neutral surface.",
-      "Create a perspective that resembles what the learner would see while actually performing the skill.",
-      "Allow the learner to observe the complete posture and body mechanics of a skilled model.",
-      "Reduce the cost of video production by using untrained family members instead of professionals."
-    ],
-    correctIndex: 1,
-    explanation: "Point-of-view video models film the arms and hands of a person doing the task, creating a perspective similar to what the learner would actually see while performing the skill. This format was used by Aldi et al. (2016) to teach daily living skills to young adults with ASD.",
-  },
-  {
-    id: 23029,
-    topic: "Video Modeling",
-    prompt: "In the Aldi et al. (2016) study, when a participant made an error after viewing the point-of-view video, the error correction procedure involved:",
-    options: [
-      "Providing verbal reprimand and requiring the participant to restart the task.",
-      "Repeating the video segment for that task step as many times as necessary to achieve mastery.",
-      "Physically guiding the participant through the entire task chain from beginning to end.",
-      "Providing a written task analysis as an additional supplementary prompt."
-    ],
-    correctIndex: 1,
-    explanation: "When a participant made an error, the video segment for that specific task step was repeated as many times as necessary to achieve mastery. In some instances, gestural prompts were also provided as part of the error correction procedure.",
-  },
-  {
     id: 23030,
     topic: "Guidelines for Effective Modeling",
     prompt: "Which of the following variables is identified as potentially relevant to model-learner similarity that can influence the likelihood of imitation?",
@@ -408,71 +291,6 @@ export const QUESTIONS_M24: Question[] = [
     ],
     correctIndex: 0,
     explanation: "A model with prestige or social status increases the likelihood of imitative behaviors. Young executives imitating senior executives exemplifies how a prestigious model drives imitative behavior. The influence is enhanced when model and imitator share similar characteristics.",
-  },
-  {
-    id: 23032,
-    topic: "Guidelines for Effective Modeling",
-    prompt: "A teacher uses a pause and increased vocal volume to emphasize the target word when modeling a new sight word for students. According to Risley and Reynolds (1970), this technique:",
-    options: [
-      "Reduces the likelihood of imitation because it adds complexity to the stimulus.",
-      "Functions primarily as a negative reinforcer by reducing discomfort from softer speech.",
-      "Increases the probability of an imitative response by emphasizing the critical aspect of the model.",
-      "Serves primarily as a response prompt rather than a model enhancement."
-    ],
-    correctIndex: 2,
-    explanation: "Emphasizing the critical aspects of the modeled stimulus increases the probability of an imitative response and boosts the likelihood of imitation as a function of the emphasized model, according to Risley and Reynolds (1970).",
-  },
-  {
-    id: 23033,
-    topic: "Guidelines for Effective Modeling",
-    prompt: "Instructions combined with a model's presentation can enhance imitation by:",
-    options: [
-      "Replacing the need for a model when the skill is sufficiently described verbally.",
-      "Automatically generalizing the modeled behavior to novel settings.",
-      "Eliminating the need for rehearsal by providing declarative knowledge.",
-      "Serving an orienting and prompting function that increases the likelihood the learner attends to and imitates the model."
-    ],
-    correctIndex: 3,
-    explanation: "Instructions, whether spoken or written, set the occasion for a specific behavior and serve an orienting and prompting function that increases the likelihood of imitation. Researchers have combined voiceover instructions with video modeling as part of package programs to enhance modeling effects.",
-  },
-  {
-    id: 23034,
-    topic: "Guidelines for Effective Modeling",
-    prompt: "In the context of effective modeling, 'rehearsal and feedback' enhances learning by:",
-    options: [
-      "Allowing the analyst to determine if the learner acquired the skill, reinforce imitative behaviors, and correct errors.",
-      "Removing the need for a model after the learner has practiced once.",
-      "Replacing reinforcement as the primary mechanism for behavior change.",
-      "Limiting the number of exposures to the model to prevent habituation."
-    ],
-    correctIndex: 0,
-    explanation: "Rehearsal and feedback provides the analyst with the chance to (1) determine if the learner has acquired the imitative skill, (2) reinforce imitative behaviors, and (3) correct any errors through feedback and redirection. Multiple response opportunities combined with feedback enhance modeling effectiveness.",
-  },
-  {
-    id: 23035,
-    topic: "Guidelines for Effective Modeling",
-    prompt: "The factor in effective modeling that emphasizes demonstrating the target behavior in a real situation or in close facsimile of the real situation is called:",
-    options: [
-      "Reinforcement density",
-      "Formal similarity",
-      "Prestige",
-      "Context"
-    ],
-    correctIndex: 3,
-    explanation: "The context factor states that a model's presentation is more likely to be imitated if it occurs in a real situation or in a facsimile of the real situation. These situations should be expanded to account for variations in circumstances and to promote generalized imitation.",
-  },
-  {
-    id: 23036,
-    topic: "Guidelines for Effective Modeling",
-    prompt: "Observing the model receive reinforcement for the target behavior increases the model's effectiveness. This is associated with which factor in the guidelines for effective modeling?",
-    options: [
-      "Context",
-      "Prestige",
-      "Reinforcement",
-      "Emphasizing critical aspects of behavior"
-    ],
-    correctIndex: 2,
-    explanation: "The reinforcement factor notes that the more frequently the imitator observes, detects, and recognizes the model being reinforced, the more effective the model becomes (Bandura, Ross, and Ross, 1963). The learner's own reinforcement for imitating also increases future imitative behavior.",
   },
   {
     id: 23037,
@@ -501,45 +319,6 @@ export const QUESTIONS_M24: Question[] = [
     explanation: "Observational learning does not require imitation. The pedestrian used information about another person's behavior and its consequence (slipping) to make a decision about her own behavior, illustrating that observational learning typically involves imitation but does not require it.",
   },
   {
-    id: 23039,
-    topic: "Observational Learning",
-    prompt: "A student who has never been directly taught a new word observes a peer receive corrective feedback on the word and then correctly identifies the word herself. According to MacDonald and Ahearn (2015), this is an example of:",
-    options: [
-      "Incidental teaching of the target word.",
-      "Generalized imitation occurring in a naturalistic setting.",
-      "Observational learning, in which the student learned from indirect contact with consequences experienced by the peer.",
-      "A discriminated operant controlled by the teacher's question as an SD."
-    ],
-    correctIndex: 2,
-    explanation: "This example matches the MacDonald and Ahearn (2015) description of observational learning: a student does not know a word, observes a peer receive instruction and feedback, and then correctly identifies the word herself because of observing the peer's performance and its consequences.",
-  },
-  {
-    id: 23040,
-    topic: "Observational Learning",
-    prompt: "Delgado and Greer (2009) argued that the acquisition of observational learning skills represents a behavioral cusp. A behavioral cusp is defined as occurring when:",
-    options: [
-      "A skill reaches 100% accuracy across three consecutive sessions.",
-      "A behavior generalizes to more than three novel settings without additional training.",
-      "A child can contact contingencies and learn in ways that were not previously possible.",
-      "A learner first requires fewer than five prompts to produce a target behavior."
-    ],
-    correctIndex: 2,
-    explanation: "A developmental cusp occurs when a child can contact contingencies that he or she could not before. Observational learning is considered a behavioral cusp because children who acquire it can now learn in ways they previously could not.",
-  },
-  {
-    id: 23041,
-    topic: "Observational Learning",
-    prompt: "In Delgado and Greer (2009), desirable observational learning (acquisition of new sight words) occurred only when participants engaged in:",
-    options: [
-      "Direct practice trials with the teacher providing immediate feedback to the participant.",
-      "Monitoring of correct and incorrect feedback delivered by the teacher to peer confederates.",
-      "Extended exposure to the sight words printed on classroom displays.",
-      "Structured peer tutoring in which confederates provided feedback directly to participants."
-    ],
-    correctIndex: 1,
-    explanation: "Delgado and Greer (2009) concluded that only under conditions in which monitoring of correct and incorrect feedback took place did desirable observational learning occur. Participants learned new sight words by monitoring the correct and incorrect responses of their confederates.",
-  },
-  {
     id: 23042,
     topic: "Three Requisite Skills for Observational Learning",
     prompt: "DeQuinzio and Taylor (2015) and others identified three requisite skills for an observational learning repertoire. If any of these skills are absent, they should be:",
@@ -564,19 +343,6 @@ export const QUESTIONS_M24: Question[] = [
     ],
     correctIndex: 1,
     explanation: "In Taylor et al. (2012), the chip placement confirmed that the participant was attending to and observing the stimulus word. Attending, at its fundamental level, means not only sustaining attention but also making an imitative and matching response that confirms observation of that stimulus.",
-  },
-  {
-    id: 23044,
-    topic: "Teaching Observational Learning Skills: Discriminating",
-    prompt: "In DeQuinzio and Taylor's (2015) discrimination training study, when a participant emitted an incorrect response after a reinforced model trial, the practitioner provided which error correction instruction?",
-    options: [
-      "Physically guided the participant to touch the correct picture.",
-      "Repeated the question 'What's this?' without any additional guidance.",
-      "Said 'Say what she says when she gets it right.'",
-      "Ended the trial immediately without providing any feedback."
-    ],
-    correctIndex: 2,
-    explanation: "During discrimination training, when the participant answered incorrectly after a reinforced trial to the confederate model, the teacher provided the error correction statement: 'Say what she says when she gets it right.' This taught the participant to imitate the model's correct responses.",
   },
   {
     id: 23045,
@@ -605,19 +371,6 @@ export const QUESTIONS_M24: Question[] = [
     explanation: "According to DeQuinzio and Taylor (2015), 'learning this discrimination is a fundamental precondition for observational learning to occur.' Observational learners must discriminate the consequences received by the model to determine which behaviors to imitate.",
   },
   {
-    id: 23047,
-    topic: "Observational Learning",
-    prompt: "Children with ASD who lack an observational learning repertoire are limited because they:",
-    options: [
-      "Can learn new operants only via direct instruction, a process that is time-consuming and expensive.",
-      "Learn quickly through peer imitation but cannot generalize to adult models.",
-      "Benefit from naturalistic teaching but require more massed-trial practice.",
-      "Develop observational learning automatically once generalized imitation is established."
-    ],
-    correctIndex: 0,
-    explanation: "Delgado and Greer (2009) stated that children without observational learning repertoires 'can learn new operants only via direct instruction, a process that is time-consuming and expensive.' This highlights the critical importance of explicitly teaching observational learning skills.",
-  },
-  {
     id: 23048,
     topic: "Observational Learning",
     prompt: "An individual who is both blind and deaf can still engage in observational learning by:",
@@ -629,19 +382,6 @@ export const QUESTIONS_M24: Question[] = [
     ],
     correctIndex: 2,
     explanation: "An individual with dual sensory impairments can engage in observational learning by sensing and imitating the tactile and kinesthetic stimulus products of another person's behavior. Observational learning requires attention, imitation, and discrimination regardless of sensory mode.",
-  },
-  {
-    id: 23049,
-    topic: "Imitation vs. Discriminated Operant",
-    prompt: "In the opening anecdote, the accompanying guitarist stopped playing riffs similar to the lead guitarist's after hearing the singer-songwriter's disapproval. This outcome is best understood as:",
-    options: [
-      "Extinction of a previously reinforced imitative behavior.",
-      "Punishment of the accompanying guitarist's imitative behavior by the singer-songwriter.",
-      "Generalized imitation failure due to a lack of formal similarity.",
-      "Observational learning, in which the guitarist used information about the consequence of the lead guitarist's behavior to modify his own responding."
-    ],
-    correctIndex: 3,
-    explanation: "The accompanying guitarist discriminated the singer-songwriter's displeasure with the lead guitarist's riff style and stopped playing similar riffs. This illustrates observational learning: detecting another person's behavior and its consequence(s) and using that information to determine whether or not to imitate the behavior.",
   },
   {
     id: 23050,

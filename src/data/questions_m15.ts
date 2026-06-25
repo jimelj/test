@@ -150,45 +150,6 @@ export const QUESTIONS_M15: Question[] = [
     explanation: "Free-operant avoidance is an arrangement in which a response at any time postpones the aversive event. Because the child can complete homework at any time after school to avoid the consequence, this is free-operant avoidance."
   },
   {
-    id: 14012,
-    topic: "Escape and Avoidance Contingencies",
-    prompt: "In the posture study by Azrin and colleagues (1968), what did correcting posture after the audible click but before the tone sounded illustrate?",
-    options: [
-      "Free-operant avoidance, because the click had not yet sounded.",
-      "Escape, because the tone was already on.",
-      "Positive reinforcement, because correct posture was praised.",
-      "Discriminated avoidance, because the click served as a warning signal and the response prevented the tone."
-    ],
-    correctIndex: 3,
-    explanation: "In discriminated avoidance, a response in the presence of a warning signal prevents the aversive stimulus. The click signaled that the tone would follow; correcting posture within 3 seconds prevented the tone from sounding."
-  },
-  {
-    id: 14013,
-    topic: "Two-Factor Theory of Avoidance",
-    prompt: "Mowrer's two-factor theory of avoidance proposes that:",
-    options: [
-      "Avoidance is maintained solely by respondent conditioning mechanisms.",
-      "Respondent conditioning first establishes fear to the warning signal, and then operant behavior is maintained by escape from that fear.",
-      "Avoidance behavior is maintained exclusively by the termination of the warning signal without any role of fear.",
-      "Two separate operant mechanisms account for avoidance, one for acquisition and one for maintenance."
-    ],
-    correctIndex: 1,
-    explanation: "Mowrer proposed that the warning signal acquires fear-eliciting properties through respondent conditioning, and avoidance behavior is then maintained operantly by escape from that conditioned fear."
-  },
-  {
-    id: 14014,
-    topic: "Two-Factor Theory of Avoidance",
-    prompt: "Sidman's research on free-operant avoidance challenged two-factor theory primarily because:",
-    options: [
-      "Animals in Sidman's studies never learned to avoid shocks.",
-      "Sidman demonstrated that respondent conditioning was the only process needed to explain avoidance.",
-      "Shock intensity was too low to generate fear responses in Sidman's experiments.",
-      "Animals learned to postpone shocks in the absence of any programmed warning signal, eliminating the need to invoke fear of a signal."
-    ],
-    correctIndex: 3,
-    explanation: "Sidman showed that animals acquired avoidance behavior without any warning signal. This finding challenged two-factor theory because there was no conditioned stimulus to elicit fear, yet avoidance still occurred."
-  },
-  {
     id: 14015,
     topic: "Characteristics of Negative Reinforcement",
     prompt: "Which statement best captures why a wide range of behaviors, including both appropriate and problem behaviors, can be maintained by negative reinforcement?",
@@ -280,32 +241,6 @@ export const QUESTIONS_M15: Question[] = [
     explanation: "Once a behavior occurs under a negative reinforcement contingency, the aversive stimulus is terminated and may no longer be observable. Therefore, the antecedent EO must be identified alongside the consequence."
   },
   {
-    id: 14022,
-    topic: "Identifying the Context of Negative Reinforcement",
-    prompt: "Weeks and Gaylord-Ross (1981) observed more problem behavior during difficult tasks than easy tasks. Why could they not conclude with certainty that escape maintained the behavior?",
-    options: [
-      "The students did not have severe enough disabilities to experience task demands as aversive.",
-      "The consequences following problem behavior were unknown, so attention or other positive reinforcers could not be ruled out.",
-      "Easy tasks produced more problem behavior than difficult tasks in every case.",
-      "The researchers failed to implement a functional analysis."
-    ],
-    correctIndex: 1,
-    explanation: "Because the consequences following problem behavior were not controlled or systematically observed, it was possible that behavior was maintained by attention or another positive reinforcer rather than by escape from task demands."
-  },
-  {
-    id: 14023,
-    topic: "Identifying the Context of Negative Reinforcement",
-    prompt: "The functional analysis methodology developed by Iwata and colleagues (1994) identifies escape-maintained problem behavior by:",
-    options: [
-      "Observing behavior across conditions that differ in antecedent and consequent events, including a demand condition where problem behavior produces escape.",
-      "Presenting preferred items contingent on appropriate behavior only.",
-      "Removing all task demands and measuring any reductions in problem behavior.",
-      "Using a reversal design to compare high-demand and low-demand sessions without changing consequences."
-    ],
-    correctIndex: 0,
-    explanation: "Iwata et al.'s functional analysis methodology includes a demand condition in which task demands serve as the antecedent (EO) and escape from demands follows problem behavior. Higher rates in this condition compared to others indicate escape-maintained behavior."
-  },
-  {
     id: 14024,
     topic: "Determinants of Negative Reinforcement Effects",
     prompt: "Which of the following conditions increases the effectiveness of a negative reinforcement contingency?",
@@ -345,58 +280,6 @@ export const QUESTIONS_M15: Question[] = [
     explanation: "When reinforcement (escape from demands) is available for competing responses such as off-task behavior, the negative reinforcement contingency for the target response is weakened. Effectiveness requires that reinforcement be unavailable for competing responses."
   },
   {
-    id: 14027,
-    topic: "Applications of Negative Reinforcement: Feeding Problems",
-    prompt: "In the Ahearn and colleagues (1996) study on chronic food refusal, what negative reinforcement contingency was in place during the nonremoval-of-the-spoon treatment?",
-    options: [
-      "Food acceptance produced escape from the spoon being held at the child's lip.",
-      "Food refusal produced access to preferred toys.",
-      "Correct eating produced praise from the therapist.",
-      "Physical guidance was removed only after the child ate all food on the plate."
-    ],
-    correctIndex: 0,
-    explanation: "In the nonremoval-of-the-spoon condition, the spoon was held at the child's lower lip until the bite was accepted. Acceptance terminated this arrangement, functioning as negative reinforcement for food acceptance."
-  },
-  {
-    id: 14028,
-    topic: "Applications of Negative Reinforcement: Feeding Problems",
-    prompt: "Piazza and colleagues (2003) compared positive reinforcement alone, negative reinforcement alone, and their combination for chronic food refusal. What was the primary finding?",
-    options: [
-      "Negative reinforcement produced increases in consumption regardless of whether implemented alone or combined with positive reinforcement, while positive reinforcement alone was ineffective.",
-      "Only positive reinforcement affected behavior in all children.",
-      "The combination of positive and negative reinforcement was always superior to either alone.",
-      "Both interventions were equally effective when implemented without extinction."
-    ],
-    correctIndex: 0,
-    explanation: "Piazza et al. found that positive reinforcement alone did not increase food consumption for any child, while negative reinforcement was effective whether implemented alone or combined with positive reinforcement."
-  },
-  {
-    id: 14029,
-    topic: "Applications of Negative Reinforcement: Error Correction",
-    prompt: "In Worsdell and colleagues' (2005) Study 3 on error correction, the 'irrelevant' error correction condition was designed to isolate the effects of:",
-    options: [
-      "Positive reinforcement for correct responding.",
-      "Negative reinforcement alone, by having students practice an unrelated word rather than the misread word.",
-      "Token economy procedures during reading instruction.",
-      "The practice effect of repeating the target word."
-    ],
-    correctIndex: 1,
-    explanation: "The irrelevant condition had students repeat an unrelated word contingent on errors. This isolated the avoidance contingency (correct response avoids repetition practice) without providing practice on the target word."
-  },
-  {
-    id: 14030,
-    topic: "Applications of Negative Reinforcement: Error Correction",
-    prompt: "The fact that students improved their reading performance even when practicing irrelevant words in the Worsdell et al. (2005) study suggests that:",
-    options: [
-      "Repetition of any word improves reading by strengthening phonemic awareness.",
-      "Irrelevant practice is always superior to relevant practice for reading acquisition.",
-      "Positive reinforcement for correct responding is unnecessary in reading instruction.",
-      "Negative reinforcement (the avoidance contingency) plays at least some role in the effectiveness of error-correction procedures."
-    ],
-    correctIndex: 3,
-    explanation: "Improvement in the irrelevant condition showed that some benefit of error-correction procedures comes from the avoidance contingency (correct responses avoid remedial practice), not only from practicing the target words."
-  },
-  {
     id: 14031,
     topic: "Acquisition and Maintenance of Problem Behavior",
     prompt: "When task demands serve as an EO for escape behavior and positive reinforcement for compliance is suboptimal, what pattern is likely to occur over time?",
@@ -408,19 +291,6 @@ export const QUESTIONS_M15: Question[] = [
     ],
     correctIndex: 3,
     explanation: "When compliance is not adequately reinforced and escape from demands is available, mild forms of escape behavior may escalate to more severe problem behaviors such as property destruction, aggression, or self-injury."
-  },
-  {
-    id: 14032,
-    topic: "Acquisition and Maintenance of Problem Behavior",
-    prompt: "O'Reilly (1995) found that aggressive behavior was higher in a demand condition than an attention condition. When data were further divided by sleep duration, which pattern emerged?",
-    options: [
-      "The highest rates of aggression occurred during the demand condition following sleep deprivation.",
-      "Aggression was highest during the attention condition following adequate sleep.",
-      "Sleep deprivation had no effect on aggression rates.",
-      "Aggression was equally high in both conditions when sleep was adequate."
-    ],
-    correctIndex: 0,
-    explanation: "O'Reilly found that work demands (EO #1) and sleep deprivation (EO #2) combined to produce the highest rates of escape-maintained aggression, illustrating how multiple EOs can interact."
   },
   {
     id: 14033,
@@ -449,58 +319,6 @@ export const QUESTIONS_M15: Question[] = [
     explanation: "Extinction for negatively reinforced behavior means withholding negative reinforcement, that is, presenting the consequence that the behavior previously escaped or avoided. For example, if whining allowed a child to avoid a task, extinction would reinstate the task requirement."
   },
   {
-    id: 14035,
-    topic: "Behavioral Replacement: Differential Negative Reinforcement",
-    prompt: "In the Durand and Carr (1987) study, stereotypic behaviors maintained by escape from task demands were reduced by teaching students to say 'Help me.' Why did stereotypy decrease?",
-    options: [
-      "Saying 'Help me' produced access to preferred activities, making stereotypy less reinforced.",
-      "The phrase 'Help me' served as a punishment that suppressed stereotypy.",
-      "The verbal response produced assistance with the task, providing the same escape function as stereotypy, making stereotypy unnecessary.",
-      "Stereotypy was placed on extinction while 'Help me' was reinforced with praise."
-    ],
-    correctIndex: 2,
-    explanation: "Teaching a functionally equivalent response that produces the same reinforcer (escape from task demands via assistance) reduces the problem behavior through differential negative reinforcement. Stereotypy decreased because 'Help me' achieved the same outcome more effectively."
-  },
-  {
-    id: 14036,
-    topic: "Behavioral Replacement: Differential Negative Reinforcement",
-    prompt: "Marcus and Vollmer (1995) compared a DNR communication condition and a DNR compliance condition for a girl's disruptive behavior. Which condition also improved task performance?",
-    options: [
-      "The DNR compliance condition, because the break was contingent on following instructions.",
-      "The DNR communication condition, because saying 'Finished' produced a break.",
-      "Neither condition improved task performance.",
-      "Both conditions equally improved task performance."
-    ],
-    correctIndex: 0,
-    explanation: "The DNR compliance condition required the child to comply with an instruction to earn a break. This produced reductions in disruption and, unlike the communication condition, also improved task engagement and performance."
-  },
-  {
-    id: 14037,
-    topic: "Behavioral Replacement: Differential Positive Reinforcement",
-    prompt: "Slocum and Vollmer (2015) compared positive and negative reinforcement for compliance in children whose problem behavior was escape-maintained. A notable feature of their study was that:",
-    options: [
-      "Extinction was implemented so that problem behavior no longer produced escape.",
-      "Both interventions were implemented without extinction, meaning problem behavior continued to produce escape throughout treatment.",
-      "Negative reinforcement was not used because of ethical concerns.",
-      "Positive reinforcement was delivered on a fixed-ratio schedule only."
-    ],
-    correctIndex: 1,
-    explanation: "Slocum and Vollmer studied whether positive or negative reinforcement for compliance could be effective even when problem behavior continued to produce escape. Both were implemented without extinction."
-  },
-  {
-    id: 14038,
-    topic: "Behavioral Replacement: Differential Positive Reinforcement",
-    prompt: "In Slocum and Vollmer's (2015) comparison, what general finding emerged regarding positive versus negative reinforcement for compliance?",
-    options: [
-      "Negative reinforcement for compliance produced more consistent effects than positive reinforcement.",
-      "Positive reinforcement for compliance produced more consistent effects than negative reinforcement.",
-      "Both interventions were equally ineffective without extinction.",
-      "Neither intervention affected rates of problem behavior."
-    ],
-    correctIndex: 1,
-    explanation: "Slocum and Vollmer reported that positive reinforcement (delivery of a small edible item for compliance) produced more consistent effects than negative reinforcement (30-second break for compliance) in reducing problem behavior."
-  },
-  {
     id: 14039,
     topic: "Teacher and Caregiver Responding",
     prompt: "When a teacher delivers a reprimand and the student's problem behavior stops, what learning process may maintain the teacher's use of reprimands?",
@@ -512,32 +330,6 @@ export const QUESTIONS_M15: Question[] = [
     ],
     correctIndex: 3,
     explanation: "When a reprimand terminates problem behavior, the teacher's behavior of delivering reprimands is negatively reinforced by escape from the aversive student behavior. This can maintain both appropriate and inappropriate teacher responses."
-  },
-  {
-    id: 14040,
-    topic: "Teacher and Caregiver Responding",
-    prompt: "In the simulation study by Miller, Lerman, and Fritz (2010), what happened when teacher reprimands no longer stopped student problem behavior (extinction condition)?",
-    options: [
-      "Teachers switched to using physical guidance instead of reprimands.",
-      "Three teachers terminated their participation, providing evidence that student problem behavior was an aversive event.",
-      "No changes in teacher behavior were observed.",
-      "Teachers increased their rate of reprimands dramatically."
-    ],
-    correctIndex: 1,
-    explanation: "Three teachers dropped out of the study during the extinction condition, which itself demonstrated that student problem behavior was aversive. This underscores the EO function of problem behavior for caregiver escape."
-  },
-  {
-    id: 14041,
-    topic: "Teacher and Caregiver Responding",
-    prompt: "Thompson, Bruzek, and Cotnoir-Bichelman (2011) studied simulated caregiving and found that caregiver responses effective in stopping a recorded infant cry persisted. This finding is best explained by:",
-    options: [
-      "Positive reinforcement from the experimenter.",
-      "Extinction of irrelevant caregiver responses paired with shaping.",
-      "Negative reinforcement: terminating the cry strengthened responses that were effective in stopping it.",
-      "Respondent conditioning of calm responses to the infant doll."
-    ],
-    correctIndex: 2,
-    explanation: "Caregiver responses that terminated the infant cry were strengthened by negative reinforcement, while responses that no longer terminated it decreased. This mirrors the negative reinforcement contingency that shapes real caregiver behavior."
   },
   {
     id: 14042,
@@ -590,58 +382,6 @@ export const QUESTIONS_M15: Question[] = [
     ],
     correctIndex: 3,
     explanation: "A socially withdrawn child who is placed among others may scream and run away instead of interacting. Running away competes with social interaction and is generated by the aversive social situation that serves as the EO."
-  },
-  {
-    id: 14046,
-    topic: "Ambiguity Between Positive and Negative Reinforcement",
-    prompt: "Michael (1975) suggested that the distinction between positive and negative reinforcement might be unnecessary. What alternative did he propose?",
-    options: [
-      "Using punishment procedures whenever reinforcement type is ambiguous.",
-      "Classifying all reinforcement as positive because behavior always increases.",
-      "Specifying the type of environmental change in terms of key stimulus features present before and after the response, rather than whether a stimulus was added or removed.",
-      "Eliminating the use of the word 'negative' from the behavior-analytic vocabulary."
-    ],
-    correctIndex: 2,
-    explanation: "Michael proposed that instead of labeling contingencies as positive or negative reinforcement, practitioners should specify the prechange and postchange stimulus conditions, which would provide a more complete understanding without the terminological ambiguity."
-  },
-  {
-    id: 14047,
-    topic: "Ambiguity Between Positive and Negative Reinforcement",
-    prompt: "Osborne's (1969) study on free-time contingencies in the classroom is cited as an example of terminological ambiguity because:",
-    options: [
-      "Students' in-seat behavior decreased during the free-time condition.",
-      "The free-time contingency could be interpreted as either negative reinforcement (termination of work) or positive reinforcement (access to activities during free time).",
-      "The study did not include a baseline phase, making interpretation impossible.",
-      "Free time served only as a punisher for some students."
-    ],
-    correctIndex: 1,
-    explanation: "Osborne noted that while the free-time contingency seemed to involve negative reinforcement through termination of the work requirement, access to activities during free time may also have functioned as positive reinforcement, illustrating the ambiguity."
-  },
-  {
-    id: 14048,
-    topic: "Ambiguity Between Positive and Negative Reinforcement",
-    prompt: "Magoon and colleagues equated positive reinforcement (money gain) and negative reinforcement (money-loss avoidance) in human operant studies. Their main finding was that:",
-    options: [
-      "The two contingency types produced identical behavioral outcomes.",
-      "Only positive reinforcement affected behavior in human participants.",
-      "Money could not serve as a negative reinforcer because it is a conditioned stimulus.",
-      "The two contingency types produced differential outcomes, supporting the proposition that they are functionally unique."
-    ],
-    correctIndex: 3,
-    explanation: "Magoon and colleagues found differential outcomes under positive reinforcement and negative reinforcement, supporting the proposition that the two types of contingencies are functionally distinct."
-  },
-  {
-    id: 14049,
-    topic: "Identifying the Context of Negative Reinforcement",
-    prompt: "Smith, Iwata, Goh, and Shore (1995) examined what made task demands aversive for individuals whose self-injury was escape-maintained. Which dimensions of tasks did they investigate?",
-    options: [
-      "Task color, font size, and room temperature.",
-      "Task novelty, duration of the work session, and rate of demand presentation.",
-      "Number of therapists present, session time of day, and task difficulty.",
-      "Type of reinforcer used, session location, and proximity to peers."
-    ],
-    correctIndex: 1,
-    explanation: "Smith et al. examined task novelty, duration of the work session, and rate of demand presentation as dimensions along which tasks might differ in their aversive properties for individuals with escape-maintained self-injury."
   },
   {
     id: 14050,

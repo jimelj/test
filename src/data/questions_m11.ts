@@ -33,19 +33,6 @@ export const QUESTIONS_M11: Question[] = [
     explanation: "Baseline 2 data verify the prediction made from Baseline 1. If responding in Baseline 2 parallels the measures from Baseline 1, the data show that behavior would have remained at baseline levels had the intervention never been introduced.",
   },
   {
-    id: 10003,
-    topic: "Operation and Logic of the Reversal Design",
-    prompt: "In baseline logic as applied to the A-B-A-B design, replication of the experimental effect is demonstrated when which event occurs?",
-    options: [
-      "Baseline 1 data are stable before treatment begins",
-      "Behavior deteriorates during Baseline 2",
-      "Treatment 2 reproduces the behavior change observed during Treatment 1",
-      "The behavior analyst maintains procedural fidelity throughout the study"
-    ],
-    correctIndex: 2,
-    explanation: "Replication of effect is achieved when reintroduction of the independent variable in Treatment 2 reproduces the behavior change observed during Treatment 1, thereby demonstrating a functional relation.",
-  },
-  {
     id: 10004,
     topic: "Variations of the A-B-A-B Design",
     prompt: "When an A-B-A-B design is extended to an A-B-A-B-A-B sequence, each additional presentation and withdrawal that reproduces the previously observed effects on behavior does which of the following?",
@@ -109,19 +96,6 @@ export const QUESTIONS_M11: Question[] = [
     ],
     correctIndex: 1,
     explanation: "The NCR reversal technique is used to show that behavior change results from contingent reinforcement, not simply from the presentation of or contact with the stimulus event. If improvements are lost when equal amounts of the consequence are delivered independent of the target behavior, a functional relation between the contingency and behavior change may be demonstrated.",
-  },
-  {
-    id: 10009,
-    topic: "Noncontingent Reinforcement (NCR) Reversal Technique",
-    prompt: "A potential weakness of the NCR control procedure is that when high rates of the desired behavior have been produced during the preceding contingent reinforcement phase, NCR delivered on a time schedule may accidentally follow occurrences of the target behavior and thereby function as which of the following?",
-    options: [
-      "A conditioned punisher",
-      "A generalized conditioned reinforcer",
-      "Adventitious (accidental) reinforcement",
-      "A discriminative stimulus for extinction"
-    ],
-    correctIndex: 2,
-    explanation: "When NCR is delivered on a predetermined time schedule after a period of high responding, some deliveries will closely follow target behavior in time and may function as adventitious, or accidental, reinforcement, possibly creating an inadvertent intermittent schedule.",
   },
   {
     id: 10010,
@@ -202,19 +176,6 @@ export const QUESTIONS_M11: Question[] = [
     explanation: "A serious ethical concern arises when a reversal design is considered for evaluating a treatment for self-injurious or dangerous behaviors. Withdrawing an effective intervention, even for one session, could result in harm to the participant.",
   },
   {
-    id: 10016,
-    topic: "Considering the Appropriateness of the Reversal Design",
-    prompt: "Which of the following strategies can be used when the behavior worsens rapidly upon treatment withdrawal, allowing a brief demonstration of experimental control without a prolonged reversal phase?",
-    options: [
-      "Combining the baseline and treatment conditions within the same session",
-      "Using a single-session return-to-baseline probe",
-      "Switching to a changing criterion design",
-      "Extending the final treatment phase to compensate"
-    ],
-    correctIndex: 1,
-    explanation: "With mild self-injurious or aggressive behaviors, a single-session return-to-baseline probe can sometimes provide sufficient empirical evidence to reveal a functional relation without exposing the participant to an extended period of no treatment.",
-  },
-  {
     id: 10017,
     topic: "Considering the Appropriateness of the Reversal Design",
     prompt: "Social concerns about using a reversal design arise primarily because which of the following may occur?",
@@ -228,19 +189,6 @@ export const QUESTIONS_M11: Question[] = [
     explanation: "Social concerns arise because the people involved, such as administrators, teachers, parents, and participants, may object to the withdrawal of an intervention they associate with desirable behavior change. Without their cooperation, the procedural integrity of the experiment could be compromised.",
   },
   {
-    id: 10018,
-    topic: "Considering the Appropriateness of the Reversal Design",
-    prompt: "Educational or clinical concerns about the reversal design are often raised in terms of which of the following?",
-    options: [
-      "Instructional time lost during reversal phases and the possibility that behavioral improvements may not be recaptured when treatment resumes",
-      "The cost of training additional observers to maintain reliability",
-      "The requirement that social validity measures be collected in every phase",
-      "Difficulty in operationally defining the independent variable during baseline"
-    ],
-    correctIndex: 0,
-    explanation: "Educational or clinical concerns focus on instructional time lost during reversal phases and the possibility that behavioral improvements observed during intervention may not be recaptured when treatment is resumed after a return to baseline conditions.",
-  },
-  {
     id: 10019,
     topic: "Multiple Treatment Reversal Designs",
     prompt: "In a multiple treatment reversal design, the letters A, B, C, D, and so on are used to denote different conditions. Which of the following best describes what such a design accomplishes?",
@@ -252,19 +200,6 @@ export const QUESTIONS_M11: Question[] = [
     ],
     correctIndex: 0,
     explanation: "Multiple treatment reversal designs use the reversal tactic to compare the effects of two or more experimental conditions to baseline and/or to one another, with each condition following the logic of prediction, verification, and replication.",
-  },
-  {
-    id: 10020,
-    topic: "Multiple Treatment Reversal Designs",
-    prompt: "To reduce the threat of sequence effects when comparing two treatments in a reversal design, which of the following design sequences is most appropriate?",
-    options: [
-      "A-B-C-B-C",
-      "A-B-A-C-A-C",
-      "B-C-B-C",
-      "A-B-B-C-C-A"
-    ],
-    correctIndex: 1,
-    explanation: "Recapturing the original baseline levels of responding before introducing each new treatment condition, as in an A-B-A-C-A-C sequence, reduces the threat of sequence effects or helps expose them for what they are.",
   },
   {
     id: 10021,
@@ -319,45 +254,6 @@ export const QUESTIONS_M11: Question[] = [
     explanation: "Experimental control in a multielement design is demonstrated when the data paths for two different treatments show little or no overlap, providing objective, believable evidence that different levels of responding are predictably and reliably produced by the presence of the different treatments.",
   },
   {
-    id: 10025,
-    topic: "Operation and Logic of the Multielement Design",
-    prompt: "In a multielement design, each successive data point for a specific treatment simultaneously serves which three functions?",
-    options: [
-      "Stabilization, replication, and generalization",
-      "Prediction of future responding, verification of previous predictions, and replication of previous effects",
-      "Baseline control, treatment comparison, and social validity",
-      "Randomization, counterbalancing, and blinding"
-    ],
-    correctIndex: 1,
-    explanation: "In the multielement design, each successive data point for a specific treatment plays all three roles of baseline logic: it provides a basis for predicting future levels of responding, offers potential verification of the previous prediction, and represents an opportunity for replication of previous effects produced by that treatment.",
-  },
-  {
-    id: 10026,
-    topic: "Operation and Logic of the Multielement Design",
-    prompt: "The extent of differential effects produced by two treatments in a multielement design is quantified by which of the following?",
-    options: [
-      "The number of data points collected across all conditions",
-      "The vertical distance (fractionation) between the respective data paths on the graph",
-      "The statistical p-value computed from parametric analysis",
-      "The horizontal distance between the first and last sessions of each treatment"
-    ],
-    correctIndex: 1,
-    explanation: "The extent of differential effects produced by two treatments is determined by the vertical distance (fractionation) between their respective data paths and quantified by the vertical axis scale. The greater the vertical distance, the greater the differential effects.",
-  },
-  {
-    id: 10027,
-    topic: "Operation and Logic of the Multielement Design",
-    prompt: "Counterbalancing the days of the week, times of day, and sequence of treatments in a multielement design is done primarily to accomplish which of the following?",
-    options: [
-      "Increase the number of data points collected per condition",
-      "Reduce the probability that observed differences are due to variables other than the treatments themselves",
-      "Allow the participant to choose their preferred treatment sooner",
-      "Satisfy institutional review board requirements for randomization"
-    ],
-    correctIndex: 1,
-    explanation: "Counterbalancing the days of the week, times of day, sequence in which treatments occur, and persons delivering treatments reduces the probability that any observed differences in behavior are the result of variables other than the treatments themselves.",
-  },
-  {
     id: 10028,
     topic: "Variations of the Multielement Design",
     prompt: "The single-phase multielement design is the primary experimental tool used in which common behavior-analytic assessment?",
@@ -382,32 +278,6 @@ export const QUESTIONS_M11: Question[] = [
     ],
     correctIndex: 2,
     explanation: "Measures obtained during the no-treatment control condition in an ongoing multielement design should not be considered representative of the unknown preintervention baseline level of responding; they may reflect only the level of behavior under no-treatment conditions when interspersed within ongoing treatment conditions.",
-  },
-  {
-    id: 10030,
-    topic: "Variations of the Multielement Design",
-    prompt: "In the three-phase multielement design consisting of baseline, comparison, and best treatment only, the purpose of the final phase is to do which of the following?",
-    options: [
-      "Compare additional untested treatments to the most effective one found during comparison",
-      "Administer only the treatment that proved most effective during the alternating treatments phase",
-      "Return to baseline conditions to verify the functional relation",
-      "Allow the participant to choose which treatment they prefer going forward"
-    ],
-    correctIndex: 1,
-    explanation: "In the three-phase design with a best-treatment-only final phase, the last phase involves administering only the most effective treatment identified during the alternating treatments comparison phase.",
-  },
-  {
-    id: 10031,
-    topic: "Variations of the Multielement Design",
-    prompt: "In the three-phase multielement design that ends with a participant's choice phase, the final phase differs from the best-treatment-only variation in which key way?",
-    options: [
-      "The final phase uses a changing criterion rather than a fixed treatment procedure",
-      "Only the treatment selected by each participant is implemented in the final phase, rather than the objectively most effective one",
-      "A second baseline is collected after the choice phase to verify the functional relation",
-      "The participant receives a different treatment each session regardless of preference"
-    ],
-    correctIndex: 1,
-    explanation: "In the participant's choice variation, the final phase implements only the treatment selected by each participant, whereas the best-treatment-only variation implements the treatment that was empirically most effective during the comparison phase.",
   },
   {
     id: 10032,
@@ -449,19 +319,6 @@ export const QUESTIONS_M11: Question[] = [
     explanation: "A major advantage of the alternating treatments design is that it does not require the investigator to withdraw a seemingly effective treatment to demonstrate a functional relation, thereby avoiding the ethical and social concerns associated with treatment withdrawal.",
   },
   {
-    id: 10035,
-    topic: "Advantages of the Multielement Design",
-    prompt: "The multielement design is considered the basic experimental tactic used in functional analysis of problem behavior largely because of which advantage?",
-    options: [
-      "Its ability to rapidly demonstrate differential effects of different maintaining conditions",
-      "Its requirement for a stable baseline before any treatment is introduced",
-      "Its suitability for studying behaviors that occur at very low frequencies",
-      "Its use of statistical analyses to compare treatment outcomes"
-    ],
-    correctIndex: 0,
-    explanation: "The multielement design's ability to rapidly demonstrate differential effects of different conditions makes it the basic experimental tactic in functional analyses of problem behavior, quickly identifying the environmental variables maintaining the behavior.",
-  },
-  {
     id: 10036,
     topic: "Advantages of the Multielement Design",
     prompt: "Which advantage of the multielement design helps address the problem of behaviors that do not return to baseline levels when an intervention is withdrawn?",
@@ -488,32 +345,6 @@ export const QUESTIONS_M11: Question[] = [
     explanation: "In a multielement design, independent variables are rapidly alternated in a random fashion producing no particular sequence, and each treatment is in effect for short periods, reducing the likelihood of carryover effects. This minimizes sequence effects that are difficult to control in reversal or multiple baseline designs.",
   },
   {
-    id: 10038,
-    topic: "Advantages of the Multielement Design",
-    prompt: "When data in a multielement design are unstable or show ascending trends due to practice effects, why are observed differences between treatment data paths still potentially attributable to the treatments?",
-    options: [
-      "Practice effects cancel out because the total number of sessions is equated across conditions",
-      "Unstable data are removed before visual analysis is conducted",
-      "Because conditions are rapidly alternated over the same time period, practice effects, maturation, and other historical variables are presumed to be equally represented in each condition",
-      "Statistical regression to the mean equalizes performance across all conditions"
-    ],
-    correctIndex: 2,
-    explanation: "Because no single condition is present for any considerable length of time and conditions are presented many times throughout the study, it can be presumed that effects of practice, task difficulty changes, maturation, or other historical variables are equally represented in each treatment condition and will not differentially affect any one condition.",
-  },
-  {
-    id: 10039,
-    topic: "Advantages of the Multielement Design",
-    prompt: "By alternating different therapists across conditions in the final phase of a study, a researcher using a multielement design can continually assess which of the following?",
-    options: [
-      "Interobserver agreement across data collectors",
-      "The degree of generalization of behavior change to other persons",
-      "Whether the treatment is socially valid according to teachers",
-      "The stability of baseline responding under different personnel"
-    ],
-    correctIndex: 1,
-    explanation: "By alternating different therapists in a multielement design, the experimenter can continually assess the degree to which behavior change generalizes from the effective treatment to other conditions of interest, such as different persons administering the procedure.",
-  },
-  {
     id: 10040,
     topic: "Considering the Appropriateness of the Multielement Design",
     prompt: "Multiple treatment interference in a multielement design refers to which of the following?",
@@ -525,19 +356,6 @@ export const QUESTIONS_M11: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Multiple treatment interference refers to the confounding effects of one treatment on a subject's behavior being influenced by the effects of another treatment administered in the same study. It raises the question of whether the effects observed under a given treatment would be the same if that treatment were implemented alone.",
-  },
-  {
-    id: 10041,
-    topic: "Considering the Appropriateness of the Multielement Design",
-    prompt: "To assess the effects of a treatment in isolation and thus address multiple treatment interference, a researcher using a multielement design can do which of the following?",
-    options: [
-      "Reduce the number of alternations so that each treatment is presented for longer blocks",
-      "Follow the alternating treatments phase with a final phase in which only one treatment is in effect",
-      "Collect social validity data from the participant about which treatment they found most helpful",
-      "Replicate the experiment with a new participant who receives only one treatment"
-    ],
-    correctIndex: 1,
-    explanation: "By following the alternating treatments phase with a phase in which only one treatment is administered, the experimenter can assess the effects of that treatment when administered in isolation, addressing the concern of multiple treatment interference.",
   },
   {
     id: 10042,
@@ -553,58 +371,6 @@ export const QUESTIONS_M11: Question[] = [
     explanation: "In most applied settings, a maximum of four different conditions (one of which may be a no-treatment control condition) can be compared effectively within a given phase of an alternating treatments design, and in many instances only two different treatments can be accommodated.",
   },
   {
-    id: 10043,
-    topic: "Considering the Appropriateness of the Multielement Design",
-    prompt: "When selecting treatment conditions for a multielement design, why is it important that the conditions embody significant differences from one another?",
-    options: [
-      "To satisfy the rule of changing only one variable at a time across phases",
-      "To enhance the probability that participants will discriminate between conditions, thereby increasing the likelihood of obtaining reliable, measurable differences in behavior",
-      "To ensure that each treatment is associated with a unique therapist to prevent confusion",
-      "To maximize the vertical distance between data paths on the graph for aesthetic clarity"
-    ],
-    correctIndex: 1,
-    explanation: "Treatments should embody significant differences from one another to enhance the probability of discrimination between conditions and thereby increase the possibility of obtaining reliable, measurable differences in behavior.",
-  },
-  {
-    id: 10044,
-    topic: "Considering the Appropriateness of the Multielement Design",
-    prompt: "A multielement design is not effective for assessing the effects of independent variables that do which of the following?",
-    options: [
-      "Require counterbalancing of session order",
-      "Change behavior only when implemented consistently over a continuous period of time",
-      "Produce increases rather than decreases in the target behavior",
-      "Involve social reinforcement rather than tangible reinforcement"
-    ],
-    correctIndex: 1,
-    explanation: "Multielement designs are not effective for assessing the effects of independent variables that change behavior only when implemented consistently over a continuous period of time, because the rapid alternation of conditions prevents any single condition from being present long enough for such effects to accumulate.",
-  },
-  {
-    id: 10045,
-    topic: "Considering the Appropriateness of the Multielement Design",
-    prompt: "A researcher notes that a treatment appears ineffective in a multielement design but suspects it might work if delivered continuously for several sessions. This concern is best addressed by doing which of the following?",
-    options: [
-      "Extending the multielement comparison phase to include more sessions per condition",
-      "Conducting a separate experiment using a reversal or multiple baseline design to evaluate the treatment when it is applied continuously",
-      "Eliminating the treatment from further consideration and selecting a new one",
-      "Reducing the number of conditions in the multielement design to minimize interference"
-    ],
-    correctIndex: 1,
-    explanation: "The suspicion that a treatment may be effective if presented in isolation for an extended period is an empirical question that can be explored through a reversal or multiple baseline design in which the single treatment is evaluated continuously.",
-  },
-  {
-    id: 10046,
-    topic: "Operation and Logic of the Reversal Design",
-    prompt: "A behavior analyst is conducting an A-B-A-B study and observes that responding during Baseline 2 closely approximates the data path predicted from Baseline 1. This outcome is best interpreted as which of the following?",
-    options: [
-      "Replication of the treatment effect",
-      "Evidence that the treatment was not responsible for behavior change",
-      "Verification that the behavior would have remained at baseline levels had the intervention not been introduced",
-      "Confirmation that the independent variable is irreversible"
-    ],
-    correctIndex: 2,
-    explanation: "When the level of responding in Baseline 2 parallels or closely approximates the measures obtained during Baseline 1, verification of the prediction made from Baseline 1 data is obtained. It confirms that the behavior would have continued at baseline levels had the intervention not been introduced.",
-  },
-  {
     id: 10047,
     topic: "Reversal Design",
     prompt: "In the widely used notation system for single-case experimental designs, a study in which the independent variable is absent in the first phase, introduced in the second phase, and withdrawn in the third phase is described as which of the following?",
@@ -618,19 +384,6 @@ export const QUESTIONS_M11: Question[] = [
     explanation: "A study with only one reversal (baseline, treatment, return to baseline) is described as an A-B-A design, where A denotes the baseline (independent variable absent) and B denotes the intervention (independent variable present).",
   },
   {
-    id: 10048,
-    topic: "Advantages of the Multielement Design",
-    prompt: "Research by Kahng and Iwata (1999) on brief multielement designs found that false positives, in which a functional relation appears to exist when none does, were most likely to occur under which condition?",
-    options: [
-      "When counterbalancing was not implemented across sessions",
-      "When only one or two measures were taken per condition",
-      "When the target behavior showed high levels of variability across all conditions",
-      "When three or more conditions were compared simultaneously"
-    ],
-    correctIndex: 1,
-    explanation: "Kahng and Iwata (1999) found that false positives were obtained more often in brief multielement designs than in multielement designs with three or more sessions in each condition, highlighting the need for adequate data per condition before drawing conclusions.",
-  },
-  {
     id: 10049,
     topic: "Considering the Appropriateness of the Reversal Design",
     prompt: "A primary advantage of the reversal design identified is its ability to do which of the following?",
@@ -642,18 +395,5 @@ export const QUESTIONS_M11: Question[] = [
     ],
     correctIndex: 2,
     explanation: "The primary advantage of the reversal design is its ability to provide a clear demonstration of the existence or absence of a functional relation. In addition, it enables quantification of the amount of behavior change over the preintervention level, and the return to baseline provides information on the need to program for maintenance.",
-  },
-  {
-    id: 10050,
-    topic: "Considering the Appropriateness of the Multielement Design",
-    prompt: "The rapid back-and-forth switching of treatments in a multielement design is sometimes criticized because it does which of the following?",
-    options: [
-      "Makes it impossible to collect interobserver agreement data across conditions",
-      "Prevents the use of visual analysis to evaluate treatment effects",
-      "Does not reflect the typical manner in which clinical and educational interventions are applied, making the approach appear artificial and undesirable",
-      "Requires the experimenter to change the dependent variable definition in each condition"
-    ],
-    correctIndex: 2,
-    explanation: "The rapid back-and-forth switching of treatments does not reflect the typical manner in which clinical and educational interventions are applied. From an instructional perspective this can be viewed as artificial and undesirable, though the quick identification of effective interventions generally compensates for this limitation.",
   },
 ];

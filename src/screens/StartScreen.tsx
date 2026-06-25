@@ -64,8 +64,51 @@ export function StartScreen({
     onResume(id);
   };
 
+  const masterIds = allModuleIds.filter((id) => getModule(id).group === "master");
   const studyIds = allModuleIds.filter((id) => getModule(id).group === "study");
   const cooperIds = allModuleIds.filter((id) => getModule(id).group === "cooper");
+
+  const renderMasterCard = (id: ModuleId) => {
+    const mod = getModule(id);
+    const att = attempts[id];
+    const hasInProgress = att && !att.submitted;
+    const hasCompleted = att?.submitted;
+    const qCount = mod.questions.length;
+    const available = qCount > 0;
+    const selected = selectedModule === id;
+    return (
+      <button
+        key={id}
+        type="button"
+        className={`master-card ${selected ? "selected" : ""} ${!available ? "unavailable" : ""}`}
+        onClick={() => available && handleModuleClick(id)}
+        aria-pressed={selected}
+        disabled={!available}
+      >
+        <span className="master-shine" aria-hidden="true" />
+        <div className="master-body">
+          <div className="mc-top">
+            <span className="master-label">
+              <span className="master-star" aria-hidden="true">★</span>
+              {mod.label}
+            </span>
+            {hasInProgress && (
+              <span className="mc-badge resume" onClick={(e) => handleResume(e, id)}>
+                Resume ↗
+              </span>
+            )}
+            {hasCompleted && !hasInProgress && <span className="mc-badge done">Completed</span>}
+          </div>
+          <p className="master-desc">{mod.description}</p>
+          <div className="master-foot">
+            <span className="master-chip">{qCount} questions</span>
+            <span className="master-chip">All 31 chapters + 3 modules</span>
+            <span className="master-chip">Evenly weighted</span>
+          </div>
+        </div>
+      </button>
+    );
+  };
 
   const renderStudyCard = (id: ModuleId) => {
     const mod = getModule(id);
@@ -154,9 +197,19 @@ export function StartScreen({
         </h1>
         <p className="lede">
           Three study-guide modules plus all 31 chapters of Cooper, Heron &amp; Heward,
-          each chapter a focused 50-question set. Pick a module and climb its leaderboard.
+          each chapter a focused 30-question set. Pick a module and climb its leaderboard.
         </p>
       </section>
+
+      {masterIds.length > 0 && (
+        <>
+          <div className="section-head">
+            <h2>Master De Facto Test</h2>
+            <span className="count">200 q · full scope</span>
+          </div>
+          <div className="master-grid">{masterIds.map(renderMasterCard)}</div>
+        </>
+      )}
 
       {studyIds.length > 0 && (
         <>
@@ -172,7 +225,7 @@ export function StartScreen({
         <>
           <div className="section-head">
             <h2>Cooper · Applied Behavior Analysis</h2>
-            <span className="count">{cooperIds.length} chapters · 50 q each</span>
+            <span className="count">{cooperIds.length} chapters · 30 q each</span>
           </div>
           <div className="ch-grid">{cooperIds.map(renderChapterCard)}</div>
         </>

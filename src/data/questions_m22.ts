@@ -33,19 +33,6 @@ export const QUESTIONS_M22: Question[] = [
     explanation: "A conditional discrimination is one in which discrimination between comparison stimuli is conditional upon, or depends upon, the sample stimulus present on that trial. The four-term contingency arranges this performance, with the sample serving as a conditional stimulus.",
   },
   {
-    id: 21003,
-    topic: "Pioneering Research on Symbolic Stimulus Relations",
-    prompt: "Sidman used the alphanumeric labeling system in equivalence research. In this system, the number in a label such as 'B2' designates:",
-    options: [
-      "The stimulus set to which the stimulus belongs",
-      "The position of the stimulus in the comparison array",
-      "The number of training trials needed for mastery",
-      "The potential equivalence class the stimulus belongs to"
-    ],
-    correctIndex: 3,
-    explanation: "In the alphanumeric labeling system, the number denotes the potential equivalence class, while the letter denotes the stimulus set. So 'B2' indicates a stimulus that is a member of the second potential equivalence class within stimulus set B.",
-  },
-  {
     id: 21004,
     topic: "Research Foundations and Core Concepts",
     prompt: "New performances demonstrated on probe trials in the absence of reinforcement, which were never directly targeted by training, are referred to as:",
@@ -85,45 +72,6 @@ export const QUESTIONS_M22: Question[] = [
     explanation: "The mathematical statement of symmetry holds that if A = B, then B = A. After AB training, a symmetry probe reverses the roles of the stimuli so that B stimuli are presented as samples and A stimuli serve as the comparison array.",
   },
   {
-    id: 21007,
-    topic: "Defining Properties of Equivalence",
-    prompt: "After training AB and AC conditional discriminations, a combined test for equivalence would present:",
-    options: [
-      "A stimuli as samples with A stimuli as comparisons to test reflexivity",
-      "A stimuli as samples with C stimuli as comparisons to test transitivity",
-      "B stimuli as samples with A stimuli as comparisons to test BA symmetry",
-      "B stimuli as samples with C stimuli as comparisons, evaluating both symmetry and transitivity simultaneously"
-    ],
-    correctIndex: 3,
-    explanation: "A combined test for equivalence evaluates both symmetry and transitivity simultaneously. After AB and AC training, presenting B stimuli as samples with C stimuli as comparisons (or C as samples with B as comparisons) tests whether B = C and C = B hold, satisfying both properties at once.",
-  },
-  {
-    id: 21008,
-    topic: "Defining Properties of Equivalence",
-    prompt: "In Sidman's early reading studies, participants who had been taught spoken word-to-picture (AB) and spoken word-to-written word (AC) relations subsequently named the written words aloud without prior oral-reading training. This emergent oral reading was evidence of which equivalence property?",
-    options: [
-      "Transitivity",
-      "Symmetry",
-      "Reflexivity",
-      "Transfer of function"
-    ],
-    correctIndex: 1,
-    explanation: "Oral reading of written words (naming the C stimuli after hearing the spoken word in training) represents a symmetrical reversal: the boys had been trained to select written words given spoken words (AC), and naming the written word is evidence of the reverse, CA symmetry.",
-  },
-  {
-    id: 21009,
-    topic: "Research Foundations and Core Concepts",
-    prompt: "After training 20 AB and 20 AC conditional discriminations, how many additional emergent relations can be described (excluding the 40 trained relations themselves)?",
-    options: [
-      "20 total emergent relations",
-      "80 total emergent relations",
-      "140 total emergent relations",
-      "180 total emergent relations"
-    ],
-    correctIndex: 2,
-    explanation: "From 20 AB and 20 AC trained relations, the emergent performances include 60 reflexivity relations, 40 symmetry relations, and 40 combined equivalence relations, totaling 140 additional emergent discriminated operant units. Adding the 40 trained relations yields a grand total of 180.",
-  },
-  {
     id: 21010,
     topic: "Class Expansion and Class Merger",
     prompt: "In class expansion, a new member is added to a demonstrated equivalence class by:",
@@ -148,19 +96,6 @@ export const QUESTIONS_M22: Question[] = [
     ],
     correctIndex: 0,
     explanation: "Class merger occurs when two or more independent equivalence classes are combined into a larger class by teaching a new conditional discrimination that links a member from each class. For example, teaching a CE conditional discrimination can merge the A1B1C1 and D1E1F1 classes into a single six-member class.",
-  },
-  {
-    id: 21012,
-    topic: "Class Expansion and Class Merger",
-    prompt: "When teaching one additional conditional discrimination (AD) to a class that already has three members (A, B, C), how many new emergent relations are created for each class?",
-    options: [
-      "Two new relations",
-      "Three new relations",
-      "Four new relations",
-      "Six new relations"
-    ],
-    correctIndex: 3,
-    explanation: "Teaching one additional conditional discrimination (AD) to an established three-member class creates six new emergent relations for each class: AD, DA, BD, DB, CD, and DC. This illustrates the dramatic impact that a small amount of additional teaching can have.",
   },
   {
     id: 21013,
@@ -228,19 +163,6 @@ export const QUESTIONS_M22: Question[] = [
     explanation: "With only two comparisons, a participant can earn reinforcers by rejecting the incorrect comparison (Type R or Reject control) rather than selecting the correct one (Type S control). If Type R control is established, the resultant equivalence classes will differ from those targeted by the teacher, because the reinforced relation is between the sample and the incorrect comparison.",
   },
   {
-    id: 21018,
-    topic: "Designing Equivalence-based Instruction",
-    prompt: "When starting conditional discrimination training, at least three comparison stimuli per trial are generally recommended primarily in order to:",
-    options: [
-      "Increase the speed of data collection during probe trials",
-      "Decrease the likelihood of exclusive Type R (Reject) stimulus control developing",
-      "Ensure that the sample stimulus is always presented in the center position",
-      "Allow for identity matching to occur naturally"
-    ],
-    correctIndex: 1,
-    explanation: "Using more than two comparisons reduces the likelihood of exclusive Type R control because more rejections are required to earn a reinforcer (two rejections instead of one with a three-choice array), while only a single Type S (Select) relation is required. This helps ensure the targeted form of stimulus control is established.",
-  },
-  {
     id: 21019,
     topic: "Designing Equivalence-based Instruction",
     prompt: "In a training trial block, each sample type should appear the same number of times and the S+ comparison should appear in each position on an equal number of trials. This practice prevents:",
@@ -278,58 +200,6 @@ export const QUESTIONS_M22: Question[] = [
     ],
     correctIndex: 2,
     explanation: "Linear series training, in which comparison stimuli from one conditional discrimination serve as sample stimuli in the next (for example, AB and BC training), has consistently underperformed compared to one-to-many and many-to-one structures in generating equivalence, particularly as the number of trained conditional discriminations increases.",
-  },
-  {
-    id: 21022,
-    topic: "Training Structures",
-    prompt: "In many-to-one (comparison-as-node) training, which stimulus set serves as the node?",
-    options: [
-      "The sample stimulus set shared across trained conditional discriminations",
-      "A novel stimulus set introduced only during probe trials",
-      "The first stimulus set presented during training",
-      "The comparison stimulus set shared across trained conditional discriminations"
-    ],
-    correctIndex: 3,
-    explanation: "In many-to-one or comparison-as-node training, multiple sets of sample stimuli are trained with a single set of comparisons. The comparison stimulus set is held in common across the trained conditional discriminations and thus serves as the node.",
-  },
-  {
-    id: 21023,
-    topic: "Designing Equivalence-based Instruction",
-    prompt: "Mastery criteria in EBI training are typically set at high accuracy percentages (for example, 90% or better) because intermediate accuracy levels (for example, 60% to 80%):",
-    options: [
-      "Are indicative of multiple sources of stimulus control that do not guarantee a clean conditional discrimination",
-      "Are too slow to measure reliably in applied settings",
-      "Indicate that delayed emergence has already begun",
-      "Confirm that contextual control has been established"
-    ],
-    correctIndex: 0,
-    explanation: "Intermediate accuracy scores such as 60% to 80% are indicative of multiple sources of stimulus control simultaneously influencing behavior. Strong and consistent performance at high accuracy levels is necessary to ensure that the conditional discrimination is established cleanly before probe tests are introduced.",
-  },
-  {
-    id: 21024,
-    topic: "Designing Equivalence-based Instruction",
-    prompt: "Before presenting probe trials in extinction, many EBI programs first thin the reinforcement schedule across training trials in a series of steps. The primary purpose of this practice is to:",
-    options: [
-      "Accelerate the acquisition of the second conditional discrimination",
-      "Ensure that reflexivity probes are not discriminated from symmetry probes",
-      "Reduce the total number of training trials needed to reach mastery",
-      "Prepare learners so that the absence of reinforcers during probe trials does not cause variability in comparison selections"
-    ],
-    correctIndex: 3,
-    explanation: "Training to mastery with intermittent reinforcement helps ensure that responding is maintained in the absence of trial-by-trial consequences, because learners have already experienced reinforcement on only a portion of trials. Without this preparation, the sudden absence of reinforcers on probe trials can produce variability.",
-  },
-  {
-    id: 21025,
-    topic: "Testing Protocols",
-    prompt: "In massed testing, the probe-trial block consists of probe trials only. What is a key disadvantage of this approach when equivalence outcomes are not observed?",
-    options: [
-      "It makes it impossible to determine whether the prerequisite baseline conditional discriminations have been maintained",
-      "It prevents delayed emergence from occurring across repeated test administrations",
-      "It requires that reflexivity probes always be presented before symmetry probes",
-      "It prevents contextual control from being evaluated in the same session"
-    ],
-    correctIndex: 0,
-    explanation: "When massed testing reveals no equivalence and baseline trial types are absent from the block, it is not possible to determine whether the prerequisite conditional discriminations are still intact. If the trained baselines have weakened, equivalence would not be expected, and this possibility cannot be evaluated or remedied without baseline trials.",
   },
   {
     id: 21026,
@@ -384,19 +254,6 @@ export const QUESTIONS_M22: Question[] = [
     explanation: "In class-specific reinforcement, not only is the correct comparison conditional on the sample stimulus, but the type of consequence delivered is also conditional on that sample and class. For example, selecting B1 given A1 produces Reinforcer 1, while selecting B2 given A2 produces a different Reinforcer 2.",
   },
   {
-    id: 21030,
-    topic: "Procedural Variations: Class-specific Reinforcement",
-    prompt: "One significant advantage of class-specific reinforcement procedures for EBI is that the class-specific reinforcers themselves:",
-    options: [
-      "Can become members of the equivalence classes, thereby increasing the number of class members established by a given amount of training",
-      "Eliminate the need for any probe trials to evaluate equivalence-class formation",
-      "Allow reflexivity to be inferred without direct testing",
-      "Replace the node in linear series training structures"
-    ],
-    correctIndex: 0,
-    explanation: "A key finding with class-specific reinforcement is that the class-specific consequences themselves become members of the equivalence classes. This increases the number of class members that can be added by teaching a single conditional discrimination, amplifying the generativity of EBI.",
-  },
-  {
     id: 21031,
     topic: "Procedural Variations: Three-term Contingency Training",
     prompt: "The use of simple discrimination (three-term contingency) training to produce equivalence classes is appealing for some learner populations because:",
@@ -434,19 +291,6 @@ export const QUESTIONS_M22: Question[] = [
     ],
     correctIndex: 0,
     explanation: "Stimulus-control shaping procedures begin with identity matching-to-sample, which is easily acquired, and then gradually shift toward an arbitrary conditional discrimination by modifying the sample stimulus in small steps across training phases. This fading approach reduces errors and facilitates acquisition for participants who struggle with arbitrary matching.",
-  },
-  {
-    id: 21034,
-    topic: "Instructional Programming",
-    prompt: "The component simple discriminations approach to EBI pretraining first establishes which type of discrimination with the future comparison stimuli?",
-    options: [
-      "Successive discrimination among the sample stimuli",
-      "Simultaneous discrimination among the future comparison stimuli",
-      "Arbitrary conditional discrimination using all stimuli at once",
-      "Identity matching between each comparison and a corresponding sample"
-    ],
-    correctIndex: 1,
-    explanation: "The component simple discriminations approach first establishes simultaneous discrimination between the stimuli that will serve as comparisons, then establishes successive discrimination between the stimuli that will serve as samples, and finally introduces conditional discrimination trials, gradually intermixing them until full conditional control is achieved.",
   },
   {
     id: 21035,
@@ -501,32 +345,6 @@ export const QUESTIONS_M22: Question[] = [
     explanation: "Emergent matching of quantities and numerals (BC probe), which follows AB and AC training, supports an interpretation of number comprehension: the child demonstrates that quantities and numerals are interchangeable class members, reflecting understanding of their symbolic relationship.",
   },
   {
-    id: 21039,
-    topic: "Applications: College Classroom",
-    prompt: "Fienup and Critchfield (2010) used equivalence-based instruction to teach college students concepts of inferential statistics. The study incorporated contextual control because:",
-    options: [
-      "The A stimuli served as contextual stimuli controlling which D-E and D-F matches were correct during training and testing",
-      "All probe trials were presented in extinction to prevent reinforcement from influencing the results",
-      "The one-to-many training structure was used with the D stimulus set as the node",
-      "Delayed emergence was used to improve initial test performances"
-    ],
-    correctIndex: 0,
-    explanation: "In Fienup and Critchfield's statistical-concepts study, Lesson 3 trained contextual control with the A stimuli (low p value or high p value) serving as contextual stimuli that determined which D-E and D-F matches were reinforced. The critical test was whether this contextual control would transfer to the B and C stimuli.",
-  },
-  {
-    id: 21040,
-    topic: "Applications: Adult Clinical Populations",
-    prompt: "In a study by Cowley et al. (1992) addressing adults with brain injury who could not link therapist names to faces, posttest results revealed that:",
-    options: [
-      "Only the trained conditional discrimination improved; other relations remained at chance levels",
-      "Spoken names, written names, and faces became matched together in any combination, indicating equivalence-class formation",
-      "Participants learned to match faces to photos but not to spoken or written names",
-      "Class-specific reinforcement was required to produce the emergent name-face relations"
-    ],
-    correctIndex: 1,
-    explanation: "In the Cowley et al. study, one trained conditional discrimination was used, and posttest results revealed equivalence-class formation for all three men: spoken names, written names, and faces were matched together in any combination. Two of the men who received the test also successfully provided oral names for therapists' faces.",
-  },
-  {
     id: 21041,
     topic: "Research Foundations and Core Concepts",
     prompt: "A key argument for the importance of equivalence research to applied behavior analysis is its generativity. This means that EBI:",
@@ -553,32 +371,6 @@ export const QUESTIONS_M22: Question[] = [
     explanation: "In naming theory, naming is a higher-order operant in which an individual engages in bidirectional speaker and listener behavior with respect to a given object or event. The complete cycle includes seeing the object, tacting it, hearing oneself say the name, and then exhibiting listener behavior. This bidirectional cycle is the technical requirement.",
   },
   {
-    id: 21043,
-    topic: "Naming Theory",
-    prompt: "Naming theory predicts that once the naming operant is fully established, teaching only one component of the naming cycle for a new stimulus (for example, teaching a child to select a new toy given its novel name) should be sufficient to:",
-    options: [
-      "Produce the full naming relation for that stimulus without additional training",
-      "Establish a conditional discrimination but not a full equivalence class",
-      "Require the same extended multiple-exemplar training used to establish the original naming operant",
-      "Produce contextual control over the new stimulus"
-    ],
-    correctIndex: 0,
-    explanation: "Once the higher-order naming operant is fully established through training multiple exemplars of each component, a new naming instance requires teaching only one component of the cycle (for example, listener training). The full naming relation, including tacting and listener behavior in both directions, should emerge without additional direct teaching.",
-  },
-  {
-    id: 21044,
-    topic: "Relational Frame Theory",
-    prompt: "In relational frame theory, 'framing' is characterized as:",
-    options: [
-      "Directly reinforcing all possible relations between stimuli in a training set",
-      "Presenting probe trials under extinction to assess emergent stimulus relations",
-      "Teaching identity matching as a prerequisite to arbitrary matching",
-      "Responding to one stimulus in terms of another, established through multiple-exemplar training"
-    ],
-    correctIndex: 3,
-    explanation: "In RFT, framing is the key higher-order operant and is characterized as responding to one stimulus in terms of another. Framing is viewed as learned behavior established through multiple-exemplar training with many different examples of a given relation.",
-  },
-  {
     id: 21045,
     topic: "Relational Frame Theory",
     prompt: "In relational frame theory, the property equivalent to transitivity in equivalence theory is referred to as:",
@@ -603,57 +395,5 @@ export const QUESTIONS_M22: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Both naming theory and RFT hold that emergent responding is learned behavior requiring a specific prior training history. This distinguishes them from Sidman's view that equivalence is a direct outcome of reinforcement contingencies and does not require a special learning history.",
-  },
-  {
-    id: 21047,
-    topic: "Applications: Functional Skills",
-    prompt: "In a study teaching grocery-shopping skills to participants with mild intellectual disabilities, EBI was used to establish equivalence classes involving spoken words, written words, and photographs of different stores. The main purpose of the equivalence training was to:",
-    options: [
-      "Replace multiple-exemplar training entirely with a single-instance training procedure",
-      "Promote generalization of the shopping task chain to a novel grocery store, comparable to training across multiple stores",
-      "Teach participants to match store photographs to price signs",
-      "Establish contextual control over the shopping task using a five-term contingency"
-    ],
-    correctIndex: 1,
-    explanation: "Taylor and O'Reilly (2000) used EBI with photographs of supermarket settings as class members. The goal was to promote generalization of the trained task chain to a novel grocery store. EBI produced the same positive impact on generalization as multiple-exemplar training across three actual store locations.",
-  },
-  {
-    id: 21048,
-    topic: "Defining Properties of Equivalence",
-    prompt: "Which mathematical property is operationally defined by testing whether each experimental stimulus functions as equal to itself in a generalized identity matching-to-sample task?",
-    options: [
-      "Symmetry",
-      "Transitivity",
-      "Reflexivity",
-      "Combinatorial entailment"
-    ],
-    correctIndex: 2,
-    explanation: "Reflexivity is operationally defined by generalized identity matching: when stimulus B2 is presented as a sample with B1, B2, and B3 as comparisons, consistently selecting B2 indicates each stimulus functions as equal to itself. The mathematical statement is A = A.",
-  },
-  {
-    id: 21049,
-    topic: "Applications: Adult Clinical Populations",
-    prompt: "Research on equivalence-class formation and gerontology has found which of the following?",
-    options: [
-      "Older adults consistently outperform young adults on equivalence probe tests",
-      "Age is not related to the likelihood of demonstrating equivalence-class formation",
-      "Older participants are less likely to demonstrate class formation than young adults, and deficits may appear before standard cognitive assessment scores indicate impairment",
-      "Alzheimer's disease prevents identity matching but does not affect equivalence-class formation"
-    ],
-    correctIndex: 2,
-    explanation: "Research has shown that older participants are less likely to demonstrate equivalence-class formation than young adults, and a correlation between class formation and MMSE scores has been noted. Notably, deficits in equivalence-class formation appeared in some individuals even with MMSE scores above the threshold typically indicative of cognitive difficulties.",
-  },
-  {
-    id: 21050,
-    topic: "Research Foundations and Core Concepts",
-    prompt: "The translational research story of stimulus equivalence is notable because, unlike many areas of behavior analysis, the core phenomenon was:",
-    options: [
-      "First discovered in basic animal laboratory research and then extended to human applications",
-      "Developed from theoretical accounts of language before any empirical data were collected",
-      "First reported as an incidental finding in studies of operant extinction",
-      "Initially identified in an applied reading-instruction context, which then demanded basic laboratory follow-up"
-    ],
-    correctIndex: 3,
-    explanation: "The equivalence research story is especially notable in the translational research context because the core phenomenon was brought to light first in an application, reading instruction with individuals with severe intellectual disabilities, which then demanded laboratory follow-up. This inverted the more typical path of basic-to-applied translation.",
   },
 ];

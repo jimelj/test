@@ -124,45 +124,6 @@ export const QUESTIONS_M29: Question[] = [
     explanation: "A functional analysis of the maintaining contingency determines whether NCR is implemented with positive reinforcement, negative reinforcement (escape), or automatic reinforcement.",
   },
   {
-    id: 28010,
-    topic: "Noncontingent Reinforcement",
-    prompt: "In the Kahng et al. (2000) NCR study, the initial schedule was later thinned to a terminal criterion of:",
-    options: [
-      "60 seconds",
-      "150 seconds",
-      "300 seconds",
-      "600 seconds"
-    ],
-    correctIndex: 2,
-    explanation: "In Kahng et al. (2000), the initial fixed-time schedule of 5 seconds was gradually thinned to a terminal criterion of 300 seconds.",
-  },
-  {
-    id: 28011,
-    topic: "Noncontingent Reinforcement",
-    prompt: "Kodak, Miltenberger, and Romaniuk (2003) used NCR escape with two boys with autism. The initial FT schedule was 10 seconds and was thinned to a terminal criterion of:",
-    options: [
-      "30 seconds",
-      "1 minute",
-      "2 minutes",
-      "5 minutes"
-    ],
-    correctIndex: 2,
-    explanation: "The NCR escape FT schedule was thinned from 10 seconds through several steps (20 sec, 30 sec, 1 min, 1.5 min) to a terminal criterion of 2 minutes.",
-  },
-  {
-    id: 28012,
-    topic: "Noncontingent Reinforcement",
-    prompt: "Lindberg et al. (2003) treated SIB maintained by automatic reinforcement with NCR by providing:",
-    options: [
-      "Noncontingent escape from demands on a variable-time schedule",
-      "Free access to a variety of preferred leisure items throughout the day",
-      "Contingent attention following each instance of SIB",
-      "Response blocking combined with a dense DRO schedule"
-    ],
-    correctIndex: 1,
-    explanation: "Lindberg et al. (2003) gave Julie and Laura free access to a variety of home-based, highly preferred leisure items (e.g., beads, string) throughout the day to compete with the automatic reinforcement maintaining SIB.",
-  },
-  {
     id: 28013,
     topic: "Noncontingent Reinforcement",
     prompt: "To determine an initial NCR schedule interval, the recommended formula involves:",
@@ -189,45 +150,6 @@ export const QUESTIONS_M29: Question[] = [
     explanation: "The three procedures for thinning NCR schedules are constant time increase, proportional time increase, and session-to-session time increase or decrease. Response-contingent interval reduction is not among them.",
   },
   {
-    id: 28015,
-    topic: "Noncontingent Reinforcement",
-    prompt: "Ringdahl et al. (2001) found that NCR was ineffective when:",
-    options: [
-      "The NCR schedule was denser than the baseline schedule",
-      "The baseline condition and NCR condition contained a similar number of reinforcers",
-      "Extinction was combined with the NCR treatment package",
-      "The NCR interval was set below the mean baseline interresponse time"
-    ],
-    correctIndex: 1,
-    explanation: "NCR was ineffective when the baseline and NCR conditions contained a similar number of reinforcers. NCR was effective only when the NCR schedule was denser (richer) than the baseline schedule.",
-  },
-  {
-    id: 28016,
-    topic: "Noncontingent Reinforcement",
-    prompt: "One of Ringdahl et al.'s (2001) three procedures for emphasizing reinforcement during NCR is to:",
-    options: [
-      "Combine differential reinforcement of other behavior (DRO) with the NCR package to decrease adventitious reinforcement",
-      "Use variable-ratio schedules rather than time-based schedules throughout the intervention",
-      "Deliver reinforcers contingent on each occurrence of the problem behavior to maintain contact",
-      "Restrict access to reinforcers between sessions to increase their motivating value"
-    ],
-    correctIndex: 0,
-    explanation: "One of Ringdahl et al.'s (2001) three procedures was to combine DRO with the NCR treatment package to decrease adventitious reinforcement of the problem behavior from the time-based NCR schedule.",
-  },
-  {
-    id: 28017,
-    topic: "Noncontingent Reinforcement",
-    prompt: "A practical terminal criterion for NCR schedule thinning that has found the most favor in applied settings is a fixed-time schedule of:",
-    options: [
-      "1 minute",
-      "3 minutes",
-      "5 minutes",
-      "10 minutes"
-    ],
-    correctIndex: 2,
-    explanation: "While various terminal criteria have been used (3 min, 5 min, 10 min), the 5-minute FT schedule has found the most favor in applied settings because it appears both practical and effective.",
-  },
-  {
     id: 28018,
     topic: "Noncontingent Reinforcement",
     prompt: "One disadvantage of NCR is that chance pairings of problem behavior with NCR delivery of reinforcing stimuli could:",
@@ -239,45 +161,6 @@ export const QUESTIONS_M29: Question[] = [
     ],
     correctIndex: 2,
     explanation: "A listed disadvantage of NCR is that chance pairings of problem behavior and NCR delivery of stimuli with known reinforcing properties could inadvertently strengthen the problem behavior.",
-  },
-  {
-    id: 28019,
-    topic: "Noncontingent Reinforcement",
-    prompt: "DeLeon et al. (2000) recommended which strategy to address the problem of changing reinforcer preferences during NCR?",
-    options: [
-      "Permanently locking in the initial reinforcer identified during functional analysis",
-      "Conducting a new functional analysis each time the problem behavior worsens",
-      "Switching to a contingent reinforcement schedule once preferences change",
-      "Periodically using a variety of available stimuli with the NCR intervention"
-    ],
-    correctIndex: 3,
-    explanation: "DeLeon et al. (2000) recommended periodically using a variety of available stimuli with the NCR intervention to reduce problems caused by changing reinforcer preferences.",
-  },
-  {
-    id: 28020,
-    topic: "Noncontingent Reinforcement",
-    prompt: "When implementing NCR in the classroom, if a student engages in the problem behavior just before the end of an interval, Coy and Kostewicz (2018) recommended that the practitioner should:",
-    options: [
-      "Deliver the reinforcer immediately to maintain the schedule",
-      "Withhold the reinforcer for approximately 10 seconds or until the student no longer displays the target behavior",
-      "Extend the NCR interval by 30 seconds as a consequence",
-      "Provide a verbal reprimand and then deliver the reinforcer"
-    ],
-    correctIndex: 1,
-    explanation: "Coy and Kostewicz (2018) recommended withholding the reinforcer for approximately 10 seconds or until the student no longer displays the target problem behavior, then delivering it and starting the next NCR interval.",
-  },
-  {
-    id: 28021,
-    topic: "Noncontingent Reinforcement",
-    prompt: "An advantage of NCR compared to some positive reductive techniques is that NCR:",
-    options: [
-      "Requires precise monitoring of the client's behavior for contingent reinforcer delivery",
-      "Always eliminates the problem behavior without any schedule thinning",
-      "Is effective regardless of the type of reinforcer used",
-      "Is easier to apply because reinforcers are delivered on a time-based schedule rather than contingent on monitoring behavior"
-    ],
-    correctIndex: 3,
-    explanation: "NCR is easier to apply than positive reductive techniques that require monitoring the client's behavior for contingent delivery of the reinforcer, because NCR uses a time-based schedule.",
   },
   {
     id: 28022,
@@ -332,19 +215,6 @@ export const QUESTIONS_M29: Question[] = [
     explanation: "A criterion of 80% compliance or greater for high-p instructions is commonly used in the high-p instructional sequence research and practice.",
   },
   {
-    id: 28026,
-    topic: "High-Probability Instructional Sequence",
-    prompt: "Axelrod and Zank (2012) categorized an instruction as low-p if a student complied with it:",
-    options: [
-      "Less than 20% of the time",
-      "40% or less of the time",
-      "Between 40% and 60% of the time",
-      "Less than 80% but more than 50% of the time"
-    ],
-    correctIndex: 1,
-    explanation: "Axelrod and Zank (2012) categorized instructions with 40% compliance or less as low-p instructions for use as the target request in the high-p sequence.",
-  },
-  {
     id: 28027,
     topic: "High-Probability Instructional Sequence",
     prompt: "According to guidelines for using the high-p instructional sequence, high-p requests should be presented with brief intertrial intervals of:",
@@ -371,19 +241,6 @@ export const QUESTIONS_M29: Question[] = [
     explanation: "The guideline warns against using the high-p sequence immediately after problem behavior because the learner might learn that emitting the problem behavior produces a series of easier (high-p) requests.",
   },
   {
-    id: 28029,
-    topic: "High-Probability Instructional Sequence",
-    prompt: "Mace and Belfiore (1990) cautioned that social praise may not increase compliance with the high-p sequence when:",
-    options: [
-      "The number of high-p requests in the sequence exceeds five",
-      "Motivation for escape behavior is high",
-      "The learner has not been taught to recognize praise as a reinforcer",
-      "The high-p and low-p tasks are similar in topography"
-    ],
-    correctIndex: 1,
-    explanation: "Mace and Belfiore (1990) cautioned that social praise may not increase compliance if the learner's motivation for escape behavior is high, underscoring the need for potent, high-quality reinforcers.",
-  },
-  {
     id: 28030,
     topic: "High-Probability Instructional Sequence",
     prompt: "A behavior analyst is fading the high-p sequence for a student who now consistently complies with low-p requests. The final target ratio of high-p to low-p instructions is:",
@@ -395,19 +252,6 @@ export const QUESTIONS_M29: Question[] = [
     ],
     correctIndex: 3,
     explanation: "Guidelines for the high-p sequence indicate that the ratio of high-p to low-p instructions should be gradually faded to 1-to-1 once the learner consistently complies with low-p requests.",
-  },
-  {
-    id: 28031,
-    topic: "High-Probability Instructional Sequence",
-    prompt: "Killu et al. (1998) studied the high-p sequence with three preschool children with developmental delays. Results showed that compliant responding to low-p requests:",
-    options: [
-      "Increased only during sessions with the primary experimenter and did not generalize to a second trainer",
-      "Was effective only for the child for whom an 80% compliance criterion was used",
-      "Decreased after the high-p sequence was implemented because of satiation",
-      "Increased whether delivered by the primary experimenter or a second trainer, and maintained across time and settings"
-    ],
-    correctIndex: 3,
-    explanation: "Killu et al. (1998) found that the high-p sequence delivered by two different trainers increased compliant responding to low-p requests for all three children, and compliant responding maintained across time and settings.",
   },
   {
     id: 28032,
@@ -449,19 +293,6 @@ export const QUESTIONS_M29: Question[] = [
     explanation: "Unlike NCR and the high-p sequence, which alter current MOs, FCT develops communicative behaviors that are sensitive to existing MOs, making the alternative communicative response functionally equivalent to the problem behavior.",
   },
   {
-    id: 28035,
-    topic: "Functional Communication Training",
-    prompt: "Carr and Durand (1985) described FCT as a two-step process. Which of the following correctly describes both steps?",
-    options: [
-      "Step 1: conduct an extinction procedure for problem behavior; Step 2: teach a replacement behavior using prompting",
-      "Step 1: conduct a functional behavior assessment to identify reinforcers maintaining the problem behavior; Step 2: use those reinforcers to develop an alternative behavior to replace the problem behavior",
-      "Step 1: implement DRO to reduce the problem behavior; Step 2: teach the communicative response as reinforcer delivery becomes less frequent",
-      "Step 1: apply response blocking; Step 2: reinforce any communicative attempt on a variable-ratio schedule"
-    ],
-    correctIndex: 1,
-    explanation: "Carr and Durand (1985) described FCT as: (1) conduct a functional behavior assessment to identify reinforcers maintaining the problem behavior, and (2) use those reinforcers to develop an alternative behavior to replace the problem behavior.",
-  },
-  {
     id: 28036,
     topic: "Functional Communication Training",
     prompt: "Alternative communicative responses taught in FCT can take many forms. Which of the following is listed as an acceptable form?",
@@ -501,19 +332,6 @@ export const QUESTIONS_M29: Question[] = [
     explanation: "Time-based procedures are inappropriate for FCT because they break the contingency between responding and reinforcement, which could cause the alternative communicative behavior to stop competing with the problem behavior and allow re-emergence of the problem behavior.",
   },
   {
-    id: 28039,
-    topic: "Functional Communication Training",
-    prompt: "Hanley et al. (2001) recommended using picture cues and external 'clocks' during FCT schedule thinning in order to:",
-    options: [
-      "Prompt the learner to initiate the communicative response at appropriate times",
-      "Announce when reinforcement is available and thereby control undesirably high rates of the communicative response",
-      "Signal to the caregiver that the thinning criterion has been met",
-      "Replace verbal prompts used during initial teaching of the communicative response"
-    ],
-    correctIndex: 1,
-    explanation: "Hanley et al. (2001) suggested picture cues and external clocks to announce when reinforcement is available, specifically to control the undesirably high rates of the alternative communicative response that thinning the FI schedule could produce.",
-  },
-  {
     id: 28040,
     topic: "Functional Communication Training",
     prompt: "One listed disadvantage of FCT is that it leaves intact the environment that evoked the problem behavior. This is significant because it:",
@@ -525,19 +343,6 @@ export const QUESTIONS_M29: Question[] = [
     ],
     correctIndex: 1,
     explanation: "A disadvantage of FCT noted by McGill (1999) is that it leaves intact the environment that evoked the problem behavior, which may limit its overall effectiveness.",
-  },
-  {
-    id: 28041,
-    topic: "Functional Communication Training",
-    prompt: "Durand (1999) taught students with severe disabilities to use a communication device to request objects and activities. This study is significant because:",
-    options: [
-      "It demonstrated that FCT can be implemented without a prior functional behavior assessment",
-      "It proved that digitized speech devices are the only effective FCT mode for students with severe disabilities",
-      "It established that FCT is effective only in school settings",
-      "It showed the importance of teaching skills that recruit reinforcement in natural settings, thereby promoting generalization and maintenance"
-    ],
-    correctIndex: 3,
-    explanation: "The Durand (1999) study is significant because it showed the importance of teaching skills that recruit reinforcement in natural community settings, thereby promoting generalization and maintenance of intervention effects.",
   },
   {
     id: 28042,
@@ -566,19 +371,6 @@ export const QUESTIONS_M29: Question[] = [
     explanation: "Unlike overcorrection, antecedent exercise is implemented independently of occurrences of the problem behavior; it is a proactive antecedent strategy rather than a contingent consequence.",
   },
   {
-    id: 28044,
-    topic: "Default Interventions: Antecedent Exercise",
-    prompt: "In Celiberti et al. (1997), the exercise condition that produced sharp reductions in physical self-stimulation and 'out of seat' behavior for a child with autism was:",
-    options: [
-      "Jogging",
-      "Walking",
-      "Calisthenics",
-      "Roller skating"
-    ],
-    correctIndex: 0,
-    explanation: "Celiberti et al. (1997) found that sharp reductions in physical self-stimulation and 'out of seat' behavior were observed for the jogging condition but not the walking condition.",
-  },
-  {
     id: 28045,
     topic: "Default Interventions: Enriched Environment",
     prompt: "An enriched environment (EE) intervention reduces problem behavior by:",
@@ -592,19 +384,6 @@ export const QUESTIONS_M29: Question[] = [
     explanation: "The EE intervention provides noncontingent access to preferred sources of reinforcement, which arranges a competition between the EE intervention and the stimulation provided by the problem behavior; when effective, this competition decreases the problem behavior.",
   },
   {
-    id: 28046,
-    topic: "Default Interventions: Enriched Environment",
-    prompt: "Smith and Iwata (1997) noted that the enriched environment intervention is most frequently applied for problem behaviors maintained by:",
-    options: [
-      "Social negative reinforcement (escape)",
-      "Social positive reinforcement (attention)",
-      "Automatic positive reinforcement",
-      "Access to tangibles"
-    ],
-    correctIndex: 2,
-    explanation: "Smith and Iwata (1997) noted that the enriched environment intervention is most frequently applied for problem behaviors maintained by automatic positive reinforcement.",
-  },
-  {
     id: 28047,
     topic: "Default Interventions: Restraint",
     prompt: "Personal restraint as an antecedent intervention should NOT be confused with response blocking because:",
@@ -616,44 +395,5 @@ export const QUESTIONS_M29: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Personal restraint, as an antecedent intervention, involves caregivers physically securing body parts before the problem behavior occurs. Response blocking, by contrast, entails stopping a problem behavior that has already been initiated.",
-  },
-  {
-    id: 28048,
-    topic: "Default Interventions: Restraint",
-    prompt: "Mazaleski et al. (1994) compared noncontingent and contingent use of oven mitts for treating chronic hand mouthing. Results showed that:",
-    options: [
-      "Only contingent mitts produced a large decrease in hand mouthing",
-      "Only noncontingent mitts were effective; contingent mitts had no effect",
-      "Both noncontingent and contingent mitts produced a large decrease in hand mouthing",
-      "Neither condition was effective without combining extinction"
-    ],
-    correctIndex: 2,
-    explanation: "Results of Mazaleski et al. (1994) showed that both noncontingent and contingent use of oven mitts produced a large decrease in the rate of hand mouthing for Marty and Ava.",
-  },
-  {
-    id: 28049,
-    topic: "Default Interventions: Restraint",
-    prompt: "Derby, Fisher, and Piazza (1996) found that self-restraint and SIB were members of the same functional response class. What did they suggest as a possible treatment?",
-    options: [
-      "Physical guidance to prevent both behaviors simultaneously",
-      "Extinction for both self-restraint and SIB concurrently",
-      "Protective equipment restraint to prevent SIB only",
-      "Noncontingent reinforcement as a possible treatment for both self-restraint and SIB"
-    ],
-    correctIndex: 3,
-    explanation: "Derby, Fisher, and Piazza (1996) found that self-restraint and SIB were maintained by social attention (the same functional response class) and suggested noncontingent reinforcement as a possible treatment for both behaviors.",
-  },
-  {
-    id: 28050,
-    topic: "Defining and Classifying Antecedent Interventions",
-    prompt: "Three groundbreaking publications in the 1980s dramatically shifted applied behavior analysts toward manipulating antecedent events. Which of the following correctly identifies one of those publications?",
-    options: [
-      "Lovaas's (1987) study demonstrating intensive behavioral intervention for autism",
-      "Bijou and Baer's (1978) operant analysis of child development",
-      "Kazdin's (1982) review of single-case research designs",
-      "Carr and Durand's (1985) experiment showing that teaching appropriate communicative responses reduced misbehavior to near zero"
-    ],
-    correctIndex: 3,
-    explanation: "One of the three groundbreaking publications was Carr and Durand's (1985) experiment showing that teaching children to emit an appropriate communicative response during conditions that previously occasioned disruptive behavior reduced misbehavior to near zero.",
   },
 ];

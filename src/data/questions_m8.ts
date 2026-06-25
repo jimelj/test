@@ -46,19 +46,6 @@ export const QUESTIONS_M8: Question[] = [
     explanation: "Obtaining a true value requires observation and recording procedures that must be at least somewhat different from those used to produce the data being evaluated, and the differences must minimize the possibility of error to an uncommon degree.",
   },
   {
-    id: 7004,
-    topic: "Indicators of Trustworthy Measurement",
-    prompt: "Reliability refers to the consistency of measurement. Which statement correctly describes the relationship between reliability and accuracy?",
-    options: [
-      "High reliability always confirms high accuracy.",
-      "High accuracy always confirms high reliability.",
-      "High reliability does not guarantee high accuracy, but poor reliability reveals problems with accuracy.",
-      "Reliability and accuracy are interchangeable concepts in behavioral measurement."
-    ],
-    correctIndex: 2,
-    explanation: "A measurement system can be highly reliable yet totally inaccurate (as illustrated by a bike computer that consistently reads 68 miles for a 58-mile route). However, poor reliability does signal that at least some data cannot be accurate.",
-  },
-  {
     id: 7005,
     topic: "Indicators of Trustworthy Measurement",
     prompt: "Measurement bias is best defined as which of the following?",
@@ -70,19 +57,6 @@ export const QUESTIONS_M8: Question[] = [
     ],
     correctIndex: 0,
     explanation: "Measurement bias refers to nonrandom measurement error, specifically error that is likely to be consistently in one direction (e.g., consistently overestimating the true value). This differs from random error, which is equally likely to overestimate or underestimate.",
-  },
-  {
-    id: 7006,
-    topic: "Indicators of Trustworthy Measurement",
-    prompt: "When measurement is not valid, what is the implication for accuracy?",
-    options: [
-      "Accuracy is moot because the data do not address the right question.",
-      "Accuracy becomes the most important indicator of data quality.",
-      "Accuracy compensates for the absence of validity.",
-      "Accuracy and validity are independent, so accuracy remains meaningful."
-    ],
-    correctIndex: 0,
-    explanation: "If measurement is not valid, accuracy is moot. Accurately measuring a behavior that is not the focus of the investigation, an irrelevant dimension, or under non-representative conditions yields invalid data regardless of its accuracy.",
   },
   {
     id: 7007,
@@ -111,19 +85,6 @@ export const QUESTIONS_M8: Question[] = [
     explanation: "Direct measurement occurs when the behavior measured is exactly the same as the behavior that is the focus of the investigation or behavior change program. It does not require an inference about its relation to the behavior of interest.",
   },
   {
-    id: 7009,
-    topic: "Threats to Valid Measurement",
-    prompt: "A practitioner is interested in a student's academic endurance during oral reading. Which measurement approach would threaten validity for this specific purpose?",
-    options: [
-      "Measuring the duration of each reading session in addition to reading rate",
-      "Recording words read per minute without measuring total reading duration",
-      "Scheduling observation periods daily during reading instruction",
-      "Using continuous recording throughout each reading session"
-    ],
-    correctIndex: 1,
-    explanation: "Measuring only words read per minute without reporting total reading duration does not provide valid data for answering questions about academic endurance. Endurance requires measuring how long the student sustained the behavior, making duration a necessary dimension.",
-  },
-  {
     id: 7010,
     topic: "Threats to Valid Measurement",
     prompt: "A measurement artifact is best described as data that:",
@@ -150,32 +111,6 @@ export const QUESTIONS_M8: Question[] = [
     explanation: "Continuous measurement is measurement that detects all instances of the target behavior during the observation period. It is the gold standard because it provides the most complete and representative picture of behavior.",
   },
   {
-    id: 7012,
-    topic: "Threats to Valid Measurement",
-    prompt: "Thomson, Holmberg, and Baer (1974) compared three time-sampling schedules to continuous recording. Which schedule produced variance from continuous measurement of only 4% to 11%?",
-    options: [
-      "Contiguous schedule",
-      "Alternating schedule",
-      "Sequential schedule",
-      "Momentary schedule"
-    ],
-    correctIndex: 2,
-    explanation: "The sequential sampling procedure produced variance from continuous measurement ranging from 4% to 11%, while the contiguous and alternating schedules produced variance often exceeding 50%, demonstrating that sequential scheduling most closely approximates continuous recording.",
-  },
-  {
-    id: 7013,
-    topic: "Threats to Valid Measurement",
-    prompt: "When resources prevent continuous measurement throughout an observation period, which general guideline best reduces measurement artifacts from discontinuous measurement?",
-    options: [
-      "Use a single long observation period rather than multiple short ones",
-      "Sample the behavior for numerous brief intervals distributed evenly throughout the session rather than using longer, less frequent intervals",
-      "Increase the length of each observation interval to capture more behavior per sample",
-      "Schedule observations only at times when the behavior is most likely to occur at its highest rate"
-    ],
-    correctIndex: 1,
-    explanation: "It is generally preferable to sample behavior during numerous brief intervals evenly distributed throughout the session rather than using fewer, longer intervals. Frequent brief samples provide more representative data than infrequent longer ones.",
-  },
-  {
     id: 7014,
     topic: "Threats to Valid Measurement",
     prompt: "Poorly scheduled measurement periods can produce data that are an artifact of when measurement occurred rather than actual behavior. When data will be used to assess the effects of an intervention on a behavior targeted for reduction, when should observations be scheduled?",
@@ -189,19 +124,6 @@ export const QUESTIONS_M8: Question[] = [
     explanation: "For behaviors targeted for reduction, the most conservative observation times are when those behaviors are most likely to occur at their highest rates. Measuring at high-rate times is the most stringent test of whether the intervention is effective.",
   },
   {
-    id: 7015,
-    topic: "Threats to Valid Measurement",
-    prompt: "A measurement scale that prevents detection of the full range of relevant values may impose an artificial floor or ceiling on performance. Which of the following best illustrates a ceiling artifact?",
-    options: [
-      "Using whole-interval recording with 10-second intervals for a behavior that occurs several times per second",
-      "Giving a student a 100-word passage to read in 1 minute to measure oral reading fluency",
-      "Measuring off-task behavior using partial-interval recording with 10-minute intervals",
-      "Scheduling observations only during the first 5 minutes of a 20-minute activity"
-    ],
-    correctIndex: 1,
-    explanation: "Giving a student a 100-word passage to read in 1 minute may yield data suggesting his maximum performance is 100 wpm, imposing an artificial ceiling. Faster readers cannot demonstrate their true rate because the scale limits what can be detected.",
-  },
-  {
     id: 7016,
     topic: "Threats to Accurate and Reliable Measurement",
     prompt: "In applied behavior analysis, what is identified as the biggest overall threat to the accuracy and reliability of behavioral data?",
@@ -213,19 +135,6 @@ export const QUESTIONS_M8: Question[] = [
     ],
     correctIndex: 0,
     explanation: "Human error is identified as the biggest threat to the accuracy and reliability of data in applied behavior analysis, because most ABA investigations use human observers rather than automated measurement systems.",
-  },
-  {
-    id: 7017,
-    topic: "Threats to Accurate and Reliable Measurement",
-    prompt: "A behavior analyst wants to reduce measurement error caused by a cumbersome data collection system. Which modification is NOT recommended for simplifying a time-sampling measurement system?",
-    options: [
-      "Decreasing the number of simultaneously observed individuals",
-      "Decreasing the duration of observation sessions",
-      "Increasing the number of behaviors recorded simultaneously",
-      "Increasing the duration of time intervals"
-    ],
-    correctIndex: 2,
-    explanation: "Increasing the number of behaviors recorded simultaneously increases the complexity of the measurement system, which is the opposite of simplification. Reducing the number of behaviors observed, individuals observed, session duration, and increasing interval length all help simplify the system.",
   },
   {
     id: 7018,
@@ -267,19 +176,6 @@ export const QUESTIONS_M8: Question[] = [
     explanation: "Data influenced by an observer's expectations or efforts to obtain results that will please the researcher are characterized by measurement bias. When an observer's belief about predicted outcomes shapes what she records, it is measurement bias caused by observer expectations.",
   },
   {
-    id: 7021,
-    topic: "Threats to Accurate and Reliable Measurement",
-    prompt: "A naive observer, in the context of reducing measurement bias, is best defined as:",
-    options: [
-      "A trained observer who is unaware of the study's purpose and the experimental conditions in effect",
-      "An observer who has not yet been trained in the target behavior definitions",
-      "An observer who is new to the field of applied behavior analysis",
-      "An observer who records data without the assistance of any measurement tools"
-    ],
-    correctIndex: 0,
-    explanation: "A totally naive observer is a trained observer who is unaware of the study's purpose and the experimental conditions in effect during a given phase or observation period. Using naive observers is the surest way to minimize measurement bias from observer expectations.",
-  },
-  {
     id: 7022,
     topic: "Threats to Accurate and Reliable Measurement",
     prompt: "Observer reactivity is measurement error resulting from:",
@@ -293,19 +189,6 @@ export const QUESTIONS_M8: Question[] = [
     explanation: "Observer reactivity is measurement error resulting from an observer's awareness that others are evaluating the data he reports. Knowing that a researcher or another observer is watching the same behavior, or will monitor recordings later, can influence what the observer records.",
   },
   {
-    id: 7023,
-    topic: "Threats to Accurate and Reliable Measurement",
-    prompt: "To reduce observer reactivity, observers should be monitored:",
-    options: [
-      "Frequently and on a predictable schedule so they know when to be especially careful",
-      "As unobtrusively as possible on an unpredictable schedule",
-      "Only at the beginning and end of each experimental phase",
-      "By placing them side-by-side so they can compare their records in real time"
-    ],
-    correctIndex: 1,
-    explanation: "Monitoring observers as unobtrusively as possible on an unpredictable schedule helps reduce observer reactivity by minimizing the observer's awareness of when they are being evaluated.",
-  },
-  {
     id: 7024,
     topic: "Threats to Accurate and Reliable Measurement",
     prompt: "When selecting potential data collectors, a systematic approach recommends interviewing candidates to determine several factors. Which factor is NOT specifically mentioned as part of the selection interview?",
@@ -317,19 +200,6 @@ export const QUESTIONS_M8: Question[] = [
     ],
     correctIndex: 1,
     explanation: "The selection interview is recommended to cover past observation experience, current schedule and commitments, work ethic and motivation, and overall social skills. Undergraduate GPA is not mentioned as a recommended screening criterion.",
-  },
-  {
-    id: 7025,
-    topic: "Threats to Accurate and Reliable Measurement",
-    prompt: "During observer training, trainees should practice recording simplified narrative descriptions of behavioral vignettes until they obtain what level of accuracy before moving to more complex vignettes?",
-    options: [
-      "80% accuracy for two or three consecutive sessions",
-      "90% accuracy for one session",
-      "95% interobserver agreement with an experienced observer",
-      "100% accuracy over a predetermined number of instances"
-    ],
-    correctIndex: 3,
-    explanation: "In Step 2 of the systematic observer training approach, trainees practice recording simplified narrative descriptions of behavioral vignettes until they obtain 100% accuracy over a predetermined number of instances before advancing to longer, more complex descriptions.",
   },
   {
     id: 7026,
@@ -371,32 +241,6 @@ export const QUESTIONS_M8: Question[] = [
     explanation: "There are two requirements for establishing true values: (a) the procedure must be different from that used to collect the data being evaluated, and (b) the procedure must incorporate extraordinary steps that avoid or remove possible sources of error.",
   },
   {
-    id: 7029,
-    topic: "Assessing the Accuracy of Measurement",
-    prompt: "Four well-trained observers independently view a video, each counts instances of contingent teacher praise, then they discuss disagreements and re-score until they reach consensus. Why does this process fail to produce a true value?",
-    options: [
-      "Because the observers did not use the same measurement system",
-      "Because the observers cannot calibrate their measurement to an independent standard, and the consensus process may be biased",
-      "Because the video recording introduces indirect measurement",
-      "Because consensus-based values are only valid when at least five observers agree"
-    ],
-    correctIndex: 1,
-    explanation: "This process fails to produce a true value for two reasons: (1) the observers could not calibrate their measurement to an independent standard, and (2) the consensus process itself may be biased (e.g., one observer's measures may unduly influence the others).",
-  },
-  {
-    id: 7030,
-    topic: "Assessing the Accuracy of Measurement",
-    prompt: "A researcher conducting accuracy assessments should report which of the following in a published report?",
-    options: [
-      "Only the mean accuracy percentage across all sessions",
-      "Only the sessions in which less than 100% accuracy was achieved",
-      "The names and training histories of the observers who conducted accuracy checks",
-      "The number and percentage of measures checked, degree of accuracy found, extent of error detected, and whether errors were corrected"
-    ],
-    correctIndex: 3,
-    explanation: "Researchers should report the number and percentage of measures checked for accuracy, the degree of accuracy found, the extent of measurement error detected, and whether those measurement errors were corrected in the data.",
-  },
-  {
     id: 7031,
     topic: "Assessing the Reliability of Measurement",
     prompt: "Assessing the reliability of behavioral measurement requires a natural or contrived permanent product so the observer can re-measure the same events. To prevent measures from the second scoring being influenced by memory of the first scoring, a researcher should:",
@@ -436,32 +280,6 @@ export const QUESTIONS_M8: Question[] = [
     explanation: "Interobserver agreement (IOA) refers to the degree to which two or more independent observers report the same observed values after measuring the same events. It is the most commonly used indicator of measurement quality in ABA.",
   },
   {
-    id: 7034,
-    topic: "Using Interobserver Agreement to Assess Behavioral Measurement",
-    prompt: "Which of the following is NOT identified as one of the four distinct purposes served by obtaining and reporting interobserver agreement?",
-    options: [
-      "Confirming that observed values match the true values of the events",
-      "Detecting observer drift",
-      "Determining the competence of new observers",
-      "Increasing consumers' confidence that data variability is not a function of which observer was on duty"
-    ],
-    correctIndex: 0,
-    explanation: "The four purposes of IOA are: (1) determining new observer competence, (2) detecting observer drift, (3) judging whether behavior definitions are clear and the system usable, and (4) increasing confidence that data variability reflects actual behavior change. Confirming correspondence to true values describes accuracy assessment, not IOA.",
-  },
-  {
-    id: 7035,
-    topic: "Using Interobserver Agreement to Assess Behavioral Measurement",
-    prompt: "Which of the following represents a violation of the requisites for obtaining valid IOA measures?",
-    options: [
-      "Both observers use the same behavioral definitions and recording codes",
-      "The two observers are separated by a partition so neither can see the other's data sheet",
-      "One observer scores academic worksheets that have already been marked by the first observer",
-      "Both observers use earphones connected to the same prerecorded audio cues to synchronize timing"
-    ],
-    correctIndex: 2,
-    explanation: "Observer independence requires that each observer score unmarked, unadulterated materials. Giving the second observer worksheets already marked by the first observer violates independence because the second observer's scoring could be influenced by the first observer's marks.",
-  },
-  {
     id: 7036,
     topic: "IOA for Event Recording",
     prompt: "Total count IOA for event recording is calculated by:",
@@ -475,19 +293,6 @@ export const QUESTIONS_M8: Question[] = [
     explanation: "Total count IOA is calculated by dividing the smaller of the counts recorded by each observer by the larger count and multiplying by 100. It is the simplest but also the crudest indicator of agreement for event recording data.",
   },
   {
-    id: 7037,
-    topic: "IOA for Event Recording",
-    prompt: "Observer 1 records 10 occurrences of a target behavior and Observer 2 records 9 occurrences during the same 30-minute session. The total count IOA is 90%. What is the primary limitation of interpreting this result?",
-    options: [
-      "High total count IOA provides no assurance that the two observers recorded the same instances of behavior.",
-      "The formula for total count IOA is only valid for duration data, not event recording.",
-      "A 90% total count IOA falls below the conventional 80% minimum criterion for ABA research.",
-      "Total count IOA cannot be reported as a percentage; it requires expression as a decimal."
-    ],
-    correctIndex: 0,
-    explanation: "The primary limitation of total count IOA is that a high level of agreement provides no assurance that the two observers recorded the same instances of behavior. Observers could have recorded entirely different response occurrences while still producing similar overall totals.",
-  },
-  {
     id: 7038,
     topic: "IOA for Event Recording",
     prompt: "Mean count-per-interval IOA increases the likelihood that agreement is meaningful compared to total count IOA by:",
@@ -499,19 +304,6 @@ export const QUESTIONS_M8: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Mean count-per-interval IOA increases meaningfulness by dividing the observation period into smaller counting intervals, having observers record counts within each interval, calculating IOA for each interval, and then averaging those interval agreements across the session.",
-  },
-  {
-    id: 7039,
-    topic: "IOA for Event Recording",
-    prompt: "Exact count-per-interval IOA is the most stringent IOA measure for most event recording data sets. It is calculated as:",
-    options: [
-      "The percentage of total intervals in which both observers recorded the same count",
-      "The mean of all interval-level IOA percentages across the observation session",
-      "The ratio of the smaller total count to the larger total count across the session",
-      "The number of trials on which observers agreed divided by the total number of trials"
-    ],
-    correctIndex: 0,
-    explanation: "Exact count-per-interval IOA is calculated as the percentage of total intervals in which two observers recorded exactly the same count. It is more stringent than mean count-per-interval IOA because it requires identical counts, not just close counts, within each interval.",
   },
   {
     id: 7040,
@@ -538,19 +330,6 @@ export const QUESTIONS_M8: Question[] = [
     ],
     correctIndex: 2,
     explanation: "Mean duration-per-occurrence IOA is a more conservative and usually more meaningful assessment of IOA for total duration data. It compares observers' timings for each individual occurrence rather than summing all durations, which can mask disagreements on specific responses.",
-  },
-  {
-    id: 7042,
-    topic: "IOA for Timing Data",
-    prompt: "An observer's timings of latencies or interresponse times (IRTs) in a session should never be:",
-    options: [
-      "Compared to a separate observer's timings for the same occurrences",
-      "Reported as mean latency-per-response IOA in the methods section",
-      "Added together and the total time compared to a similar total obtained by another observer as the basis for IOA",
-      "Collected by an observer who is unaware of the study's purpose"
-    ],
-    correctIndex: 2,
-    explanation: "An observer's timings of latencies or IRTs in a session should never be added and the total time compared to a similar total obtained by another observer as the basis for calculating IOA, because summing can mask disagreements on individual responses.",
   },
   {
     id: 7043,
@@ -592,19 +371,6 @@ export const QUESTIONS_M8: Question[] = [
     explanation: "Scored-interval IOA is recommended for behaviors that occur at approximately 30% or fewer of the observation intervals. For low-rate behaviors, scored-interval IOA provides a more conservative measure by ignoring intervals where both observers agreed that the behavior did not occur.",
   },
   {
-    id: 7046,
-    topic: "IOA for Interval Recording",
-    prompt: "Unscored-interval IOA considers only intervals in which at least one observer recorded the nonoccurrence of the target behavior. For which situation is this method most appropriate?",
-    options: [
-      "Behaviors that occur in approximately 30% or fewer of intervals",
-      "Any behavior measured using partial-interval recording",
-      "Behaviors recorded using time sampling with momentary observations",
-      "Behaviors that occur in approximately 70% or more of intervals"
-    ],
-    correctIndex: 3,
-    explanation: "Unscored-interval IOA is recommended for behaviors that occur at relatively high rates, specifically approximately 70% or more of intervals. For high-rate behaviors, this method avoids inflated agreement that would result from interval-by-interval IOA, which would count many agreements on occurrence by chance.",
-  },
-  {
     id: 7047,
     topic: "Considerations in Selecting, Obtaining, and Reporting IOA",
     prompt: "How often should IOA be assessed in a typical applied behavior analysis study?",
@@ -616,32 +382,6 @@ export const QUESTIONS_M8: Question[] = [
     ],
     correctIndex: 3,
     explanation: "It is generally recommended that IOA be obtained for a minimum of 20% of a study's sessions, and preferably between 25% and 33% of sessions. IOA should also be distributed across all conditions, phases, days, times, and settings.",
-  },
-  {
-    id: 7048,
-    topic: "Considerations in Selecting, Obtaining, and Reporting IOA",
-    prompt: "The conventional minimum criterion for acceptable mean interobserver agreement in applied behavior analysis using observational recording is:",
-    options: [
-      "75% mean agreement",
-      "90% mean agreement",
-      "80% mean agreement",
-      "95% mean agreement"
-    ],
-    correctIndex: 2,
-    explanation: "The usual convention in applied behavior analysis is to expect independent observers to achieve a mean of no less than 80% agreement when using observational recording. However, this criterion has no scientific justification beyond a long history of use as a benchmark.",
-  },
-  {
-    id: 7049,
-    topic: "Considerations in Selecting, Obtaining, and Reporting IOA",
-    prompt: "When graphically displaying IOA data by plotting the secondary observer's measures on the same graph as the primary observer's data, which pattern suggests the absence of observer bias?",
-    options: [
-      "The secondary observer consistently records higher values than the primary observer across all phases",
-      "The secondary observer records the same value as the primary observer in every session",
-      "Neither observer consistently reports measures that are higher or lower than the other, suggesting a random pattern of over- and underestimation",
-      "The secondary observer records data only during the first and last sessions of each phase"
-    ],
-    correctIndex: 2,
-    explanation: "The absence of observer bias is suggested when neither observer consistently reports measures that are higher or lower than the other. An absence of bias is usually indicated by a random pattern of overestimation and underestimation across the sessions.",
   },
   {
     id: 7050,

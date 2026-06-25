@@ -35,48 +35,6 @@ export const QUESTIONS_M34: Question[] = [
     highlight: "ethics"
   },
   {
-    id: 33003,
-    topic: "Ethics Defined",
-    prompt: "The utilitarian approach to ethics judges the rightness or wrongness of a behavior based on:",
-    options: [
-      "Formal codes of professional conduct",
-      "Whether the act is legal in the relevant jurisdiction",
-      "Its consequences or results",
-      "The practitioner's personal learning history"
-    ],
-    correctIndex: 2,
-    explanation: "The utilitarian (teleological or results-oriented) approach judges the rightness or wrongness of a behavior based on its consequences or results, providing needed flexibility when implementing rules of conduct.",
-    highlight: "ethics"
-  },
-  {
-    id: 33004,
-    topic: "Ethics Defined",
-    prompt: "Lattal and Clark (2007) stated that rules of conduct alone are:",
-    options: [
-      "Sufficient to resolve all complex ethical dilemmas practitioners face",
-      "Unnecessary if a practitioner has a strong personal moral code",
-      "Neither specific enough nor comprehensive enough to cover all aspects of a difficult ethical decision",
-      "Equivalent in value to legal regulations governing professional behavior"
-    ],
-    correctIndex: 2,
-    explanation: "Lattal and Clark stated that 'Rules alone are neither specific enough nor comprehensive enough to cover all aspects of a difficult ethical decision.' The utilitarian approach provides a principled way to analyze ethical questions not answered with a simple yes or no.",
-    highlight: "ethics"
-  },
-  {
-    id: 33005,
-    topic: "Why Ethics Is Important",
-    prompt: "Skinner defined countercontrol as occurring when someone responds to coercive or aversive external control by:",
-    options: [
-      "Seeking mediation through a neutral third party",
-      "Immediately complying in order to reduce the aversive stimulus",
-      "Filing a formal complaint with a professional licensing board",
-      "Showing an emotional reaction including operant behavior that injures or is aversive to the controller"
-    ],
-    correctIndex: 3,
-    explanation: "Skinner defined countercontrol as occurring when someone responds to coercion or an aversive form of external control by showing 'an emotional reaction of anger or frustration including operant behavior which injures or is otherwise aversive to the controller.'",
-    highlight: "ethics"
-  },
-  {
     id: 33006,
     topic: "Why Ethics Is Important",
     prompt: "Groups such as the elderly, children, individuals with intellectual disabilities, or individuals who are incarcerated require external ethical codes partly because:",
@@ -132,19 +90,6 @@ export const QUESTIONS_M34: Question[] = [
     highlight: "ethics"
   },
   {
-    id: 33010,
-    topic: "What Is Worth Doing",
-    prompt: "In a cost-benefit analysis for a proposed intervention, a behavior analyst must weigh:",
-    options: [
-      "The likely difference between the cost of treatment and the projected future benefits to the person",
-      "Only the financial cost to the funding source against potential savings",
-      "The risk of legal liability against the risk of not treating the problem",
-      "The number of published studies supporting the treatment against those opposing it"
-    ],
-    correctIndex: 0,
-    explanation: "A cost-benefit analysis requires weighing the likely difference between the cost of treatment (resources involved in planning, implementing, monitoring, and evaluating) and the projected benefits (likely future potential gains by the person). The benefit should be significant enough to justify the short- and long-term cost.",
-  },
-  {
     id: 33011,
     topic: "What Does It Mean to Be a Good Behavior Analyst",
     prompt: "Being a good behavior analyst requires adherence to The Compliance Code. However, this adherence alone is:",
@@ -170,20 +115,6 @@ export const QUESTIONS_M34: Question[] = [
     ],
     correctIndex: 3,
     explanation: "The Compliance Code contains 71 elements organized into 10 different sections relevant to professional and ethical behavior of behavior analysts, along with a glossary of terms.",
-    highlight: "ethics"
-  },
-  {
-    id: 33013,
-    topic: "Standards of Professional Practice",
-    prompt: "Five complementary documents describe standards of professional conduct for applied behavior analysts. Which of the following is one of the two documents specifying a code of conduct rather than a position statement?",
-    options: [
-      "The Right to Effective Behavioral Treatment (ABAI, 1989)",
-      "Statement on Restraint and Seclusion (ABAI, 2010)",
-      "Ethical Principles of Psychologists and Code of Conduct (APA, 2010)",
-      "The Right to Effective Education (ABAI, 1990)"
-    ],
-    correctIndex: 2,
-    explanation: "Two of the five documents specify codes of conduct: the Professional and Ethical Compliance Code for Behavior Analysts (BACB, 2014) and the Ethical Principles of Psychologists and Code of Conduct (APA, 2010). The other three are position statements.",
     highlight: "ethics"
   },
   {
@@ -226,20 +157,6 @@ export const QUESTIONS_M34: Question[] = [
     ],
     correctIndex: 2,
     explanation: "A behavior analyst should not begin working with a new clinical population without obtaining additional active supervision. The behavior analyst must accrue adequate supervised experience working with any new population.",
-    highlight: "ethics"
-  },
-  {
-    id: 33017,
-    topic: "Developing Competence in Supervision",
-    prompt: "In 2015, the BACB implemented supervision requirements that included which of the following?",
-    options: [
-      "A minimum of 40 supervised fieldwork hours before providing supervision",
-      "A registry publicly linking the BCBA supervisor to supervisees",
-      "Annual face-to-face evaluations of supervisory competence by the BACB",
-      "Mandatory co-supervision with a BCBA-D for all new supervisors"
-    ],
-    correctIndex: 1,
-    explanation: "The BACB's 2015 supervision requirements included (a) specific training in supervisory practices prior to supervising others, (b) continuing education in the area of supervision, and (c) a registry publicly linking the BCBA supervisor to supervisees.",
     highlight: "ethics"
   },
   {
@@ -299,20 +216,6 @@ export const QUESTIONS_M34: Question[] = [
     highlight: "ethics"
   },
   {
-    id: 33022,
-    topic: "Making and Substantiating Professional Claims",
-    prompt: "Misrepresenting one's credentials, training, or background to a recipient of services is:",
-    options: [
-      "Unethical but never illegal",
-      "Legal as long as services are delivered competently",
-      "Permissible if the misrepresentation is minor and unintentional",
-      "Always unethical and, as likely fraudulent conduct, may be illegal"
-    ],
-    correctIndex: 3,
-    explanation: "Making dishonest statements or claims relating to one's professional experience or credentials is always unethical and, as likely fraudulent conduct, may be illegal.",
-    highlight: "ethics"
-  },
-  {
     id: 33023,
     topic: "Informed Consent",
     prompt: "Three tests must be met before informed consent can be considered valid. Which option correctly lists all three?",
@@ -324,48 +227,6 @@ export const QUESTIONS_M34: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Three tests must be met before informed consent can be considered valid: (a) the person must demonstrate the capacity to decide, (b) the decision must be voluntary, and (c) the person must have adequate knowledge of all salient aspects of the treatment.",
-    highlight: "ethics"
-  },
-  {
-    id: 33024,
-    topic: "Informed Consent",
-    prompt: "Hurley and O'Sullivan (1999) described capacity to give informed consent as:",
-    options: [
-      "A fixed legal standard that does not vary across individuals or procedures",
-      "A fluid concept that varies with each individual and proposed procedure",
-      "Solely determined by IQ score or diagnosis of intellectual disability",
-      "Equivalent to the ability to sign one's name on a legal document"
-    ],
-    correctIndex: 1,
-    explanation: "According to Hurley and O'Sullivan (1999), 'Capacity to give informed consent is a fluid concept and varies with each individual and proposed procedure.' A person may consent to a positive reinforcement program but lack capacity for decisions about more complex procedures.",
-    highlight: "ethics"
-  },
-  {
-    id: 33025,
-    topic: "Informed Consent",
-    prompt: "Surrogate consent for an incapacitated individual is based on:",
-    options: [
-      "What the surrogate personally believes is best for the individual",
-      "The formal recommendation of the behavior analyst providing services",
-      "Knowledge of what the incapacitated person would have wanted",
-      "A majority vote of all team members involved in the person's care"
-    ],
-    correctIndex: 2,
-    explanation: "Surrogate consent is a legal process by which another individual is authorized to make decisions for a person deemed incompetent, based on the knowledge of what the incapacitated person would have wanted.",
-    highlight: "ethics"
-  },
-  {
-    id: 33026,
-    topic: "Informed Consent",
-    prompt: "When treatment is necessary for an individual who lacks capacity but that individual actively refuses treatment, which type of consent is required?",
-    options: [
-      "Surrogate consent is sufficient in all jurisdictions",
-      "A majority decision by the interdisciplinary team",
-      "Guardian consent, because surrogate consent is insufficient in this situation",
-      "Written approval from the funding source"
-    ],
-    correctIndex: 2,
-    explanation: "When treatment is deemed necessary for an individual who lacks capacity but that individual refuses treatment, surrogate consent is insufficient. Only a guardian may provide oversight and consent in this situation.",
     highlight: "ethics"
   },
   {
@@ -383,34 +244,6 @@ export const QUESTIONS_M34: Question[] = [
     highlight: "ethics"
   },
   {
-    id: 33028,
-    topic: "Informed Consent",
-    prompt: "To satisfy the knowledge requirement for informed consent, a client must demonstrate understanding by:",
-    options: [
-      "Signing and dating the consent document in the presence of two witnesses",
-      "Passing a written test prepared by the behavior analyst covering all aspects of the treatment",
-      "Providing a verbal statement that they understand and agree to participate",
-      "Being able to describe the procedures in their own words and correctly answer questions about the plan"
-    ],
-    correctIndex: 3,
-    explanation: "Once information has been provided, the individual must demonstrate an understanding by being able to describe the procedures in their own words and correctly answer questions about the plan.",
-    highlight: "ethics"
-  },
-  {
-    id: 33029,
-    topic: "Informed Consent",
-    prompt: "A risk-benefit analysis as part of the informed consent process should occur:",
-    options: [
-      "Only at the outset of services, before the first session",
-      "Annually during each program review cycle",
-      "Prior to initial or subsequent requests for informed consent, and repeatedly throughout the delivery of services",
-      "Only when a restrictive procedure is being considered"
-    ],
-    correctIndex: 2,
-    explanation: "A risk-benefit analysis should occur prior to initial or subsequent requests for informed consent, and repeatedly throughout the delivery of services, as described by Bailey and Burch (2016).",
-    highlight: "ethics"
-  },
-  {
     id: 33030,
     topic: "Confidentiality",
     prompt: "Disclosure of confidential information without client consent may occur when:",
@@ -422,20 +255,6 @@ export const QUESTIONS_M34: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Disclosure of confidential information without consent may occur under valid conditions including: as mandated by law, to comply with a court order, when credible information suggests imminent harm or danger to the client or another person, when an immediate crisis develops, or when third-party payment is involved.",
-    highlight: "ethics"
-  },
-  {
-    id: 33031,
-    topic: "Confidentiality",
-    prompt: "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) specifically pertains to:",
-    options: [
-      "Credentialing standards for behavior analysts providing Medicaid-funded services",
-      "Billing accuracy requirements for ABA-based insurance claims",
-      "Disclosure requirements for publicly funded research involving human participants",
-      "Confidentiality of medical information and records"
-    ],
-    correctIndex: 3,
-    explanation: "HIPAA (Public Law 104-191) specifically pertains to confidentiality of medical information and records. Many ABA-based services are delivered under medically authorized services, so practitioners must follow all HIPAA requirements.",
     highlight: "ethics"
   },
   {
@@ -467,20 +286,6 @@ export const QUESTIONS_M34: Question[] = [
     highlight: "ethics"
   },
   {
-    id: 33034,
-    topic: "Social Media and New Technologies",
-    prompt: "One of O'Leary et al.'s (2017) recommendations for ethical use of social media by behavior analysts is to avoid:",
-    options: [
-      "Referring readers to the professional literature",
-      "Using disclaimers about the absence of a professional relationship",
-      "Making treatment recommendations via social media platforms",
-      "Discussing behavior analysis concepts in public forums"
-    ],
-    correctIndex: 2,
-    explanation: "O'Leary et al. (2017) recommend avoiding making treatment recommendations on social media because there is simply not enough information on social media outlets to give specific advice.",
-    highlight: "ethics"
-  },
-  {
     id: 33035,
     topic: "Protecting the Client's Dignity, Health, and Safety",
     prompt: "Negligence in professional practice is typically exhibited as nonfeasance, which refers to:",
@@ -509,32 +314,6 @@ export const QUESTIONS_M34: Question[] = [
     highlight: "ethics"
   },
   {
-    id: 33037,
-    topic: "Protecting the Client's Dignity, Health, and Safety",
-    prompt: "For a client to exercise a meaningful choice, the chapter specifies that which two types of alternatives must be present?",
-    options: [
-      "Behavioral alternatives and stimulus alternatives",
-      "Written alternatives and verbal alternatives",
-      "Short-term alternatives and long-term alternatives",
-      "Preferred alternatives and non-preferred alternatives"
-    ],
-    correctIndex: 0,
-    explanation: "In behavioral terms, making a choice requires that both behavioral alternatives (actions the person can perform) and stimulus alternatives (more than one stimulus item present simultaneously from which to choose) be possible and available.",
-  },
-  {
-    id: 33038,
-    topic: "Protecting the Client's Dignity, Health, and Safety",
-    prompt: "Favell and McGimsey (1993) listed seven characteristics of an acceptable treatment environment. Which of the following is one of those characteristics?",
-    options: [
-      "Staff-to-client ratios meet minimum licensing standards at all times",
-      "The environment is the least restrictive alternative, functionally defined",
-      "The environment is accredited by an external professional organization",
-      "Staff turnover is kept below 20 percent annually"
-    ],
-    correctIndex: 1,
-    explanation: "One of Favell and McGimsey's seven characteristics is that the environment is the least restrictive alternative, functionally defined based on freedom of movement and activity engagement parameters.",
-  },
-  {
     id: 33039,
     topic: "Coordinating with Other Professionals",
     prompt: "When a nonbehavioral treatment is proposed by another team member, The Compliance Code section 2.09(d) requires the behavior analyst to:",
@@ -546,20 +325,6 @@ export const QUESTIONS_M34: Question[] = [
     ],
     correctIndex: 2,
     explanation: "The Compliance Code 2.09(d) states that behavior analysts have a responsibility to 'review and appraise the effects of any treatments about which they are aware that might impact the goals of the behavior-change program.'",
-    highlight: "ethics"
-  },
-  {
-    id: 33040,
-    topic: "Coordinating with Other Professionals",
-    prompt: "When making referrals to other professionals, the behavior analyst must ensure that:",
-    options: [
-      "The client is directed to the professional with whom the analyst has a prior working relationship",
-      "The referring analyst maintains co-treatment responsibility for the case",
-      "Referral documentation is shared with the funding source within 30 days",
-      "No referral fees, kick-backs, gifts, or favors change hands as a result of the referral"
-    ],
-    correctIndex: 3,
-    explanation: "There must never be referral fees or kick-backs. The practitioner should provide the client with a list of options, a choice of possible providers, and allow the client to make the final choice. No money, gifts, or favors should ever change hands when a referral results in a client contacting another professional.",
     highlight: "ethics"
   },
   {
@@ -576,19 +341,6 @@ export const QUESTIONS_M34: Question[] = [
     explanation: "One of the key questions for determining whether behavioral intervention is necessary and appropriate is whether the problem has emerged suddenly and whether it might have a medical cause, including whether a medical evaluation has been done.",
   },
   {
-    id: 33042,
-    topic: "Advocating for the Client",
-    prompt: "If the answer to any of the six questions about the likely success of an intervention is 'no,' the behavior analyst should:",
-    options: [
-      "Proceed with treatment and adjust the plan once challenges become apparent",
-      "Ask the client's guardian to provide written permission before proceeding",
-      "Seriously consider declining to initiate treatment",
-      "Transfer the case to a more experienced colleague immediately"
-    ],
-    correctIndex: 2,
-    explanation: "If the answer to any of the six questions (such as whether the client is willing to participate or whether the behavior has been successfully treated in the research literature) is 'no,' the behavior analyst should seriously consider declining to initiate treatment.",
-  },
-  {
     id: 33043,
     topic: "Evidence-Based Practice and Least Restrictive Alternatives",
     prompt: "When more than one scientifically supported treatment has been established, The Compliance Code 2.09(c) indicates that additional factors that may guide selection include:",
@@ -601,19 +353,6 @@ export const QUESTIONS_M34: Question[] = [
     correctIndex: 1,
     explanation: "The Compliance Code 2.09(c) indicates that additional factors may include efficiency and cost-effectiveness, risks and side-effects of the interventions, client preference, and practitioner experience and training.",
     highlight: "ethics"
-  },
-  {
-    id: 33044,
-    topic: "Evidence-Based Practice and Least Restrictive Alternatives",
-    prompt: "Silvestri and Heward (2016) define evidence as the outcome of applying the scientific method. They also state that 'an extraordinary claim based on anything but proportionally strong evidence should bring:'",
-    options: [
-      "Immediate referral to an ethics committee",
-      "A request for peer-reviewed citations from the claimant",
-      "A formal complaint to the relevant professional organization",
-      "Skepticism"
-    ],
-    correctIndex: 3,
-    explanation: "Silvestri and Heward (2016) stated that 'an extraordinary claim based on anything but proportionally strong evidence should bring skepticism,' consistent with the scientific approach promoted throughout the chapter.",
   },
   {
     id: 33045,
@@ -654,20 +393,6 @@ export const QUESTIONS_M34: Question[] = [
     ],
     correctIndex: 3,
     explanation: "A member of a peer review committee must not participate in a review of their own work or the work of their supervisees. The general rule is that the practitioner should strive to avoid all potential conflicts of interest.",
-    highlight: "ethics"
-  },
-  {
-    id: 33048,
-    topic: "Creating a Culture of Ethical Practice",
-    prompt: "Lattal and Clark (2007) stated that the ability to sort through ethical issues and make decisions that most people would see as ethical is:",
-    options: [
-      "An innate trait found primarily in individuals with strong personal character",
-      "Developed naturally through years of clinical experience without formal instruction",
-      "A skill that can and should be taught",
-      "Beyond the scope of organizational training programs"
-    ],
-    correctIndex: 2,
-    explanation: "Lattal and Clark (2007) stated that 'the ability to sort through the issues and make decisions that most people would see as ethical is a skill that emphatically can and should be taught.'",
     highlight: "ethics"
   },
   {

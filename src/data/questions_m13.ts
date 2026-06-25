@@ -46,19 +46,6 @@ export const QUESTIONS_M13: Question[] = [
     explanation: "Knowing that the average performance of a group changed may reveal nothing about individual subjects. Some may have improved, some stayed the same, and others may have gotten worse, yet all of this variation is hidden within the group mean.",
   },
   {
-    id: 12004,
-    topic: "Group Data and Individual Performance",
-    prompt: "According to Johnston and Pennypacker (1980), an effect that emerges only after individual data have been combined is:",
-    options: [
-      "The most reliable indicator of a true functional relation",
-      "Sufficient justification for adopting the treatment in applied settings",
-      "Evidence of strong external validity across subjects",
-      "Probably artifactual and not representative of real behavioral processes"
-    ],
-    correctIndex: 3,
-    explanation: "Johnston and Pennypacker cautioned that an effect emerging only from combined individual data is probably artifactual and not representative of any real behavioral processes, underscoring why individual-level data must be analyzed.",
-  },
-  {
     id: 12005,
     topic: "Group Data Masking Variability",
     prompt: "When repeated measurement reveals significant variability in a subject's behavior, the appropriate research response is to:",
@@ -70,19 +57,6 @@ export const QUESTIONS_M13: Question[] = [
     ],
     correctIndex: 2,
     explanation: "When repeated measurement reveals significant variability, the researcher should search experimentally for factors responsible for that variability. Statistical control is never a substitute for experimental control.",
-  },
-  {
-    id: 12006,
-    topic: "Group Data and Behavioral Processes",
-    prompt: "Skinner argued that researchers must demonstrate behavior-environment relations at the level of the individual organism because using group data risks:",
-    options: [
-      "Underestimating the effect sizes of treatments",
-      "Violating IRB protocols for research with human subjects",
-      "Producing results that lack social validity for individual clients",
-      "Discovering synthetic phenomena representing mathematical rather than behavioral processes"
-    ],
-    correctIndex: 3,
-    explanation: "Skinner contended that group-level analyses risk discovering synthetic phenomena that represent mathematical, not behavioral, processes. The function derived from group data does not represent any actual behavioral process operating in individual subjects.",
   },
   {
     id: 12007,
@@ -111,32 +85,6 @@ export const QUESTIONS_M13: Question[] = [
     explanation: "Controlling a variable can be accomplished in only two ways: holding the variable constant throughout the experiment, or isolating the suspected factor as an independent variable and manipulating its presence, absence, or value.",
   },
   {
-    id: 12009,
-    topic: "Importance of Flexibility in Experimental Design",
-    prompt: "Sidman (1960) warned that accepting prototype experimental designs as a set of rules to be followed in designing experiments would be:",
-    options: [
-      "Disastrous, because there are no rules of experimental design",
-      "Consistent with the goals of applied behavior analysis",
-      "A reasonable starting point for novice researchers",
-      "Acceptable only when studying between-subjects variability"
-    ],
-    correctIndex: 0,
-    explanation: "Sidman was adamant that treating prototype designs as rules to follow would be disastrous, stating clearly that 'there are no rules of experimental design.' Researchers must exercise flexibility and creativity in each unique experiment.",
-  },
-  {
-    id: 12010,
-    topic: "Experimental Designs Combining Analytic Tactics",
-    prompt: "Combining analytic tactics in an experimental design is justified when it:",
-    options: [
-      "Automatically produces more publications per study",
-      "Allows for a more convincing demonstration of experimental effect",
-      "Reduces the complexity of the independent variable",
-      "Eliminates the need for component analyses"
-    ],
-    correctIndex: 1,
-    explanation: "Combining analytic tactics may allow a more convincing demonstration of experimental control than a single-tactic design, similar to adding suspenders to a belt. However, multiple tactics are not automatically superior if they obscure a clear single-tactic result.",
-  },
-  {
     id: 12011,
     topic: "Component Analysis",
     prompt: "A component analysis is defined as an experiment designed to:",
@@ -161,19 +109,6 @@ export const QUESTIONS_M13: Question[] = [
     ],
     correctIndex: 3,
     explanation: "In a drop-out component analysis, the investigator presents the full treatment package and then systematically removes components. If treatment effectiveness wanes when a component is removed, that component is identified as necessary.",
-  },
-  {
-    id: 12013,
-    topic: "Component Analysis",
-    prompt: "In an add-in component analysis, a researcher assesses components individually or in combination before presenting the complete package. A primary advantage of this method over the drop-out method is that it:",
-    options: [
-      "Can identify sufficient components",
-      "Ensures that the target behavior improves immediately in the first or second phase",
-      "Eliminates all sequence effects that might confound results",
-      "Is simpler to implement than the drop-out approach"
-    ],
-    correctIndex: 0,
-    explanation: "The add-in component analysis assesses components individually or in combination before presenting the complete treatment package. This method can identify sufficient components, whereas the main advantage of the drop-out method is that behavior improves immediately.",
   },
   {
     id: 12014,
@@ -332,84 +267,6 @@ export const QUESTIONS_M13: Question[] = [
     explanation: "Low treatment integrity can lead to a false positive (claiming a functional relation when none exists) or a false negative (failing to detect a functional relation when one does exist), depending on how the incomplete or inconsistent implementation affects the data.",
   },
   {
-    id: 12026,
-    topic: "Treatment Integrity",
-    prompt: "Gresham and colleagues (1993) recommended that treatments be operationally defined along four dimensions. Which set of dimensions did they specify?",
-    options: [
-      "Temporal, social, procedural, and technological",
-      "Objective, clear, measurable, and observable",
-      "Verbal, physical, spatial, and temporal",
-      "Antecedent, behavior, consequence, and setting"
-    ],
-    correctIndex: 2,
-    explanation: "Gresham and colleagues (1993) recommended that treatments be operationally defined in each of four dimensions: verbal, physical, spatial, and temporal, using a time-out procedure as an example to illustrate each dimension.",
-  },
-  {
-    id: 12027,
-    topic: "Treatment Integrity",
-    prompt: "For a study to achieve the highest score on the National Autism Center's Scientific Merit Rating Scale, treatment integrity must be measured during at least what percentage of sessions, at what minimum accuracy?",
-    options: [
-      "10% of sessions at 70% accuracy",
-      "25% of sessions at 80% accuracy",
-      "50% of sessions at 90% accuracy",
-      "100% of sessions at 85% accuracy"
-    ],
-    correctIndex: 1,
-    explanation: "The National Autism Center requires that treatment integrity be measured during a minimum of 25% of sessions, at or above 80% accuracy, with interobserver agreement of 80% or above, for a study to achieve the highest score on its Scientific Merit Rating Scale.",
-  },
-  {
-    id: 12028,
-    topic: "Treatment Integrity",
-    prompt: "A researcher notes that the practitioner implementing the intervention tends to apply the full procedure only when the investigator is present and applies only favored aspects at other times. This is an example of:",
-    options: [
-      "Observer drift",
-      "Experimenter bias in data collection",
-      "Bootleg reinforcement",
-      "Treatment drift"
-    ],
-    correctIndex: 3,
-    explanation: "Treatment drift occurs when the application of the independent variable differs from its initial implementation. A practitioner implementing only favored aspects and the full procedure only when observed is a classic example of treatment drift driven by contingencies on the implementer's behavior.",
-  },
-  {
-    id: 12029,
-    topic: "Social Validity",
-    prompt: "Wolf (1978) proposed that the social validity of an applied behavior analysis study should be assessed in which three ways?",
-    options: [
-      "The reliability of the measurement system, the replicability of the findings, and the generality of the results",
-      "The consumer's preference for the treatment, the magnitude of behavior change, and the maintenance of gains",
-      "The technological precision of procedures, the conceptual integrity of the report, and the contribution to the literature",
-      "The social significance of the behavior change goals, the appropriateness of the intervention, and the social importance of the results"
-    ],
-    correctIndex: 3,
-    explanation: "Wolf (1978) recommended that the social validity of an applied behavior analysis study be assessed in three ways: the social significance of the behavior change goals, the appropriateness of the intervention, and the social importance of the results.",
-  },
-  {
-    id: 12030,
-    topic: "Social Validity: Goals",
-    prompt: "Van Houten (1979) suggested two basic approaches for determining socially valid performance goals. Which pair of approaches did he identify?",
-    options: [
-      "Assessing the performance of persons considered competent, and experimentally manipulating different levels of performance to determine optimal results",
-      "Conducting a functional assessment and comparing baseline to treatment data",
-      "Surveying consumers about their preferences and reviewing published normative data",
-      "Identifying the behavior of ultimate value and measuring it in the natural environment"
-    ],
-    correctIndex: 0,
-    explanation: "Van Houten (1979) suggested two basic approaches: assessing the performance of persons considered competent to set a valid target level, and experimentally manipulating different levels of performance to determine empirically which level produces optimal results.",
-  },
-  {
-    id: 12031,
-    topic: "Social Validity: Interventions",
-    prompt: "The Intervention Rating Profile (IRP-15) is best described as:",
-    options: [
-      "A standardized instrument for assessing children's academic performance before and after intervention",
-      "A checklist used to document treatment integrity during observation sessions",
-      "A 15-item Likert-type scale for assessing teachers' perceptions of the acceptability of classroom interventions",
-      "A tool for comparing participants' outcomes to those of a normative sample of typical performers"
-    ],
-    correctIndex: 2,
-    explanation: "The Intervention Rating Profile (IRP-15) is a 15-item Likert-type scale developed to assess teachers' perceptions of the acceptability of classroom interventions.",
-  },
-  {
     id: 12032,
     topic: "Social Validity: Outcomes",
     prompt: "A behavior analyst wants to assess the social validity of outcomes by comparing participants' performance to that of nondisabled peers performing the same tasks in similar contexts. This method of social validity assessment is called:",
@@ -436,19 +293,6 @@ export const QUESTIONS_M13: Question[] = [
     explanation: "A real-world test in the natural environment is described as perhaps the most socially valid way to assess newly acquired behavior, because it puts the learner's repertoire in contact with naturally occurring contingencies that may promote maintenance and generalization.",
   },
   {
-    id: 12034,
-    topic: "Social Validity: Outcomes",
-    prompt: "Iwata and colleagues (1990) developed the Self-Injury Trauma Scale (SITS). What does this instrument measure, and what is its relevance to social validity?",
-    options: [
-      "It trains observers to record self-injurious behavior using momentary time sampling",
-      "It provides consumers with a questionnaire to rate the acceptability of self-injury treatment procedures",
-      "It compares a client's level of self-injury to a normative sample of individuals without disabilities",
-      "It measures the number, type, severity, and location of injuries produced by self-injurious behavior, allowing reductions in injury to validate that behavior change was meaningful"
-    ],
-    correctIndex: 3,
-    explanation: "Iwata and colleagues (1990) developed the SITS to measure the number, type, severity, and location of injuries produced by self-injurious behavior. Reduction in injury scores validates that decreases in target behavior translated into meaningful real-world outcomes.",
-  },
-  {
     id: 12035,
     topic: "External Validity",
     prompt: "External validity is defined as:",
@@ -460,32 +304,6 @@ export const QUESTIONS_M13: Question[] = [
     ],
     correctIndex: 2,
     explanation: "External validity refers to the degree to which a functional relation found reliable and socially valid in a given experiment operates under different conditions, including with different subjects, in different settings, and with different behaviors.",
-  },
-  {
-    id: 12036,
-    topic: "External Validity and Between-Groups Research",
-    prompt: "The proper inference from the results of a well-executed between-groups study is:",
-    options: [
-      "From the sample to the individual participants who resembled those in the study",
-      "From the individual experimental subjects to the broader population",
-      "From the sample to the population from which the sample was drawn",
-      "From the experimental group findings to all individuals who receive the same treatment"
-    ],
-    correctIndex: 2,
-    explanation: "The proper inference about the results of a groups-design study is from the sample to the population, not from the sample to the individual. Random sampling ensures the sample represents the population, making results less meaningful for any specific individual.",
-  },
-  {
-    id: 12037,
-    topic: "External Validity and Applied Behavior Analysis",
-    prompt: "According to Birnbrauer (1981), external validity is not a characteristic of a single study but rather:",
-    options: [
-      "A property conferred on a study by random sampling procedures",
-      "Established by the number of subjects included in a single-case study",
-      "Guaranteed whenever a study is conducted in a natural rather than laboratory setting",
-      "The product of many studies, pursued only through systematic replication"
-    ],
-    correctIndex: 3,
-    explanation: "Birnbrauer pointed out that external validity is not something a single study has, but rather the product of many studies. External validity can be pursued only through the active process of systematic replication.",
   },
   {
     id: 12038,
@@ -527,19 +345,6 @@ export const QUESTIONS_M13: Question[] = [
     explanation: "When a systematic replication successfully reproduces results, it not only demonstrates the reliability of the earlier findings but also adds to their external validity by showing that the same effect can be obtained under different conditions.",
   },
   {
-    id: 12041,
-    topic: "Systematic Replication",
-    prompt: "Sidman (1960) described systematic replication as a gamble worth taking because, if successful:",
-    options: [
-      "It is easier to execute and requires fewer resources than direct replication",
-      "It produces findings that are automatically accepted as evidence-based practice",
-      "It eliminates the risk of a failed replication by allowing modifications to the original method",
-      "It not only increases reliability but also greatly enhances generality and provides additional data unavailable from simple repetition"
-    ],
-    correctIndex: 3,
-    explanation: "Sidman argued that systematic replication's pay-off is handsome because success increases reliability and greatly enhances generality, and provides additional data that simple repetition of the original experiment could not have produced.",
-  },
-  {
     id: 12042,
     topic: "Evaluating ABA Research: Internal Validity",
     prompt: "When evaluating the internal validity of an applied behavior analysis study, what is the reader's first step?",
@@ -579,19 +384,6 @@ export const QUESTIONS_M13: Question[] = [
     explanation: "A Type I error, also called a false positive, occurs when the researcher concludes that the independent variable had an effect when in truth no such relation exists in nature. A Type II error is the opposite: concluding no effect when one actually exists.",
   },
   {
-    id: 12045,
-    topic: "Type I and Type II Errors",
-    prompt: "Baer (1977) noted that behavior analysts' reliance on visual analysis results in which pattern of errors relative to researchers who rely on statistical significance testing?",
-    options: [
-      "High rates of both Type I and Type II errors",
-      "Low rates of both Type I and Type II errors",
-      "A low incidence of Type I errors but an increased commission of Type II errors",
-      "A high incidence of Type I errors but a low incidence of Type II errors"
-    ],
-    correctIndex: 2,
-    explanation: "Baer (1977) pointed out that reliance on visual inspection results in a low incidence of Type I errors but increases the commission of Type II errors relative to statistical testing. As a result, behavior analysts identify fewer variables, but those they do identify tend to be more powerful, general, and dependable.",
-  },
-  {
     id: 12046,
     topic: "Evaluating ABA Research: Visual Analysis",
     prompt: "A recognized limitation of relying on visual analysis in applied behavior analysis is that:",
@@ -603,57 +395,5 @@ export const QUESTIONS_M13: Question[] = [
     ],
     correctIndex: 0,
     explanation: "Visual analysis is not without limitations. Poor interrater agreement on whether data patterns demonstrate experimental control has long been a concern, as shown by studies in which agreement was relatively low except for graphs with ideal patterns.",
-  },
-  {
-    id: 12047,
-    topic: "Evaluating ABA Research: Social Validity",
-    prompt: "When evaluating the social validity of an independent variable in a published study, a reader should consider all of the following except:",
-    options: [
-      "The acceptability of the procedure to practitioners and clients",
-      "The practicality and cost of the intervention",
-      "The statistical power of the design to detect small effects",
-      "Whether the procedure is perceived as too complex to learn or apply"
-    ],
-    correctIndex: 2,
-    explanation: "Evaluating the social validity of the independent variable involves its acceptability, practicality, and cost. Statistical power is a methodological concern related to internal validity and the likelihood of detecting effects, not a dimension of social validity.",
-  },
-  {
-    id: 12048,
-    topic: "Evaluating ABA Research: Theoretical Significance",
-    prompt: "Hayes, Rincover, and Solnick (1980) identified a 'technical drift' in applied behavior analysis away from conceptual analyses toward an emphasis on client cure. They warned this would likely result in:",
-    options: [
-      "Increased social validity of published research",
-      "A loss of scientific understanding due to focusing purely on the technical aspects of improving behavior",
-      "Greater generality of findings because more diverse populations would be included in studies",
-      "Reduced treatment integrity because practitioners would prioritize outcomes over procedural rigor"
-    ],
-    correctIndex: 1,
-    explanation: "Hayes et al. (1980) warned that a focus on client cure at the expense of conceptual analysis would likely result in a loss of scientific understanding. They recommended more thorough analyses of behavior to identify actual functional variables and improve the efficiency and generality of behavioral programs.",
-  },
-  {
-    id: 12049,
-    topic: "Evaluating ABA Research: Theoretical Significance",
-    prompt: "Sidman (1960) distinguished simple reliability from 'knowledgeable reproducibility.' Knowledgeable reproducibility refers to:",
-    options: [
-      "Replication conducted by independent research teams in multiple geographical locations",
-      "Reproducibility achieved simply by following the same procedure without understanding why it works",
-      "A more complete level of analysis in which all important factors controlling the functional relation have been identified and controlled",
-      "The ability to reproduce behavior change effects in group designs using random assignment"
-    ],
-    correctIndex: 2,
-    explanation: "Sidman differentiated simple reliability from 'knowledgeable reproducibility,' a more complete level of analysis in which all of the important factors influencing the functional relation have been identified and controlled, not just the surface-level procedure.",
-  },
-  {
-    id: 12050,
-    topic: "Evaluating ABA Research: Theoretical Significance",
-    prompt: "A published study demonstrates a significant behavior change but its methods do not make systematic conceptual sense in relation to known behavioral principles. According to Baer, Wolf, and Risley (1987), such a study:",
-    options: [
-      "Meets the full analytic standard for applied behavior analysis because it demonstrated convincing behavior change",
-      "May be convincingly applied and behavioral yet not sufficiently analytic, because effective behavior-change methods must also make systematic conceptual sense",
-      "Lacks internal validity because the independent variable was not clearly defined",
-      "Has high social validity but low external validity because generality was not established through replication"
-    ],
-    correctIndex: 1,
-    explanation: "Baer, Wolf, and Risley (1987) emphasized that applied behavior analysis is considered analytic only when it demonstrates convincingly how to make behavior changes and when its methods make systematic, conceptual sense. A study that changes behavior by methods that do not make conceptual sense may be applied and behavioral but is not sufficiently analytic.",
   },
 ];

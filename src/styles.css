@@ -1158,6 +1158,135 @@ input { font-family: inherit; }
   opacity: 0.75;
 }
 
+/* ===== Master De Facto Test — colorful, full-scope mock exam card ===== */
+.master-grid {
+  margin: 6px 0 18px;
+  animation: rise 0.5s var(--ease) both;
+}
+
+.master-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 2.5px; /* thickness of the animated gradient frame */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  background: linear-gradient(120deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd, #ff6b6b);
+  background-size: 300% 300%;
+  animation: masterFlow 9s ease infinite;
+  box-shadow: 0 10px 30px rgba(95, 39, 205, 0.28), 0 4px 14px rgba(72, 219, 251, 0.20);
+  transition: transform 0.18s var(--ease), box-shadow 0.18s var(--ease);
+}
+.master-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 42px rgba(95, 39, 205, 0.38), 0 6px 18px rgba(72, 219, 251, 0.30);
+}
+.master-card.selected {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.9), 0 16px 42px rgba(95, 39, 205, 0.42);
+}
+.master-card.unavailable {
+  filter: grayscale(0.7);
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@keyframes masterFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.master-body {
+  position: relative;
+  z-index: 1;
+  border-radius: 17px;
+  padding: 18px 20px;
+  background: linear-gradient(160deg, rgba(20, 16, 40, 0.94), rgba(12, 18, 40, 0.97));
+}
+
+.master-shine {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 32%, rgba(255, 255, 255, 0.22) 50%, transparent 68%);
+  transform: translateX(-120%);
+  animation: masterSweep 5s ease-in-out infinite;
+}
+@keyframes masterSweep {
+  0%, 55% { transform: translateX(-120%); }
+  100% { transform: translateX(120%); }
+}
+
+.master-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  background: linear-gradient(90deg, #ffffff, #ffe9a8, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.master-star {
+  -webkit-text-fill-color: #feca57;
+  color: #feca57;
+  filter: drop-shadow(0 0 6px rgba(254, 202, 87, 0.6));
+}
+
+.master-desc {
+  margin: 9px 0 13px;
+  color: #d7def0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.master-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.master-chip {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 11px;
+  border-radius: 999px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Same colorful treatment on every exam question: an animated rainbow frame.
+   Uses a masked gradient ::before so it rings the card edge without covering the
+   per-domain interior tint or intercepting clicks. */
+.q-card {
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 0 8px 26px rgba(95, 39, 205, 0.16), 0 3px 12px rgba(72, 219, 251, 0.13);
+}
+.q-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 3px; /* frame thickness */
+  background: linear-gradient(120deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd, #ff6b6b);
+  background-size: 300% 300%;
+  animation: masterFlow 9s ease infinite;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }

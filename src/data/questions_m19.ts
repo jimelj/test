@@ -20,19 +20,6 @@ export const QUESTIONS_M19: Question[] = [
     explanation: "An MO has two defining effects: a value-altering effect (changing the reinforcing or punishing effectiveness of a stimulus) and a behavior-altering effect (changing the current frequency of behavior previously reinforced by that stimulus).",
   },
   {
-    id: 18002,
-    topic: "Definition and Characteristics of Motivating Operations",
-    prompt: "Laraway and colleagues (2003) proposed the term 'motivating operation' to replace 'establishing operation' primarily because it acknowledges that these variables can:",
-    options: [
-      "Only increase the value of consequences as reinforcers",
-      "Only alter behavior in the presence of discriminative stimuli",
-      "Both strengthen and weaken the value of a consequence as a reinforcer",
-      "Function as both antecedents and consequences simultaneously"
-    ],
-    correctIndex: 2,
-    explanation: "The term motivating operation was proposed to encompass the fact that these variables serve not only to strengthen (establishing operations) but also to weaken (abolishing operations) the value of a consequence as a reinforcer.",
-  },
-  {
     id: 18003,
     topic: "Definition and Characteristics of Motivating Operations",
     prompt: "When an MO decreases the reinforcing effectiveness of a stimulus, it is specifically called:",
@@ -57,45 +44,6 @@ export const QUESTIONS_M19: Question[] = [
     ],
     correctIndex: 2,
     explanation: "The abative effect is the behavior-altering aspect of an abolishing operation: a decrease in the current frequency of all behavior that has been reinforced by the relevant stimulus, object, or event.",
-  },
-  {
-    id: 18005,
-    topic: "Definition and Characteristics of Motivating Operations",
-    prompt: "Food ingestion after a period of deprivation functions as which type of motivating operation?",
-    options: [
-      "An abolishing operation with an abative effect",
-      "An establishing operation with an evocative effect",
-      "A discriminative stimulus with a reinforcing effect",
-      "A conditioned punisher with an avoidance effect"
-    ],
-    correctIndex: 0,
-    explanation: "Food ingestion is an abolishing operation (AO) because it decreases the effectiveness of food as a reinforcer (reinforcer-abolishing effect) and decreases the current frequency of food-seeking behaviors (abative effect).",
-  },
-  {
-    id: 18006,
-    topic: "Definition and Characteristics of Motivating Operations",
-    prompt: "The value-altering and behavior-altering effects of an MO are best described as:",
-    options: [
-      "Sequential, with the value-altering effect always preceding the behavior-altering effect",
-      "Identical in practice and not distinguishable under any conditions",
-      "Only observable after the organism contacts the relevant reinforcer",
-      "Occurring simultaneously and considered independent of each other"
-    ],
-    correctIndex: 3,
-    explanation: "The value-altering and behavior-altering effects occur simultaneously but are considered independent in the sense that one does not derive from the other. However, once behavior contacts reinforcement, these two effects may become difficult to discern.",
-  },
-  {
-    id: 18007,
-    topic: "Definition and Characteristics of Motivating Operations",
-    prompt: "A behavior analyst notices that a child's tantrum intensity increases on days when the child has received very little parental attention. This observation is consistent with which MO effect?",
-    options: [
-      "The reinforcer-abolishing effect of attention deprivation",
-      "The evocative effect of attention deprivation as an establishing operation",
-      "The abative effect of attention satiation",
-      "The discriminative effect of parental presence"
-    ],
-    correctIndex: 1,
-    explanation: "Attention deprivation functions as an establishing operation whose evocative effect increases the current frequency and intensity of behavior (such as tantrums) previously reinforced by attention. The duration and intensity of the tantrum are correlated with the amount of attention received beforehand.",
   },
   {
     id: 18008,
@@ -163,19 +111,6 @@ export const QUESTIONS_M19: Question[] = [
     explanation: "In nontechnical terms, an SD tells you that something you want is available, while an MO makes you want something. SDs signal differential availability of a reinforcer; MOs alter the differential reinforcing effectiveness of an event.",
   },
   {
-    id: 18013,
-    topic: "Distinguishing Between MOs and SDs",
-    prompt: "A rat trained to press a lever for food presses less frequently when the chamber light is off. The decreased responding in the dark is best explained by:",
-    options: [
-      "Extinction, because food is unavailable when the light is off",
-      "The abolishing operation of food satiation",
-      "The abative effect of the MO being absent",
-      "The conditioned punishing effect of darkness"
-    ],
-    correctIndex: 0,
-    explanation: "In a discrimination procedure, food is available when the light is on (SD) and unavailable when it is off (S-delta). Food is still valued (the MO is still in effect) in the dark, but the behavior decreases because the reinforcer is unavailable. This is extinction, not MO control.",
-  },
-  {
     id: 18014,
     topic: "Distinguishing Between MOs and SDs",
     prompt: "An itch is best classified as which type of antecedent variable?",
@@ -228,19 +163,6 @@ export const QUESTIONS_M19: Question[] = [
     explanation: "Sleep deprivation is a UMO with a reinforcer-establishing effect: it increases the effectiveness of sleep as a reinforcer and evokes behavior previously reinforced by being able to sleep. The other options describe abolishing operations (ingestion, orgasm) or an incorrect direction (becoming warmer abolishes the reinforcing value of additional warmth).",
   },
   {
-    id: 18018,
-    topic: "Unconditioned Motivating Operations (UMOs)",
-    prompt: "A person who has not eaten in 18 hours begins searching kitchen cabinets. Food deprivation in this scenario is best described as:",
-    options: [
-      "An abolishing operation with an abative effect on food-seeking",
-      "A discriminative stimulus signaling the availability of food",
-      "A conditioned reinforcer that increases kitchen-searching behavior",
-      "An establishing operation with an evocative effect on food-seeking behavior"
-    ],
-    correctIndex: 3,
-    explanation: "Food deprivation is an unconditioned establishing operation. Its value-altering effect is to increase the reinforcing effectiveness of food, and its behavior-altering (evocative) effect is to increase all behaviors previously reinforced by food, including searching kitchen cabinets.",
-  },
-  {
     id: 18019,
     topic: "Unconditioned Motivating Operations (UMOs)",
     prompt: "Getting uncomfortably warm functions as a UMO by:",
@@ -254,32 +176,6 @@ export const QUESTIONS_M19: Question[] = [
     explanation: "Getting uncomfortably warm is a UMO that establishes a cooler temperature as an effective reinforcer (value-altering effect) and evokes behaviors that have resulted in a body-cooling effect, such as turning on air conditioning (behavior-altering: evocative effect).",
   },
   {
-    id: 18020,
-    topic: "Unconditioned Motivating Operations (UMOs)",
-    prompt: "What technically functions as the UMO related to breathing is not oxygen deprivation per se, but rather:",
-    options: [
-      "The presence of carbon monoxide in the blood",
-      "The buildup of carbon dioxide in the blood as a result of not being able to excrete it",
-      "A decrease in blood pressure caused by holding one's breath",
-      "The conditioned aversive properties of suffocation cues"
-    ],
-    correctIndex: 1,
-    explanation: "It is not actually oxygen deprivation that functions as the UMO, but rather the buildup of carbon dioxide in the blood as a result of not being able to excrete it (either because of not being able to breathe or because of breathing in air as rich in carbon dioxide as exhaled air).",
-  },
-  {
-    id: 18021,
-    topic: "Unconditioned Motivating Operations (UMOs)",
-    prompt: "Painful stimulation as a UMO can evoke aggressive behavior toward another organism. This occurs because painful stimulation may establish which events as effective reinforcers?",
-    options: [
-      "Removal of the other organism from the environment",
-      "Food and water, as pain increases overall deprivation",
-      "Social attention, because aggression produces attention",
-      "Signs of damage to the other organism"
-    ],
-    correctIndex: 3,
-    explanation: "Beyond evoking escape behavior, painful stimulation may function as a UMO that establishes events such as signs of damage to another organism as effective reinforcers, and evokes behaviors that have been reinforced by such signs. Skinner extended this analysis to the emotions of anger, love, and fear.",
-  },
-  {
     id: 18022,
     topic: "MOs for Punishment",
     prompt: "A migraine establishes bright light as a punisher and decreases opening the curtains. This is an example of:",
@@ -291,32 +187,6 @@ export const QUESTIONS_M19: Question[] = [
     ],
     correctIndex: 1,
     explanation: "A migraine functions as an EO related to punishment: it has a punisher-establishing effect (establishing bright light as a punisher) and an abative effect (decreasing the frequency of behaviors that have produced bright light, such as opening curtains).",
-  },
-  {
-    id: 18023,
-    topic: "MOs for Punishment",
-    prompt: "Time-out from reinforcement is effective as a punishment procedure only when:",
-    options: [
-      "It is applied immediately and consistently after each instance of the target behavior",
-      "The duration of time-out is at least 5 minutes to ensure the punishing effect",
-      "The MO for the reinforcers available during time-in is currently in effect",
-      "The child has previously experienced response cost as a punishment procedure"
-    ],
-    correctIndex: 2,
-    explanation: "Time-out will only be effective when 'time-in' serves as a reinforcer. Research by Solnick and colleagues showed that time-out was effective when the time-in environment was enriched and generally ineffective when time-in was impoverished. The effectiveness of time-out depends on the MO for the reinforcer being eliminated.",
-  },
-  {
-    id: 18024,
-    topic: "MOs for Punishment",
-    prompt: "A parent's disapproving look has been paired repeatedly with restricting access to video games. When would this disapproving look be most effective as a conditioned punisher?",
-    options: [
-      "When the child has already played video games for several hours and is satiated",
-      "Whenever the look has been delivered more than 10 times in the past week",
-      "Only during the specific task that produced disapproval in the past",
-      "When the child has had restricted access to video games and the MO for playing is in effect"
-    ],
-    correctIndex: 3,
-    explanation: "A conditioned punisher established by being paired with the removal of reinforcers depends on the same MO that establishes the value of those removed reinforcers. The disapproving look will be most effective when the child has been deprived of video games (MO for playing is in effect), making its restriction more aversive.",
   },
   {
     id: 18025,
@@ -343,19 +213,6 @@ export const QUESTIONS_M19: Question[] = [
     ],
     correctIndex: 0,
     explanation: "The buzzer has two effects: (1) it evokes the lever press as an SD, and (2) it increases the future frequency of cord pulling as a conditioned reinforcer. Both effects influence behavior in the same direction: an increase in current frequency and an increase in future frequency.",
-  },
-  {
-    id: 18027,
-    topic: "Multiple Effects of MOs",
-    prompt: "Food deprivation (a gradual-onset event) differs from sudden painful stimulation in its capacity to function as a punishing consequence because:",
-    options: [
-      "Food deprivation lacks any punishing properties under all circumstances",
-      "Food deprivation's gradual onset means it cannot easily function as a behavioral consequence that decreases future behavior",
-      "Only unconditioned stimuli can serve as punishers, and food deprivation is conditioned",
-      "Punishing consequences must always involve tangible stimuli, not deprivation states"
-    ],
-    correctIndex: 1,
-    explanation: "Events with sudden onset (like painful stimulation) can function as punishers for the response immediately preceding them. However, this must be qualified for events such as food deprivation that have such gradual onsets that they cannot easily function as behavioral consequences that decrease the future frequency of behavior.",
   },
   {
     id: 18028,
@@ -397,32 +254,6 @@ export const QUESTIONS_M19: Question[] = [
     explanation: "A CMO-S (surrogate CMO) is a previously neutral stimulus that acquired its MO effects by being paired with a UMO. This process is similar to how conditioned reinforcers and punishers acquire their functions by being paired with another behaviorally effective stimulus.",
   },
   {
-    id: 18031,
-    topic: "Surrogate CMO (CMO-S)",
-    prompt: "Research by O'Reilly and colleagues (2000) found that diverted parental attention (a parent talking to a third person) evoked aberrant behavior in individuals with developmental disabilities. Diverted attention is best interpreted as:",
-    options: [
-      "A CMO-T, because it establishes parental attention as a conditioned reinforcer",
-      "A CMO-S, because diverted attention was paired with low levels of attention (MO for attention)",
-      "An SD for problem behavior because attention was available during diverted attention",
-      "A CMO-R, because diverted attention preceded a form of social worsening"
-    ],
-    correctIndex: 1,
-    explanation: "Diverted attention was paired with low levels of parental attention, which functions as an MO for attention-maintained behavior. Through this pairing, diverted attention acquired CMO-S properties, establishing attention as a reinforcer and evoking problem behavior maintained by attention.",
-  },
-  {
-    id: 18032,
-    topic: "Surrogate CMO (CMO-S)",
-    prompt: "Seeing a restroom sign and suddenly feeling the urge to urinate is best explained by which concept?",
-    options: [
-      "The CMO-T, because the sign establishes urination-related behaviors as conditioned reinforcers",
-      "The SD, because restrooms are differentially correlated with the availability of relief",
-      "The CMO-R, because the restroom sign preceded a period of social worsening",
-      "The CMO-S, because the restroom sign was paired with a full bladder (MO)"
-    ],
-    correctIndex: 3,
-    explanation: "The restroom sign may function as a CMO-S because it has been paired with a full bladder (a UMO). Through repeated pairings, the sign acquired the same motivating effects as the full bladder, evoking behavior that would otherwise occur only when the bladder is full.",
-  },
-  {
     id: 18033,
     topic: "Surrogate CMO (CMO-S)",
     prompt: "To weaken the motivating effectiveness of a CMO-S, a practitioner could use which procedure?",
@@ -462,32 +293,6 @@ export const QUESTIONS_M19: Question[] = [
     explanation: "The warning stimulus fails to qualify as an SD because, in its absence, there is no effective consequence that could have failed to follow the response (there is no reinforcer unavailability). In an avoidance procedure, when the warning stimulus is absent, shock termination is not available or effective, which differs from the S-delta condition where reinforcement could have been delivered but was not.",
   },
   {
-    id: 18036,
-    topic: "Reflexive CMO (CMO-R)",
-    prompt: "During early intensive behavioral intervention, questions and instructions given to learners may function primarily as CMO-Rs rather than as SDs because:",
-    options: [
-      "Learners receive praise for correct answers, establishing questions as conditioned reinforcers",
-      "The questions and instructions establish the opportunity for new learning as a conditioned reinforcer",
-      "They precede further intense social interaction or prompting if the learner does not respond, establishing their own removal as a reinforcer",
-      "They are paired with highly preferred activities, making them function as CMO-Ss"
-    ],
-    correctIndex: 2,
-    explanation: "During early intensive behavioral intervention, questions and instructions are followed by verbal or physical prompts (further intense social interaction) if the learner does not respond appropriately. This makes them function as CMO-Rs: they establish their own removal as a conditioned reinforcer and evoke responses that produce such removal (compliance).",
-  },
-  {
-    id: 18037,
-    topic: "Reflexive CMO (CMO-R)",
-    prompt: "When a stranger asks you for directions and you are in a hurry, the main controlling variable for giving a quick response is most likely:",
-    options: [
-      "The positive reinforcement of the stranger's 'thank you'",
-      "The UMO of social deprivation that makes social interaction valuable",
-      "The SD provided by the stranger's presence correlated with receiving praise",
-      "The CMO-R established by the request, whose continued presence signals potential social worsening"
-    ],
-    correctIndex: 3,
-    explanation: "When answering the question is inconvenient and the stranger's thanks is not a strong reinforcer, the CMO-R is probably the main controlling variable. The stranger's request begins a brief period that functions as a warning stimulus: a form of social worsening (awkwardness) will occur if a response is not made promptly.",
-  },
-  {
     id: 18038,
     topic: "Transitive CMO (CMO-T)",
     prompt: "A transitive CMO (CMO-T) is best defined as:",
@@ -499,19 +304,6 @@ export const QUESTIONS_M19: Question[] = [
     ],
     correctIndex: 1,
     explanation: "A CMO-T is an environmental variable that establishes (or abolishes) the reinforcing effectiveness of another stimulus and evokes (or abates) the behavior that has been reinforced by that other stimulus. It makes something else effective as a reinforcer rather than altering itself (CMO-R) or mimicking another MO (CMO-S).",
-  },
-  {
-    id: 18039,
-    topic: "Transitive CMO (CMO-T)",
-    prompt: "Food deprivation functions simultaneously as both a UMO and a CMO-T. As a CMO-T, food deprivation:",
-    options: [
-      "Directly establishes food as an unconditioned reinforcer",
-      "Abolishes the effectiveness of all stimuli correlated with food",
-      "Establishes the reinforcing value of conditioned stimuli associated with food, such as a restaurant menu or utensils",
-      "Evokes behaviors previously reinforced by food in the absence of any discriminative stimuli"
-    ],
-    correctIndex: 2,
-    explanation: "As a UMO, food deprivation establishes food as an unconditioned reinforcer. As a CMO-T, food deprivation establishes the reinforcing value of conditioned reinforcers associated with food (e.g., a menu, utensils, an attentive server), which requires a learning history.",
   },
   {
     id: 18040,
@@ -553,32 +345,6 @@ export const QUESTIONS_M19: Question[] = [
     explanation: "The distinction hinges on the relation between reinforcer availability and the presence of the stimulus. If the reinforcer is more available in the presence than in the absence of the stimulus, it is an SD. If the reinforcer is equally available in the absence and presence of the stimulus, the stimulus functions as a CMO-T by altering value rather than signaling availability.",
   },
   {
-    id: 18043,
-    topic: "Transitive CMO (CMO-T)",
-    prompt: "Research by Shillingsburg and colleagues (2014) taught children to mand for information using 'which cup?' and 'who has it?' Participants manded more often during EO than AO conditions. This demonstrates that these mands for information were under the control of:",
-    options: [
-      "The presence of an adult as an SD for requesting information",
-      "A CMO-S created by pairing the stimulus with prior deprivation",
-      "A UMO for social interaction that increased during the EO condition",
-      "A CMO-T that increased the value of information about the item's location as a conditioned reinforcer"
-    ],
-    correctIndex: 3,
-    explanation: "The study used the interrupted-chain procedure to function as a CMO-T that increased the value of location information as a conditioned reinforcer. Participants manded using 'which' and 'who' more often during EO rather than AO conditions, confirming that the mands were under functional control of CMO-Ts.",
-  },
-  {
-    id: 18044,
-    topic: "Relevance of MOs to the Generality of Treatment Effects",
-    prompt: "Fragale and colleagues found that children with autism who learned to mand for preferred items manded almost exclusively when items had been restricted prior to the session. This finding most directly illustrates:",
-    options: [
-      "That mand training generalizes automatically across all settings once learned",
-      "That extinction procedures are needed to maintain mand behavior across contexts",
-      "That an acquired behavior may not occur in a new setting if the relevant MO is absent",
-      "That stimulus control by discriminative stimuli is the primary barrier to generalization"
-    ],
-    correctIndex: 2,
-    explanation: "The Fragale et al. finding illustrates that even well-established behaviors may not occur in novel settings if the MO is absent. Generalization and maintenance failures can be due not only to novel discriminative stimuli but also to different MO conditions. For a newly acquired response to generalize and maintain, its relevant MO must be in effect.",
-  },
-  {
     id: 18045,
     topic: "Relevance of MOs to the Generality of Treatment Effects",
     prompt: "When programming for generalization of learned behaviors, a clinician should ensure generalization occurs:",
@@ -592,32 +358,6 @@ export const QUESTIONS_M19: Question[] = [
     explanation: "When programming for generalization, clinicians must do so not only across different discriminative stimuli but also across different MOs. For a newly acquired response to be generalized and maintained, its relevant MO must also be in effect in those new situations.",
   },
   {
-    id: 18046,
-    topic: "Relevance of MOs to Applied Behavior Analysis",
-    prompt: "Gottschalk and colleagues (2000) compared preference assessments under control, satiation, and deprivation conditions. Approach responses were highest during deprivation conditions. This finding demonstrates that:",
-    options: [
-      "Preference assessments are not valid measures of reinforcer potency",
-      "Results of preference assessments are highly dependent on current MO conditions",
-      "Satiation conditions should always be used before conducting preference assessments",
-      "Deprivation eliminates the discriminative control of preferred stimuli"
-    ],
-    correctIndex: 1,
-    explanation: "Gottschalk et al. found that approach responses were higher during deprivation conditions across all participants. This demonstrates that results of preference assessments are highly dependent on current MOs, which has important implications for how practitioners conduct and interpret such assessments.",
-  },
-  {
-    id: 18047,
-    topic: "Relevance of MOs to Applied Behavior Analysis",
-    prompt: "Research by Worsdell and colleagues (2000) showed that high rates of problem behavior occurred when both the EO and reinforcement were present, but almost no responding occurred when the EO was present and reinforcement was absent. This finding is consistent with which principle?",
-    options: [
-      "That problem behavior is always maintained by positive reinforcement when an EO is in effect",
-      "That functional analyses are invalid when MOs are experimentally manipulated",
-      "That MOs only affect behavior under extinction conditions, not during active reinforcement",
-      "That for behavior to occur it must be followed by an effective reinforcer, and MOs modulate the effectiveness of that reinforcement"
-    ],
-    correctIndex: 3,
-    explanation: "The Worsdell et al. findings are consistent with the conceptualization that for behavior to occur, it must be followed by an effective reinforcer. When the EO was present but reinforcement was absent, almost no responding occurred, suggesting MOs differentially affect the results of functional analyses by modulating reinforcer effectiveness.",
-  },
-  {
     id: 18048,
     topic: "Relevance of MOs to Applied Behavior Analysis",
     prompt: "The study of MOs led behavior analysts to recognize that the traditional three-term contingency (antecedent-behavior-consequence) is dependent upon which fourth variable?",
@@ -629,19 +369,6 @@ export const QUESTIONS_M19: Question[] = [
     ],
     correctIndex: 2,
     explanation: "Research on MOs allowed behavior analysts to recognize that the three-term contingency is dependent upon a fourth variable: the motivating operation, which modulates the effectiveness of reinforcement and hence the evocative strength of discriminative stimuli. Without an effective MO, even well-established SDs may not evoke behavior.",
-  },
-  {
-    id: 18049,
-    topic: "Definition and Characteristics of Motivating Operations",
-    prompt: "The term 'setting event' is considered less useful than 'motivating operation' primarily because:",
-    options: [
-      "Setting events only refer to physical environments, not deprivation or social variables",
-      "Setting events are too broadly defined and include variables that have function-altering effects",
-      "Most descriptions of setting events are topographical rather than functional, lacking a clear functional definition",
-      "Setting events were originally defined for respondent behavior and do not apply to operant behavior"
-    ],
-    correctIndex: 2,
-    explanation: "No clear functional definition of 'setting event' has appeared in the literature, and most descriptions are topographical rather than functional. The MO concept, by contrast, describes variables with two specific functional effects (value-altering and behavior-altering), providing a greater evidential requirement and better taxonomic precision.",
   },
   {
     id: 18050,

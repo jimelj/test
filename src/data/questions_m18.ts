@@ -20,19 +20,6 @@ export const QUESTIONS_M18: Question[] = [
     explanation: "Negative punishment is defined as a response followed immediately by the removal of a stimulus that decreases future occurrences of similar responses. The distinction from positive punishment is the type of stimulus change: removal versus presentation.",
   },
   {
-    id: 17002,
-    topic: "Negative Punishment Defined",
-    prompt: "Which statement correctly distinguishes negative punishment from positive punishment?",
-    options: [
-      "Negative punishment increases behavior; positive punishment decreases behavior.",
-      "Both involve stimulus presentation, but negative punishment uses weaker stimuli.",
-      "Negative punishment is used only in schools; positive punishment is used in clinical settings.",
-      "Negative punishment involves stimulus removal; positive punishment involves stimulus presentation."
-    ],
-    correctIndex: 3,
-    explanation: "Both negative and positive punishment decrease future behavior. The distinction is the type of stimulus change: negative punishment involves the removal of a stimulus, whereas positive punishment involves the presentation of a stimulus.",
-  },
-  {
     id: 17003,
     topic: "Negative Punishment Defined",
     prompt: "Applied behavior analysts implement negative punishment with two principal tactics. Which option correctly identifies those two tactics?",
@@ -70,32 +57,6 @@ export const QUESTIONS_M18: Question[] = [
     ],
     correctIndex: 3,
     explanation: "The three factors implicit in the definition of time-out are: (a) the time-in versus time-out discrepancy must be discriminative, (b) the loss of reinforcement must be immediate, and (c) a decrease in future frequency must occur. Written consent before each episode is not one of the three definitional factors.",
-  },
-  {
-    id: 17006,
-    topic: "Time-Out Defined",
-    prompt: "A teacher removes a student from class to the hallway after every episode of aggression, yet the student's aggression does not decrease over the following weeks. From a functional perspective, what can be concluded?",
-    options: [
-      "Time-out is not in effect because there was no resultant decrease in the behavior.",
-      "Time-out is in effect because the student was removed from the classroom.",
-      "Time-out is in effect because the removal was immediate.",
-      "Time-out is in effect because the hallway is devoid of reinforcers."
-    ],
-    correctIndex: 0,
-    explanation: "From a functional perspective, time-out requires a resultant decrease in future similar behaviors. Without that decrease, time-out cannot be claimed, even if the person was physically removed from the setting.",
-  },
-  {
-    id: 17007,
-    topic: "Time-Out Defined",
-    prompt: "The conceptual perspective on time-out emphasizes that the more discriminatively reinforcing the time-in setting is, the more effective time-out will be. What practical implication does this have?",
-    options: [
-      "Practitioners should make the time-out setting as reinforcing as the time-in setting.",
-      "The time-in setting should be kept minimally reinforcing to prevent avoidance.",
-      "Time-out should be applied for longer periods in highly reinforcing classrooms.",
-      "A richer time-in environment increases the punishing value of time-out."
-    ],
-    correctIndex: 3,
-    explanation: "The greater the difference between the reinforcing value of the time-in setting and the absence of that value in the time-out setting, the more effective time-out will be as a negative punisher. A richer time-in environment makes time-out more aversive.",
   },
   {
     id: 17008,
@@ -137,19 +98,6 @@ export const QUESTIONS_M18: Question[] = [
     explanation: "Planned ignoring occurs when, contingent on an inappropriate behavior, the opportunity to earn social reinforcers such as attention or verbal interaction is removed. Turning away from the learner exemplifies this tactic.",
   },
   {
-    id: 17011,
-    topic: "Planned Ignoring",
-    prompt: "Planned ignoring operationally involves which of the following?",
-    options: [
-      "Systematically looking away, remaining quiet, or refraining from any interaction for a specific time",
-      "Removing the participant from the time-in setting and placing them in a partitioned space",
-      "Turning off a television or preferred auditory stimulus contingent on the problem behavior",
-      "Repositioning the participant so they can observe ongoing activities without earning reinforcers"
-    ],
-    correctIndex: 0,
-    explanation: "Planned ignoring operationally involves systematically looking away from the individual, remaining quiet, or refraining from any interaction whatsoever for a specific time.",
-  },
-  {
     id: 17012,
     topic: "Terminate Specific Reinforcer Contact",
     prompt: "A cafeteria used a traffic signal light and music that stopped for 10 seconds when noise exceeded a set threshold. This exemplifies which time-out tactic?",
@@ -161,19 +109,6 @@ export const QUESTIONS_M18: Question[] = [
     ],
     correctIndex: 3,
     explanation: "Terminate specific reinforcer contact is a variation of time-out whereby each occurrence of the target behavior immediately stops an activity or sensory reinforcer. In the cafeteria study, loud noise caused the music (a specific reinforcer) to stop.",
-  },
-  {
-    id: 17013,
-    topic: "Terminate Specific Reinforcer Contact",
-    prompt: "In a study by Bishop and Stumphauzer (1973), television cartoons were turned off each time young children engaged in thumb sucking. This procedure is an example of:",
-    options: [
-      "Response cost using an existing token cache",
-      "Exclusion time-out",
-      "Terminate specific reinforcer contact",
-      "Bonus response cost"
-    ],
-    correctIndex: 2,
-    explanation: "The contingent termination of television cartoons to reduce thumb sucking is an example of terminate specific reinforcer contact, a nonexclusion time-out variation in which the specific reinforcer stops when the target behavior occurs.",
   },
   {
     id: 17014,
@@ -189,19 +124,6 @@ export const QUESTIONS_M18: Question[] = [
     explanation: "In contingent observation, the person is repositioned within the existing setting so they can observe ongoing activities, but access to available reinforcers is lost. The sidelined athlete can watch the game but cannot participate or earn social reinforcers.",
   },
   {
-    id: 17015,
-    topic: "Contingent Observation",
-    prompt: "The directive 'sit and watch' is associated with which time-out tactic?",
-    options: [
-      "Partition time-out",
-      "Planned ignoring",
-      "Contingent observation",
-      "Time-out room"
-    ],
-    correctIndex: 2,
-    explanation: "Contingent observation involves directing the student to move from the group but remain visible, and reinforcers are withheld. This is commonly described as directing the student to 'sit and watch.'",
-  },
-  {
     id: 17016,
     topic: "Partition or Select Space Time-Out",
     prompt: "A student is moved from her assigned seat to a cubicle in the corner of the classroom contingent on misbehavior. She can still hear the lesson but her view is restricted. This is an example of:",
@@ -213,19 +135,6 @@ export const QUESTIONS_M18: Question[] = [
     ],
     correctIndex: 1,
     explanation: "In partition or select space time-out, the student remains within the time-in setting but their view is restricted by a panel or cubicle, or a select space is arranged to serve as the time-out area.",
-  },
-  {
-    id: 17017,
-    topic: "Partition or Select Space Time-Out",
-    prompt: "Which of the following is a potential disadvantage of partition or select space time-out?",
-    options: [
-      "The student is removed from the time-in setting entirely, missing instructional content.",
-      "The student cannot observe any classroom activities during the time-out period.",
-      "The time-out period is typically too brief to suppress problem behavior.",
-      "The student may still obtain reinforcement from peers, reducing the procedure's effectiveness."
-    ],
-    correctIndex: 3,
-    explanation: "A disadvantage of partition time-out is that the individual may still be able to obtain reinforcement from other students, reducing the procedure's effectiveness. Public perceptions and possible disparaging comments from peers are also concerns.",
   },
   {
     id: 17018,
@@ -265,19 +174,6 @@ export const QUESTIONS_M18: Question[] = [
     ],
     correctIndex: 2,
     explanation: "A time-out room must be continuously monitored by staff and should not contain potentially reinforcing items. It should not be locked, and it should preferably be located in close proximity to the time-in setting.",
-  },
-  {
-    id: 17021,
-    topic: "Time-Out Room",
-    prompt: "After a few exposures to a time-out room, students learn to discriminate this room from other rooms. What behavioral effect does this produce?",
-    options: [
-      "The time-out room itself becomes a conditioned reinforcer.",
-      "Students become more likely to escape from the school building.",
-      "The time-out room loses its effectiveness because students habituate to it.",
-      "The room assumes conditioned aversive properties, increasing the probability that the time-in setting will be more reinforcing."
-    ],
-    correctIndex: 3,
-    explanation: "After a few exposures, the time-out room assumes conditioned aversive properties, which increases the probability that the time-in setting will be perceived as more reinforcing by contrast.",
   },
   {
     id: 17022,
@@ -332,32 +228,6 @@ export const QUESTIONS_M18: Question[] = [
     explanation: "Although time-out has shown effectiveness, it should not be the method of first choice. Practitioners should initially consider nonpunitive methods for reducing the target behavior, such as differential reinforcement of alternative behavior or extinction.",
   },
   {
-    id: 17026,
-    topic: "Using Time-Out Effectively",
-    prompt: "To enrich the time-in environment for effective time-out implementation, a practitioner should:",
-    options: [
-      "Remove all reinforcement from the time-in setting to make time-out less aversive by comparison.",
-      "Limit the frequency of praise to prevent the student from becoming dependent on reinforcement.",
-      "Ensure the time-in environment is identical in stimulation to the time-out area.",
-      "Identify behaviors incompatible with or alternative to those leading to time-out and reinforce them."
-    ],
-    correctIndex: 3,
-    explanation: "Practitioners should identify behaviors alternative to or incompatible with behaviors that lead to time-out and reinforce them. The ratio of reinforcing statements to reprimands should strongly favor reinforcing statements.",
-  },
-  {
-    id: 17027,
-    topic: "Using Time-Out Effectively",
-    prompt: "A practitioner planning to use time-out should provide students with explicit examples and nonexamples of the behaviors that will lead to time-out. What concern does this recommendation address?",
-    options: [
-      "Research findings that children were not always aware of the reasons time-out was implemented",
-      "The requirement that time-out rooms be locked to prevent escape",
-      "Legal rulings mandating that students choose their own time-out area",
-      "The ethical prohibition against using time-out for minor infractions"
-    ],
-    correctIndex: 0,
-    explanation: "Post-time-out interviews revealed that children were not always aware of the reasons time-out was implemented. Providing explicit examples and nonexamples of the target behavior addresses this problem.",
-  },
-  {
     id: 17028,
     topic: "Duration of Time-Out",
     prompt: "What is the recommended duration for most time-out sessions?",
@@ -371,19 +241,6 @@ export const QUESTIONS_M18: Question[] = [
     explanation: "Time-out sessions should be as brief as possible while maintaining effectiveness. Durations of 2 to 5 minutes are often effective, and time-out periods exceeding 15 minutes are generally not effective.",
   },
   {
-    id: 17029,
-    topic: "Duration of Time-Out",
-    prompt: "Which of the following is a reason why longer time-out periods are counterproductive?",
-    options: [
-      "Longer time-outs make it harder for students to discriminate the time-in from the time-out setting.",
-      "Longer periods increase the reinforcing value of the time-out environment.",
-      "Extended time-out periods immediately eliminate all self-stimulatory behavior.",
-      "The person may develop a tolerance for the longer duration and find ways to obtain reinforcers during time-out."
-    ],
-    correctIndex: 3,
-    explanation: "Longer time-out periods are counterproductive because the person may develop a tolerance and find ways to obtain reinforcers, especially if they have a history of self-stimulatory behavior. Longer periods also remove the person from the educational environment.",
-  },
-  {
     id: 17030,
     topic: "Exit Criteria",
     prompt: "A release contingency in time-out refers to which of the following?",
@@ -395,19 +252,6 @@ export const QUESTIONS_M18: Question[] = [
     ],
     correctIndex: 2,
     explanation: "A release contingency requires the absence of misbehavior for a specified period prior to the end of the fixed time-out period. For example, no misbehavior during the last 30 seconds of a 5-minute period.",
-  },
-  {
-    id: 17031,
-    topic: "Exit Criteria",
-    prompt: "Donaldson and Vollmer (2011) compared fixed-duration time-out with release contingency time-out. What was their primary recommendation?",
-    options: [
-      "A fixed-duration time-out should be considered first because there was no apparent benefit to including a release contingency, and release contingencies resulted in longer time-outs.",
-      "A release contingency should always be used because it reduces spillover of problem behavior.",
-      "Release contingencies should be used exclusively because they teach self-calming skills.",
-      "Fixed-duration time-out should be reserved for severe problem behaviors only."
-    ],
-    correctIndex: 0,
-    explanation: "Donaldson and Vollmer recommended that a fixed-duration time-out should be considered first because there was no apparent benefit to including a release contingency, release contingencies resulted in longer time-outs, and the effort required to implement a release contingency is greater.",
   },
   {
     id: 17032,
@@ -436,19 +280,6 @@ export const QUESTIONS_M18: Question[] = [
     explanation: "The BACB reaffirmed three guiding principles: (1) the welfare of the individual served is the highest priority, (2) individuals and parents or guardians have a right to choose, and (3) the principle of least restrictiveness should be followed.",
   },
   {
-    id: 17034,
-    topic: "Legal and Ethical Guidelines for Time-Out",
-    prompt: "According to the ABAI Position Statement on Restraint and Seclusion, how does seclusion differ from time-out?",
-    options: [
-      "Time-out and seclusion are treated as identical because both involve removal from the time-in setting.",
-      "Seclusion is always permitted without a behavior intervention plan; time-out always requires one.",
-      "Seclusion involves involuntary isolation to a private, escape-proof setting, whereas time-out involves response-contingent withdrawal of access to positive reinforcers.",
-      "Time-out requires physical restraint; seclusion does not."
-    ],
-    correctIndex: 2,
-    explanation: "Time-out involves the immediate response-contingent withdrawal of access to positive reinforcers, while seclusion involves involuntary isolation to a private, escape-proof setting that physically displaces the person from the time-in environment.",
-  },
-  {
     id: 17035,
     topic: "Terminating the Time-Out Program",
     prompt: "When should a practitioner begin planning to eliminate the time-out program?",
@@ -473,58 +304,6 @@ export const QUESTIONS_M18: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Response cost is the response-contingent loss of a specific number of positive reinforcers that has the effect of decreasing the future occurrence of similar responses. It essentially constitutes a fine for misbehavior.",
-  },
-  {
-    id: 17037,
-    topic: "Response Cost Defined",
-    prompt: "Response cost typically involves the loss of which types of stimuli?",
-    options: [
-      "Primary reinforcers such as food and water only",
-      "Attention from peers and teachers only",
-      "Access to the time-in setting for a specified period",
-      "Generalized conditioned reinforcers such as tokens, tangibles such as stickers, or minutes of already-earned time with a preferred activity"
-    ],
-    correctIndex: 3,
-    explanation: "Response cost typically involves the loss of generalized conditioned reinforcers such as money or tokens, tangibles such as stickers or marbles, or minutes of already-earned time with a preferred activity.",
-  },
-  {
-    id: 17038,
-    topic: "Response Cost Defined",
-    prompt: "The punitive value of the reinforcers lost in a response cost procedure depends on:",
-    options: [
-      "The severity of the problem behavior being targeted",
-      "The individual reinforcement preferences of the participant",
-      "The number of peers who observe the reinforcer being removed",
-      "The total number of reinforcers available in the setting"
-    ],
-    correctIndex: 1,
-    explanation: "The punitive value of the lost reinforcers depends entirely on the individual reinforcement preferences of the participant. A reinforcer that is highly valued will produce a greater punishing effect when removed.",
-  },
-  {
-    id: 17039,
-    topic: "Desirable Aspects of Response Cost",
-    prompt: "According to Lerman and Toole (2011), how do nonexclusion time-out and response cost rank in terms of restrictiveness among punishment procedures?",
-    options: [
-      "They are the most restrictive procedures, followed by exclusion time-out and overcorrection.",
-      "They are moderately restrictive and should be used only after exclusion time-out has failed.",
-      "They are considered the least restrictive, followed by exclusion time-out, overcorrection, and other physical punishers.",
-      "They are equivalent in restrictiveness to extinction and differential reinforcement."
-    ],
-    correctIndex: 2,
-    explanation: "Lerman and Toole noted that nonexclusion time-out and response cost are typically considered the least restrictive of punishment procedures, followed by exclusion time-out, overcorrection, and other physical punishers.",
-  },
-  {
-    id: 17040,
-    topic: "Desirable Aspects of Response Cost",
-    prompt: "Embry and Biglan (2008) included response cost in their list of 52 fundamental units of behavioral influence. What criteria justified this designation?",
-    options: [
-      "It is the most powerful behavior reduction procedure available and requires no additional positive reinforcement procedures.",
-      "It is socially valid, is easy to implement, and produces clear and discrete outcomes that have been verified repeatedly.",
-      "It eliminates problem behavior permanently after a single application.",
-      "It is compatible with every cultural context without modification."
-    ],
-    correctIndex: 1,
-    explanation: "Embry and Biglan included response cost because it is socially valid, is easy to implement, and produces clear and discrete outcomes that have been verified repeatedly by experimental and applied analyses.",
   },
   {
     id: 17041,
@@ -564,19 +343,6 @@ export const QUESTIONS_M18: Question[] = [
     ],
     correctIndex: 3,
     explanation: "When repeated imposition of response cost reinforces rather than punishes the undesirable behavior, the practitioner should stop using response cost and switch to another reductive procedure such as time-out or DRA.",
-  },
-  {
-    id: 17044,
-    topic: "Using Response Cost Effectively",
-    prompt: "According to Weiner (1962), as the magnitude of the response cost fine increases, what is the likely outcome?",
-    options: [
-      "The rate of the undesirable behavior will increase because of frustration.",
-      "Larger reductions in behavior may occur, but a fine that is too large can exhaust the person's reinforcer supply and make the system ineffective.",
-      "The behavior will decrease only if the fine exceeds 50% of the total reinforcer supply.",
-      "No predictable effect, because the magnitude of the fine is unrelated to behavior change."
-    ],
-    correctIndex: 1,
-    explanation: "As the magnitude of the fine increases, larger reductions in the rate of the undesirable behavior may occur. However, if the loss is too great and too rapid, the person will be exhausted of reinforcers, creating a deficit situation and making the system ineffective.",
   },
   {
     id: 17045,
@@ -629,31 +395,5 @@ export const QUESTIONS_M18: Question[] = [
     ],
     correctIndex: 3,
     explanation: "Omission errors occur when the analyst fails to apply the response cost contingency and levy the appropriate fine after a target behavior occurrence, either by not registering the behavior or by observing it but still failing to apply the fine.",
-  },
-  {
-    id: 17049,
-    topic: "Response Cost Considerations",
-    prompt: "A teacher removes a token from a student each time the student calls out, but the teacher's visible reaction when doing so inadvertently provides attention that maintains the behavior. This illustrates which consideration?",
-    options: [
-      "Avoidance",
-      "Calling attention to the punished behavior",
-      "Treatment integrity errors",
-      "Unpredictability of side effects"
-    ],
-    correctIndex: 1,
-    explanation: "Response cost calls attention to the undesirable behavior. The teacher's attention, even in the form of notification of reinforcer loss, could function as an attention-getting reinforcing event, potentially increasing future misbehavior.",
-  },
-  {
-    id: 17050,
-    topic: "Response Cost with Positive Reinforcement",
-    prompt: "Musser and colleagues (2001) combined response cost with positive reinforcement to improve compliance. What was one advantage of this combined approach?",
-    options: [
-      "It eliminated the need to collect data on the target behavior.",
-      "It allowed the practitioner to use time-out as a backup if response cost was ineffective.",
-      "It ensured that students always ended each session with a full supply of tokens.",
-      "If all tokens were not lost through response cost, the remaining ones could be exchanged for backup reinforcers, and the practitioner also focused on reinforcing positive behaviors."
-    ],
-    correctIndex: 3,
-    explanation: "Combining response cost with positive reinforcement has two advantages: (1) remaining tokens can be traded for backup reinforcers if not all are lost, and (2) the practitioner also focuses on reinforcing positive behaviors, teaching new skills and reducing legal and ethical concerns.",
   },
 ];

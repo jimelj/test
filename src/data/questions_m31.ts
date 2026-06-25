@@ -33,32 +33,6 @@ export const QUESTIONS_M31: Question[] = [
     explanation: "Tokens are generalized conditioned reinforcers because they have been paired with a wide array of backup reinforcers, making them effective across different motivational states and settings.",
   },
   {
-    id: 30003,
-    topic: "Functions of Tokens",
-    prompt: "One advantage of tokens is that they bridge the time gap between a behavior and the delivery of a backup reinforcer. Which additional gap do tokens also bridge?",
-    options: [
-      "The setting gap between where a behavior occurs and where the backup reinforcer is delivered",
-      "The motivation gap between practitioner and learner",
-      "The skill gap between novice and advanced learners",
-      "The cost gap between inexpensive and luxury backup items"
-    ],
-    correctIndex: 0,
-    explanation: "Tokens bridge both the time gap and the setting gap. For example, tokens earned at school can be exchanged for reinforcers at home, or tokens earned in one classroom can be exchanged in a different classroom.",
-  },
-  {
-    id: 30004,
-    topic: "Functions of Tokens",
-    prompt: "A behavior analyst notes that tokens make the management of motivation less critical. Which property of tokens explains this?",
-    options: [
-      "Tokens are safe and cannot be swallowed or used to cause injury",
-      "Tokens are durable and inexpensive to produce",
-      "As generalized conditioned reinforcers, tokens are associated with many backup reinforcers and are thus independent of any single motivational state",
-      "Tokens are easily counterfeit-proofed with special marking pens"
-    ],
-    correctIndex: 2,
-    explanation: "Because tokens are generalized conditioned reinforcers paired with many backup reinforcers, they are relatively independent of specific states of deprivation or satiation, reducing the need to manage motivation carefully.",
-  },
-  {
     id: 30005,
     topic: "Level Systems",
     prompt: "In a level system, what happens as participants advance from lower to higher levels?",
@@ -70,19 +44,6 @@ export const QUESTIONS_M31: Question[] = [
     ],
     correctIndex: 3,
     explanation: "As participants move up from one level to the next in a level system, they gain access to more privileges and are expected to demonstrate greater independence, while the token reinforcement schedule is gradually thinned.",
-  },
-  {
-    id: 30006,
-    topic: "Level Systems",
-    prompt: "Level systems are based on at least three assumptions. Which of the following is one of those assumptions?",
-    options: [
-      "Individual contingencies introduced alone are more effective than package programs",
-      "Token economies should be withdrawn immediately once criterion is reached",
-      "Response cost should never be used within a level system",
-      "Student behaviors and expectations must be stated explicitly"
-    ],
-    correctIndex: 3,
-    explanation: "One of the three assumptions underlying level systems is that student behaviors and expectations must be stated explicitly. The other two are that package programs are more effective than individual contingencies alone, and that differential reinforcement is needed to reinforce closer approximations to the next level.",
   },
   {
     id: 30007,
@@ -98,19 +59,6 @@ export const QUESTIONS_M31: Question[] = [
     explanation: "The six steps are: (1) identify target behaviors and rules, (2) select tokens, (3) develop a menu of backup reinforcers, (4) establish a token exchange ratio, (5) determine when and how tokens will be dispensed and exchanged, and (6) field-test the system before full-scale implementation.",
   },
   {
-    id: 30008,
-    topic: "Designing a Token Economy",
-    prompt: "When selecting target behaviors for a token economy, which guideline should be followed?",
-    options: [
-      "Start with a small number of behaviors, including some that are easy for the individual to accomplish",
-      "Begin with a large number of behaviors so that learners have many opportunities to earn tokens",
-      "Select the same behaviors for all learners to ensure consistency across the program",
-      "Target only behaviors that are currently absent from the learner's repertoire"
-    ],
-    correctIndex: 0,
-    explanation: "Guidelines for selecting behaviors include choosing only measurable and observable behaviors, specifying criteria for success, starting with a small number of behaviors including some easy ones, and ensuring participants have prerequisite skills for all targeted behaviors.",
-  },
-  {
     id: 30009,
     topic: "Selecting Tokens",
     prompt: "A practitioner wants to use tally marks as tokens. To prevent learners from counterfeiting the tokens, the practitioner should:",
@@ -122,19 +70,6 @@ export const QUESTIONS_M31: Question[] = [
     ],
     correctIndex: 0,
     explanation: "To prevent counterfeiting when using tally marks, the marks should be placed on a special card or made with a special marking pen available only to the analyst, preventing learners from surreptitiously manufacturing their own tokens.",
-  },
-  {
-    id: 30010,
-    topic: "Selecting Tokens",
-    prompt: "Which of the following is a potential disadvantage of using highly desirable objects as tokens?",
-    options: [
-      "Learners may refuse to exchange them for backup reinforcers, leading to token hoarding",
-      "Such tokens are too inexpensive to maintain their reinforcing value",
-      "Using desirable objects as tokens violates ethical guidelines for token economies",
-      "The objects may distract learners from the behaviors the system is designed to change"
-    ],
-    correctIndex: 3,
-    explanation: "Using desirable objects as tokens can backfire when learners spend so much time interacting with the tokens themselves that the tokens distract them from the purpose of the system, as illustrated by the example of a teacher who used baseball cards as tokens.",
   },
   {
     id: 30011,
@@ -150,19 +85,6 @@ export const QUESTIONS_M31: Question[] = [
     explanation: "Token reinforcement contingencies should not deny the learner basic needs (food, medical care) or items associated with basic rights (clean clothing, adequate heating). These should not be withheld as part of a token economy program.",
   },
   {
-    id: 30012,
-    topic: "Backup Reinforcers",
-    prompt: "Why is it important to conduct repeated reinforcer assessments over time when managing a token economy?",
-    options: [
-      "Federal law requires a minimum number of assessments per year",
-      "Initial assessments are unreliable and must be replicated before any backup item is used",
-      "Repeated assessments allow the practitioner to increase the price of all backup items systematically",
-      "Reinforcer preference can shift and change over time, so assessments must be updated"
-    ],
-    correctIndex: 3,
-    explanation: "Reinforcer preference can shift and change over time, so practitioners should be prepared to conduct multiple assessments over time to ensure that backup reinforcers continue to function as reinforcers for each individual.",
-  },
-  {
     id: 30013,
     topic: "Token Exchange Ratio",
     prompt: "When first implementing a token economy, the ratio between tokens earned and the price of backup items should be:",
@@ -174,19 +96,6 @@ export const QUESTIONS_M31: Question[] = [
     ],
     correctIndex: 2,
     explanation: "Initially, the ratio between tokens earned and the price of backup items should be small (low) to provide immediate success for learners. Thereafter, the ratio of exchange should be adjusted to maintain the responsiveness of participants.",
-  },
-  {
-    id: 30014,
-    topic: "Token Exchange Ratio",
-    prompt: "As learners' token-earning behaviors and income increase, which adjustment is recommended for the backup reinforcer menu?",
-    options: [
-      "Increase the cost of backup items, devalue tokens, and increase the number of backup items available",
-      "Decrease the cost of all backup items to reward greater earning",
-      "Eliminate luxury backup items and focus only on necessary items",
-      "Reduce the number of target behaviors so learners are not overwhelmed"
-    ],
-    correctIndex: 0,
-    explanation: "With increased earnings, the practitioner should increase the cost of backup items, devalue tokens, increase the number of backup items, and add luxury backup items, while increasing the prices of necessary backup items more than luxury items.",
   },
   {
     id: 30015,
@@ -215,19 +124,6 @@ export const QUESTIONS_M31: Question[] = [
     explanation: "Token loss should never be applied when a learner has no tokens. Students should not be allowed to go into debt, as doing so would likely decrease the reinforcement value of the tokens. A learner should always earn more tokens than she loses.",
   },
   {
-    id: 30017,
-    topic: "Response Cost in Token Economies",
-    prompt: "Research comparing token-earn and token-loss contingencies found that when students were given a choice, most preferred:",
-    options: [
-      "The token-earn contingency because it involved positive reinforcement",
-      "The token-loss contingency, despite it being a negative punishment procedure",
-      "Neither contingency, preferring instead a DRO-only arrangement",
-      "The token-earn contingency because it was easier to implement"
-    ],
-    correctIndex: 1,
-    explanation: "In the Jowett Hirst et al. study, when given a choice, five of six children chose the response cost (token-loss) contingency over the token-earn contingency, an interesting finding given that token-loss is a negative punishment procedure.",
-  },
-  {
     id: 30018,
     topic: "Field-Testing a Token Economy",
     prompt: "During the field-test phase of a token economy, what distinguishes it from full implementation?",
@@ -254,19 +150,6 @@ export const QUESTIONS_M31: Question[] = [
     explanation: "The behavior analyst must recognize that during initial training, trainees are on a learning curve and will make mistakes. Booster training, review sessions, or monitoring protocols should be planned to ensure correct implementation when the trainee is working independently.",
   },
   {
-    id: 30020,
-    topic: "Training Staff",
-    prompt: "Plavnick et al. (2010) found that after two 1-hour training sessions, teachers' implementation of a token economy improved during training but then decreased during independent implementation. What intervention improved and maintained their performance?",
-    options: [
-      "Introduction of self-monitoring of checklist items",
-      "Additional lecture-style training sessions on token economy components",
-      "Reducing the number of token economy steps required of teachers",
-      "Replacing the token economy with a simpler behavior management system"
-    ],
-    correctIndex: 0,
-    explanation: "When self-monitoring was introduced after performance decreased during independent implementation, the number of checklist items completed accurately increased and remained high, illustrating that additional support after initial training may be necessary.",
-  },
-  {
     id: 30021,
     topic: "Withdrawing a Token Economy",
     prompt: "Which of the following is the first guideline for withdrawing a token economy effectively?",
@@ -278,19 +161,6 @@ export const QUESTIONS_M31: Question[] = [
     ],
     correctIndex: 3,
     explanation: "The first guideline for withdrawing a token economy is that token presentation should always be paired with social approval and verbal praise. This increases the reinforcing effect of social approval and helps maintain behaviors after token withdrawal.",
-  },
-  {
-    id: 30022,
-    topic: "Withdrawing a Token Economy",
-    prompt: "To gradually fade the physical evidence of a token, which of the following is the correct order in the fading sequence?",
-    options: [
-      "Physical tokens, then slips of paper, then tally marks on an index card kept by the learner, then the index card moved to the analyst",
-      "Physical tokens, then points on a card kept by the analyst, then tally marks on a learner index card, then slips of paper",
-      "Slips of paper, then physical tokens, then tally marks, then verbal announcements only",
-      "Tally marks, then physical tokens, then slips of paper, then no system at all"
-    ],
-    correctIndex: 0,
-    explanation: "The fading sequence progresses from physical tokens (poker chips), to slips of paper, to tally marks on an index card kept by the learner, to the index card taped to the desk, to the analyst keeping the card while learners can check their balance, to no checking allowed, to the system no longer operative.",
   },
   {
     id: 30023,
@@ -319,19 +189,6 @@ export const QUESTIONS_M31: Question[] = [
     explanation: "Token economies can be intrusive because they require time, energy, and resources. Additionally, most natural environments do not reinforce behavior with tokens, making schedule thinning while maintaining performance an important consideration.",
   },
   {
-    id: 30025,
-    topic: "Further Considerations: Token Economy",
-    prompt: "A token economy is described as 'self-perpetuating.' What does this mean in practice?",
-    options: [
-      "The token economy can be so effective that practitioners are reluctant to remove it, causing learners to continue working for backup reinforcers not normally available in the natural environment",
-      "The system automatically adjusts exchange ratios based on learner performance",
-      "Learners independently maintain the system by collecting and distributing tokens to peers",
-      "The token economy replicates itself across settings without any additional practitioner effort"
-    ],
-    correctIndex: 0,
-    explanation: "A token economy can be self-perpetuating because analysts can be so encouraged by its results that they do not want to remove the system, causing learners to continue working for backup reinforcers that may not normally be available in the natural environment.",
-  },
-  {
     id: 30026,
     topic: "Group Contingency Defined",
     prompt: "In a group contingency, a common consequence is contingent on:",
@@ -356,19 +213,6 @@ export const QUESTIONS_M31: Question[] = [
     ],
     correctIndex: 1,
     explanation: "One advantage of a group contingency is efficiency: instead of repeatedly administering individual consequences to each group member, the practitioner can apply one consequence to all members, saving time and potentially reducing workload.",
-  },
-  {
-    id: 30028,
-    topic: "Rationale for Group Contingencies",
-    prompt: "A group contingency can capitalize on peer influence because it:",
-    options: [
-      "Sets the occasion for peers to act as change agents for one another",
-      "Requires the practitioner to monitor every student individually at all times",
-      "Eliminates all forms of peer pressure within the group",
-      "Requires that all group members perform the same behaviors at the same time"
-    ],
-    correctIndex: 0,
-    explanation: "A group contingency can capitalize on peer influence and peer monitoring because this type of contingency sets the occasion for peers to act as change agents. Potentially harmful outcomes can be minimized by structuring contingency elements randomly.",
   },
   {
     id: 30029,
@@ -397,19 +241,6 @@ export const QUESTIONS_M31: Question[] = [
     explanation: "Under a dependent group contingency, the reward for the whole group depends on the performance of an individual student or small group. If the individual performs below criterion, the reward is not delivered to anyone.",
   },
   {
-    id: 30031,
-    topic: "Dependent Group Contingencies",
-    prompt: "The 'hero procedure' is a variation of which type of group contingency?",
-    options: [
-      "Independent group contingency",
-      "Average-performance group contingency",
-      "Interdependent group contingency",
-      "Dependent group contingency"
-    ],
-    correctIndex: 3,
-    explanation: "The hero procedure is a variation of the dependent group contingency. When an individual or small group earns a reward for the entire class, the contingency is sometimes referred to as the hero procedure. It can facilitate positive interactions because the class benefits from the targeted student's improved behavior.",
-  },
-  {
     id: 30032,
     topic: "Interdependent Group Contingencies",
     prompt: "An interdependent group contingency is best described as an 'all or none' arrangement because:",
@@ -421,19 +252,6 @@ export const QUESTIONS_M31: Question[] = [
     ],
     correctIndex: 1,
     explanation: "An interdependent group contingency requires all members to meet the criterion (individually and as a group) before any member earns the reward. This means all students earn the reward or none of them do.",
-  },
-  {
-    id: 30033,
-    topic: "Good Behavior Game",
-    prompt: "The Good Behavior Game (GBG), first investigated by Barrish, Saunders, and Wolf (1969), is an example of which type of group contingency?",
-    options: [
-      "Independent group contingency",
-      "Interdependent group contingency",
-      "Dependent group contingency",
-      "High-performance group contingency"
-    ],
-    correctIndex: 1,
-    explanation: "The Good Behavior Game is an interdependent group contingency. The class is divided into teams, and whichever team has the fewest marks against it (or both teams if they each meet a criterion) earns the reward.",
   },
   {
     id: 30034,
@@ -475,19 +293,6 @@ export const QUESTIONS_M31: Question[] = [
     explanation: "In an average-performance group contingency, the mean performance of the group is averaged and reinforcement is contingent on achieving that mean score or higher. High- and low-performance contingencies use the high score and low score, respectively, as the standard.",
   },
   {
-    id: 30037,
-    topic: "Setting Performance Criteria for Group Contingencies",
-    prompt: "Research by Hamblin et al. (1971) found that academically challenged students performed the worst under which type of performance contingency?",
-    options: [
-      "High-performance contingency",
-      "Low-performance contingency",
-      "Average-performance contingency",
-      "Independent group contingency"
-    ],
-    correctIndex: 0,
-    explanation: "Hamblin et al. (1971) found that academically challenged students performed the worst under a high-performance contingency, whereas gifted students performed best under this contingency, illustrating that effectiveness can vary for different group members.",
-  },
-  {
     id: 30038,
     topic: "Selecting the Appropriate Group Contingency",
     prompt: "A practitioner wants to improve the behavior of one student who has recently been integrated into a general education classroom, with the whole class benefiting from the student's improvement. Which type of group contingency is most appropriate?",
@@ -501,32 +306,6 @@ export const QUESTIONS_M31: Question[] = [
     explanation: "When the goal is to improve the behavior of one person or a small group, a dependent group contingency is most appropriate. The whole group's reward depends on that individual's performance, facilitating positive attention and encouragement from peers.",
   },
   {
-    id: 30039,
-    topic: "Selecting the Appropriate Group Contingency",
-    prompt: "A practitioner wants to differentially reinforce appropriate behavior so that each student earns rewards based on her own performance, independent of others. Which type of group contingency is most appropriate?",
-    options: [
-      "Dependent group contingency",
-      "Independent group contingency",
-      "Hero procedure",
-      "Interdependent group contingency"
-    ],
-    correctIndex: 1,
-    explanation: "When the practitioner wants to differentially reinforce appropriate behavior individually, an independent group contingency should be considered. Only those group members who individually meet the criterion earn the reinforcer.",
-  },
-  {
-    id: 30040,
-    topic: "Monitoring Group Contingency Performance",
-    prompt: "When a student deliberately fails to meet the group contingency criterion so that no one earns the reinforcer, what is a recommended response?",
-    options: [
-      "Remove the group contingency entirely to protect all students from negative consequences",
-      "Publicly identify the saboteur so that peer pressure encourages compliance",
-      "Arrange individual contingencies for the saboteur that combine the group contingency with other procedures such as behavior reduction or behavior building",
-      "Reduce the performance criterion for the entire group to accommodate the saboteur"
-    ],
-    correctIndex: 2,
-    explanation: "When a student sabotages a group contingency, individual contingencies should be arranged for that student that might combine the group contingency with other behavior reduction or behavior building procedures.",
-  },
-  {
     id: 30041,
     topic: "Contingency Contract Components",
     prompt: "Which two components are required in ALL contingency contracts?",
@@ -538,32 +317,6 @@ export const QUESTIONS_M31: Question[] = [
     ],
     correctIndex: 2,
     explanation: "All contingency contracts require two components: a task description and a reward description. A task record is an optional third element that helps track completion and provide interim reinforcement.",
-  },
-  {
-    id: 30042,
-    topic: "Contingency Contract Components",
-    prompt: "The task component of a contingency contract specifies which four elements?",
-    options: [
-      "Who, what, when, and how much",
-      "Who, what, when, and how well",
-      "What, when, how well, and how much",
-      "Who, when, how well, and how much"
-    ],
-    correctIndex: 1,
-    explanation: "The task component of a contingency contract specifies: Who (the person who will perform the task and receive the reward), What (the task or behavior), When (the time the task must be completed), and How Well (the criteria for successful task completion, which is the most important part).",
-  },
-  {
-    id: 30043,
-    topic: "Contingency Contract Components",
-    prompt: "The reward component of a contingency contract specifies which four elements?",
-    options: [
-      "Who, what, when, and how well",
-      "What, when, how much, and any bonus contingencies",
-      "Who, how well, how much, and task record",
-      "Who, what, when, and how much"
-    ],
-    correctIndex: 3,
-    explanation: "The reward side of a contingency contract specifies: Who (the person who will judge task completion and deliver the reward), What (the reward), When (the time the reward can be received), and How Much (the amount of reward that can be earned).",
   },
   {
     id: 30044,
@@ -642,18 +395,5 @@ export const QUESTIONS_M31: Question[] = [
     ],
     correctIndex: 3,
     explanation: "The student specified the wrong behavior in the task component. Studying for 1 hour was not directly related to earning better grades. Changing the contract to require solving a specific number of algebra equations correctly would better target the behavior needed to achieve the stated goal.",
-  },
-  {
-    id: 30050,
-    topic: "Developing Contingency Contracts",
-    prompt: "In the five-step contracting procedure described by Dardig and Heward, what is the purpose of List C?",
-    options: [
-      "To identify tasks that each family or group member currently performs",
-      "To provide a running record of each group member's daily task completion",
-      "To identify potential contract tasks that other group members could perform",
-      "To identify possible rewards that each group member would like to earn by completing contracted tasks"
-    ],
-    correctIndex: 3,
-    explanation: "List C is used for each group member to identify potential rewards they would like to earn by completing contracted tasks, including everyday favorite things and activities as well as special items they may have wanted for a long time.",
   },
 ];

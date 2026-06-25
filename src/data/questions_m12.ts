@@ -7,19 +7,6 @@ import type { Question } from "../types";
  */
 export const QUESTIONS_M12: Question[] = [
   {
-    id: 11001,
-    topic: "Operation and Logic of the Multiple Baseline Design",
-    prompt: "Baer, Wolf, and Risley (1968) first proposed the multiple baseline design as an alternative to the reversal design for which two situations?",
-    options: [
-      "When the target behavior is likely to be irreversible, or when withdrawal of treatment is undesirable, impractical, or unethical",
-      "When the independent variable cannot be measured, or when the dependent variable is unstable",
-      "When only a single behavior is targeted, or when concurrent measurement is too costly",
-      "When baseline data are too variable, or when the treatment must be applied simultaneously to all behaviors"
-    ],
-    correctIndex: 0,
-    explanation: "Baer, Wolf, and Risley described the multiple baseline design as appropriate when the target behavior is likely to be irreversible (i.e., it comes into contact with naturally existing contingencies that maintain the new level), or when it is undesirable, impractical, or unethical to withdraw a seemingly effective treatment.",
-  },
-  {
     id: 11002,
     topic: "Operation and Logic of the Multiple Baseline Design",
     prompt: "In a multiple baseline design, experimental control and a functional relation are demonstrated when:",
@@ -98,97 +85,6 @@ export const QUESTIONS_M12: Question[] = [
     explanation: "Replication is demonstrated each time a new tier's behavior changes when and only when the independent variable is applied to it. Each such change adds to confidence that the independent variable, and not some other factor, is responsible for the behavioral improvements.",
   },
   {
-    id: 11008,
-    topic: "Operation and Logic of the Multiple Baseline Design",
-    prompt: "Compared to the reversal design, the multiple baseline design is considered an inherently weaker demonstration of experimental control primarily because:",
-    options: [
-      "It requires more tiers and is therefore more time-consuming",
-      "Verification of the baseline prediction for each behavior must be inferred from the lack of change in other behaviors rather than demonstrated directly with that behavior",
-      "It cannot be used to evaluate the effects of instructional programs",
-      "It requires continuous measurement of all behaviors throughout the study"
-    ],
-    correctIndex: 1,
-    explanation: "The multiple baseline design is considered inherently weaker than the reversal design because verification is not demonstrated directly with the behavior in question. Instead, it is inferred from the relative stability of other behaviors that are still under baseline conditions.",
-  },
-  {
-    id: 11009,
-    topic: "Operation and Logic of the Multiple Baseline Design",
-    prompt: "Baer, Wolf, and Risley (1968) stated that the number of replications needed in any multiple baseline design is ultimately determined by:",
-    options: [
-      "The magnitude of behavior change observed in the first tier",
-      "The consumers of the research, such as teachers, administrators, parents, and journal editors",
-      "A minimum of five tiers as specified by experimental convention",
-      "The statistical power analysis conducted before the study begins"
-    ],
-    correctIndex: 1,
-    explanation: "Baer and colleagues indicated that the minimum number of replications needed is the number necessary to convince those who will be asked to respond to the experiment and the researcher's claims, such as teachers, administrators, parents, funding sources, and journal editors.",
-  },
-  {
-    id: 11010,
-    topic: "Multiple Baseline Across Behaviors Design",
-    prompt: "Ward and Carnes (2002) used a multiple baseline across behaviors design with college football linebackers. What were the three behaviors targeted in that study?",
-    options: [
-      "Blocking, passing, and kicking",
-      "Reads, drops, and tackles",
-      "Sprinting, conditioning, and stance",
-      "Passing routes, blitzing, and coverage"
-    ],
-    correctIndex: 1,
-    explanation: "Ward and Carnes targeted three football skills: reads (positioning to cover an area), drops (moving to correct position based on offensive alignment), and tackles (stopping the ball carrier). These were measured in practice sessions and games.",
-  },
-  {
-    id: 11011,
-    topic: "Multiple Baseline Across Behaviors Design",
-    prompt: "In the Ward and Carnes (2002) football study, what was the independent variable applied across the three behaviors?",
-    options: [
-      "Video modeling and peer feedback",
-      "Token economy and response cost",
-      "Self-set goals and public posting",
-      "Differential reinforcement of high rates"
-    ],
-    correctIndex: 2,
-    explanation: "The independent variable was a combination of self-set goals and public posting. Players set personal performance goals and their results were posted on a chart in the locker room after each practice.",
-  },
-  {
-    id: 11012,
-    topic: "Multiple Baseline Across Settings Design",
-    prompt: "In the Roane, Kelly, and Fisher (2003) study, the treatment condition for reducing Jason's object mouthing involved:",
-    options: [
-      "Response interruption and redirection combined with token reinforcement",
-      "Continuous access to food items (chewing gum, marshmallows, and hard candy) carried in a fanny pack",
-      "Differential reinforcement of other behavior with a 30-second delay",
-      "Physical guidance and verbal prompts by a therapist present in each setting"
-    ],
-    correctIndex: 1,
-    explanation: "During the treatment condition, Jason had continuous access to competing food items (chewing gum, marshmallows, and hard candy) that he carried in a fanny pack around his waist. This noncontingent access to food competed with object mouthing.",
-  },
-  {
-    id: 11013,
-    topic: "Multiple Baseline Across Settings Design",
-    prompt: "The Roane et al. (2003) object mouthing study is an example of a multiple baseline across settings design because:",
-    options: [
-      "Three different behaviors were targeted for the same participant across sequential phases",
-      "Three different participants each exhibited mouthing in a single shared setting",
-      "The same behavior (object mouthing) was measured in three different settings (classroom, playroom, outdoors) and the treatment was introduced in each setting sequentially",
-      "The intervention criteria were gradually increased across three treatment sub-phases"
-    ],
-    correctIndex: 2,
-    explanation: "A multiple baseline across settings design targets the same behavior of the same subject in two or more different settings, with treatment introduced sequentially. Roane and colleagues measured Jason's mouthing across three settings and applied treatment in each setting in a staggered sequence.",
-  },
-  {
-    id: 11014,
-    topic: "Multiple Baseline Across Subjects Design",
-    prompt: "In the Scherrer and Wilder (2008) cocktail server study, what was the dependent variable?",
-    options: [
-      "The number of customer complaints about spills per shift",
-      "The speed at which servers carried trays to tables",
-      "The percentage of eight safe tray-carrying behaviors performed correctly by each server",
-      "The number of training trials required for each server to reach mastery"
-    ],
-    correctIndex: 2,
-    explanation: "The dependent variable was the percentage of eight safe tray-carrying behaviors performed by each server, including carrying position for amount of weight, finger and thumb positions, wrist position, and tray distance from body, among others.",
-  },
-  {
     id: 11015,
     topic: "Multiple Baseline Across Subjects Design",
     prompt: "Why is the multiple baseline across subjects design considered 'not a true single-case design' according to the text?",
@@ -202,19 +98,6 @@ export const QUESTIONS_M12: Question[] = [
     explanation: "The multiple baseline across subjects design is not a true single-case design because each subject does not serve as his or her own control. Verification of predictions relies on the relatively unchanging baseline measures of other subjects still in baseline.",
   },
   {
-    id: 11016,
-    topic: "Multiple Probe Design",
-    prompt: "Horner and Baer (1978) first described the multiple probe design as particularly appropriate for which type of situation?",
-    options: [
-      "Analyzing treatments that must be withdrawn and reintroduced to demonstrate a functional relation",
-      "Analyzing the relation between an independent variable and the acquisition of successive approximations or task sequences",
-      "Comparing two competing treatments applied alternately within the same session",
-      "Evaluating the generalization of a skill across unrelated settings"
-    ],
-    correctIndex: 1,
-    explanation: "Horner and Baer (1978) described the multiple probe design as a method for analyzing the relation between an independent variable and the acquisition of successive approximations or a task sequence, particularly when continuous baseline measurement of all behaviors is unnecessary or impractical.",
-  },
-  {
     id: 11017,
     topic: "Multiple Probe Design",
     prompt: "In contrast to a standard multiple baseline design, what distinguishes the data collection approach in a multiple probe design?",
@@ -226,19 +109,6 @@ export const QUESTIONS_M12: Question[] = [
     ],
     correctIndex: 2,
     explanation: "In the multiple probe design, intermittent measures called probes (rather than continuous data collection) provide the basis for determining whether behavior change has occurred prior to intervention. This distinguishes it from the standard multiple baseline design, in which data are collected simultaneously throughout the baseline phase.",
-  },
-  {
-    id: 11018,
-    topic: "Multiple Probe Design",
-    prompt: "According to Horner and Baer (1978), why is continuous baseline measurement of steps later in a task sequence often unnecessary and illusory in a multiple baseline analysis?",
-    options: [
-      "Because later steps are always mastered before earlier steps when using chaining procedures",
-      "Because measuring steps that cannot be performed until earlier prerequisite steps are mastered represents zero opportunity for the behavior, not truly zero responding",
-      "Because later steps in a sequence always show high variability that prevents stable baseline measurement",
-      "Because continuous measurement of all steps increases the likelihood of reactivity and inflates baseline performance"
-    ],
-    correctIndex: 1,
-    explanation: "Horner and Baer argued that measuring a behavior that has no opportunity to occur (because prerequisite steps have not been taught) does not represent zero behavior so much as zero opportunity. Such measures fill out the picture of a multiple baseline in an illusory way without adding meaningful information.",
   },
   {
     id: 11019,
@@ -278,19 +148,6 @@ export const QUESTIONS_M12: Question[] = [
     ],
     correctIndex: 1,
     explanation: "A major weakness of the delayed multiple baseline design is that baselines begun after the independent variable has been applied to earlier behaviors may not represent the true preexperimental operant level. They may reflect changes due to the manipulation of other behaviors, potentially masking behavioral covariation.",
-  },
-  {
-    id: 11022,
-    topic: "Delayed Multiple Baseline Design",
-    prompt: "Poche, Brouwer, and Swearingen (1981) used a delayed multiple baseline design to teach self-protective responses to children. What was one ethical justification for beginning training with each child at approximately the same time despite equal-length baselines?",
-    options: [
-      "Equal baselines were required by the journal's publication standards",
-      "The nature of the target behavior required it be taught to each child as soon as possible given the potential danger of repeated exposure to adult lures",
-      "The children's parents requested simultaneous training for all three children",
-      "The training was expected to produce immediate generalization across children, making equal baselines necessary"
-    ],
-    correctIndex: 1,
-    explanation: "The ethical justification was that the target behavior (self-protective responses to adult lures) needed to be taught to each child as soon as possible. Continuing to expose children to adult lures while withholding training would have been highly questionable given the potential danger.",
   },
   {
     id: 11023,
@@ -410,32 +267,6 @@ export const QUESTIONS_M12: Question[] = [
     explanation: "A key advantage is that the multiple baseline design's requirement to sequentially apply the independent variable across multiple behaviors, settings, or subjects aligns naturally with the goals of practitioners who need to help multiple clients learn multiple skills in multiple settings.",
   },
   {
-    id: 11032,
-    topic: "Considerations: Advantages of the Multiple Baseline Design",
-    prompt: "In addition to not requiring treatment withdrawal, the text identifies which other advantage related to detecting generalization?",
-    options: [
-      "It eliminates the ethical concerns associated with withholding treatment from some behaviors",
-      "Concurrent measurement of multiple behaviors allows the behavior analyst to directly monitor covariation and detect generalization of behavior change",
-      "It allows the experimenter to compare multiple independent variables simultaneously",
-      "It produces a stronger demonstration of experimental control than any other single-case design"
-    ],
-    correctIndex: 1,
-    explanation: "Because the multiple baseline design involves concurrent measurement of two or more behaviors, settings, or subjects, it provides a direct opportunity to observe whether behavior change generalizes across tiers. Changes in behaviors still under baseline conditions may indicate generalization, even though such changes compromise experimental control.",
-  },
-  {
-    id: 11033,
-    topic: "Considerations: Limitations of the Multiple Baseline Design",
-    prompt: "According to Baer (1975), compared to the reversal design, the multiple baseline design more thoroughly evaluates:",
-    options: [
-      "The function of any particular target behavior",
-      "The effectiveness of the experimental technique, because the technique works again and again while each response works only once",
-      "The generalization of behavior change across untrained behaviors",
-      "The stability of behavior within each individual tier of the design"
-    ],
-    correctIndex: 1,
-    explanation: "Baer (1975) noted that in the multiple baseline design, it is primarily the technique that is made to work repeatedly, not the same response in the same subject. This provides rich information about the technique's effectiveness across diverse behaviors or subjects, but less information about the function of any particular target behavior.",
-  },
-  {
     id: 11034,
     topic: "Considerations: Limitations of the Multiple Baseline Design",
     prompt: "Which of the following represents an ethical concern unique to the multiple baseline design?",
@@ -473,32 +304,6 @@ export const QUESTIONS_M12: Question[] = [
     ],
     correctIndex: 1,
     explanation: "Verification in the changing criterion design can be approached in two ways: (1) varying phase lengths so that behavior changes only when the criterion changes regardless of varied phase durations, and (2) returning to a former criterion level (a reversed criterion) and demonstrating that behavior conforms to that earlier level, as Hall and Fox (1977) suggested.",
-  },
-  {
-    id: 11037,
-    topic: "Operation and Logic of the Changing Criterion Design",
-    prompt: "Cook, Rapp, and Schulze (2015) used a changing criterion design to increase the duration that a boy with autism wore a medical alert bracelet. What was the independent variable in that study?",
-    options: [
-      "Positive reinforcement contingent on wearing the bracelet for increasingly longer intervals",
-      "Differential negative reinforcement of other behavior (DNRO), in which the bracelet was removed contingent on compliance with a predetermined wait time",
-      "Extinction of problem behavior combined with a gradual desensitization hierarchy",
-      "Token economy in which the child earned tokens exchangeable for preferred items by wearing the bracelet"
-    ],
-    correctIndex: 1,
-    explanation: "The independent variable was differential negative reinforcement of other behavior (DNRO). The bracelet was removed (negative reinforcement) contingent on Jonah complying with a predetermined wait time without problem behavior. The criterion wait time was gradually increased across phases.",
-  },
-  {
-    id: 11038,
-    topic: "Operation and Logic of the Changing Criterion Design",
-    prompt: "McDougall (2005) proposed the range-bound changing criterion design in which each sub-phase includes:",
-    options: [
-      "A single criterion that must be met for exactly five consecutive sessions before advancing",
-      "Both a lower and an upper criterion within which the participant is expected to perform",
-      "A reversal to a previous criterion at the midpoint of each sub-phase",
-      "A probe session comparing performance to a no-treatment control condition"
-    ],
-    correctIndex: 1,
-    explanation: "McDougall's range-bound changing criterion design specifies both a lower and an upper criterion for each intervention sub-phase, creating a range within which the participant is expected to perform. Improvements and experimental control are demonstrated when the target behavior resides within the pre-specified range.",
   },
   {
     id: 11039,
@@ -540,19 +345,6 @@ export const QUESTIONS_M12: Question[] = [
     explanation: "When the number of response opportunities exactly equals the criterion, the student cannot exceed the criterion even if capable of doing so. This imposes an artificial ceiling on responding and compromises the validity of the data, producing a misleadingly controlled-looking graph.",
   },
   {
-    id: 11042,
-    topic: "Guidelines for Using the Changing Criterion Design",
-    prompt: "Kratochwill and colleagues (2017) recommended a minimum of how many criterion changes in a changing criterion design?",
-    options: [
-      "Two",
-      "Three",
-      "Five",
-      "Eight"
-    ],
-    correctIndex: 1,
-    explanation: "Kratochwill and colleagues (2017) recommended a minimum of three criterion changes for a changing criterion design to provide a convincing demonstration of experimental control.",
-  },
-  {
     id: 11043,
     topic: "Considerations: Appropriateness of the Changing Criterion Design",
     prompt: "Which of the following is identified as a limitation specific to the changing criterion design?",
@@ -579,19 +371,6 @@ export const QUESTIONS_M12: Question[] = [
     explanation: "Shaping involves reinforcing successive approximations that differ in topography (form) rather than simply in the rate or duration of an existing behavior. Because each new criterion in shaping represents a different response class, the changing criterion design, which is suited for stepwise changes in the rate, accuracy, duration, or latency of a single behavior, is not appropriate for shaping programs.",
   },
   {
-    id: 11045,
-    topic: "Considerations: Appropriateness of the Changing Criterion Design",
-    prompt: "Which single-case design does the changing criterion design resemble from a conceptual standpoint, even though the analogy is imperfect?",
-    options: [
-      "The reversal (A-B-A-B) design",
-      "The alternating treatments design",
-      "The multiple baseline design",
-      "The multielement design"
-    ],
-    correctIndex: 2,
-    explanation: "Both Hartmann and Hall (1976) and Hall and Fox (1977) replotted changing criterion data in a multiple baseline format to illustrate the conceptual similarity. However, the analogy is imperfect because the 'different behaviors' at each tier are not truly independent of one another.",
-  },
-  {
     id: 11046,
     topic: "Operation and Logic of the Multiple Baseline Design",
     prompt: "In a multiple baseline design, what is meant by the term 'tier'?",
@@ -603,45 +382,6 @@ export const QUESTIONS_M12: Question[] = [
     ],
     correctIndex: 1,
     explanation: "In multiple baseline design terminology, a tier refers to each separate behavior, setting, or subject that constitutes one row of the stacked multiple baseline graph. Each tier receives the independent variable sequentially.",
-  },
-  {
-    id: 11047,
-    topic: "Three Basic Forms of the Multiple Baseline Design",
-    prompt: "Hall, Cristler, Cranston, and Tucker (1970) published a paper describing three experiments, one for each basic form of the multiple baseline design. What was notable about who conducted those studies?",
-    options: [
-      "The studies were conducted exclusively by university researchers in highly controlled laboratory settings",
-      "The studies were carried out by teachers and parents, demonstrating that practitioners can conduct important studies in natural settings using available resources",
-      "The studies were replicated across five countries to establish cross-cultural validity",
-      "The studies were conducted by the same researcher across all three forms to ensure methodological consistency"
-    ],
-    correctIndex: 1,
-    explanation: "Hall and colleagues' 1970 paper was important in part because the studies were carried out by teachers and parents, indicating that practitioners can conduct significant studies in natural settings using resources available to them. This highlighted the accessibility of the multiple baseline design.",
-  },
-  {
-    id: 11048,
-    topic: "Nonconcurrent Multiple Baseline Across Participants Design",
-    prompt: "Watson and Workman (1981) proposed the nonconcurrent multiple baseline design to address which specific challenge faced by researchers in applied settings?",
-    options: [
-      "The difficulty of measuring behavior in multiple settings simultaneously when only one observer is available",
-      "The fact that clients with the same target behavior may only infrequently be referred at the same point in time, making concurrent measurement across subjects impossible",
-      "The ethical concern about withholding treatment from control participants for an extended period",
-      "The logistical difficulty of training multiple therapists to implement the same independent variable with fidelity"
-    ],
-    correctIndex: 1,
-    explanation: "Watson and Workman (1981) proposed the nonconcurrent design because concurrent measurement across subjects clearly poses problems for researchers in applied settings such as schools and mental health centers, where clients with the same target behavior may only infrequently be referred at the same point in time.",
-  },
-  {
-    id: 11049,
-    topic: "Guidelines for Using the Changing Criterion Design",
-    prompt: "Klein, Houlihan, Vincent, and Panahon (2017) surveyed 106 articles using changing criterion designs published between 1971 and 2013. What did they find regarding adequacy of experimental control?",
-    options: [
-      "Approximately 75% of studies met all necessary requirements for adequate experimental control",
-      "Only about 25% of the graphs reviewed met all necessary requirements; most lacked variation in phase magnitude, variation in phase length, or implemented two or fewer criterion changes",
-      "All studies that included a reversal to a previous criterion level demonstrated adequate experimental control",
-      "Studies with the most criterion changes consistently produced the strongest demonstrations of experimental control"
-    ],
-    correctIndex: 1,
-    explanation: "Klein and colleagues found that only about 25% of the graphs reviewed met all necessary requirements for adequate experimental control. The most common deficiencies were lack of variation in phase magnitude (without compensating with a reversal), lack of variation in phase length, and implementing two or fewer criterion changes.",
   },
   {
     id: 11050,
